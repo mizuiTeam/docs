@@ -4,11 +4,9 @@ description: 'Conecte sua loja Bagy ao Ishorts em poucos cliques.'
 icon: 'store'
 ---
 
-A integração com a Bagy é feita via Token de API, permitindo que o Ishorts leia seu catálogo de produtos automaticamente.
+Para realizar a integração, você precisará gerar um **Token de API** na plataforma da Bagy.
 
 ## Passo a Passo
-
-Siga as instruções abaixo para gerar suas credenciais:
 
 <Steps>
   <Step title="Acesse o Painel Bagy">
@@ -18,29 +16,46 @@ Siga as instruções abaixo para gerar suas credenciais:
   <Step title="Menu de Configurações">
     No menu lateral esquerdo, navegue até **Configurações** e clique em **APIs e Webhooks**.
     <Frame>
-      <img src="/images/bagy-passo-1.png" alt="Menu de configurações da Bagy" />
+      <img src="/images/bagy/bagy-1.png" alt="Menu de configurações da Bagy" />
     </Frame>
   </Step>
   
   <Step title="Criar Nova Chave">
     Clique no botão **Adicionar API** (geralmente localizado no canto superior direito).
+    <Frame>
+      <img src="/images/bagy/bagy-2.png" alt="Botão adicionar API" />
+    </Frame>
   </Step>
 
   <Step title="Nomear a Integração">
-    No campo **Nome da API**, digite `IShorts` para identificar a conexão.
+    No campo **Nome da API**, digite `IShorts` e clique em **Adicionar** para gerar as credenciais.
+    <Frame>
+      <img src="/images/bagy/bagy-3.png" alt="Nomeando a API" />
+    </Frame>
   </Step>
 
-  <Step title="Gerar Token">
-    Clique em **Adicionar**. O sistema irá gerar as credenciais.
+  <Step title="Copiar o Token">
+    Copie o código que aparece no campo **Token de acesso**. Você precisará dele no próximo passo.
+    <Frame>
+      <img src="/images/bagy/bagy-4.png" alt="Copiando o token de acesso" />
+    </Frame>
   </Step>
 
-  <Step title="Conectar no Ishorts">
-    Copie o código que aparece em **Token de acesso**. 
-    
-    Volte ao painel do Ishorts, selecione a integração **Bagy** e cole o token no campo indicado.
+  <Step title="Acessar Integrações no Ishorts">
+    No painel do Ishorts, no menu lateral esquerdo, clique em **Integrar**. Na página que abrir, clique no botão **Integrar** novamente.
+    <Frame>
+      <img src="/images/bagy/bagy-5.png" alt="Menu de integração no Ishorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Concluir Integração">
+    Selecione a opção **Bagy**, cole o **Token de acesso** no campo indicado e clique em **Integrar**.
+    <Frame>
+      <img src="/images/bagy/bagy-6.png" alt="Concluindo integração Bagy" />
+    </Frame>
   </Step>
 </Steps>
 
 <Check>
-  **Pronto!** Após colar o token, seus produtos começarão a ser sincronizados e você já poderá criar seus primeiros vídeos.
+  **Pronto!** Após colar o token, seus produtos começarão a ser sincronizados automaticamente.
 </Check>
