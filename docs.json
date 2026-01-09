@@ -16,21 +16,7 @@
           {
             "group": "Institucional",
             "pages": [
-              "mizui/index",
-              "mizui/faq",
-              "mizui/contato"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Cashing",
-        "groups": [
-          {
-            "group": "Começando",
-            "pages": [
-              "cashing/introducao",
-              "cashing/como-funciona"
+              "mizui/index"
             ]
           }
         ]
@@ -64,40 +50,8 @@
       ]
     }
   ]
-},
-      {
-        "tab": "Counti",
-        "groups": [
-          {
-            "group": "Documentação",
-            "pages": [
-              "counti/introducao"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "MeFavorita",
-        "groups": [
-          {
-            "group": "Documentação",
-            "pages": [
-              "mefavorita/introducao"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Tagy",
-        "groups": [
-          {
-            "group": "Documentação",
-            "pages": [
-              "tagy/introducao"
-            ]
-          }
-        ]
-      }
+}
+      
     ]
   },
   "logo": {
