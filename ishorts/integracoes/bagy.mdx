@@ -1,25 +1,53 @@
 ---
 title: 'Bagy'
-description: 'Conecte sua loja Bagy ao Ishorts em poucos cliques.'
+description: 'Conecte sua loja Bagy ao iShorts.'
 icon: 'store'
 ---
 
-Para realizar a integração, você precisará gerar um **Token de API** na plataforma da Bagy.
+## Visão Geral
 
-## Passo a Passo
+O iShorts possui integração nativa com a Bagy via API. O processo começa no painel da Mizui e exige a geração de um token de acesso no painel da sua loja.
 
 <Steps>
-  <Step title="Acesse o Painel Bagy">
-    Faça login na sua conta administrativa da Bagy.
+  <Step title="Acesse a Plataforma Mizui">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/), faça seu login e clique em **Entrar** no aplicativo **iShorts**.
+    <Frame>
+      <img src="/images/painel-1.png" alt="Tela inicial da plataforma Mizui" />
+    </Frame>
   </Step>
-  
+
+  <Step title="Acessar Integrações">
+    No painel do iShorts, clique no menu **Integrações** na barra lateral esquerda. Em seguida, clique no botão **Integrar**.
+    <Frame>
+      <img src="/images/painel-2.png" alt="Iniciando a integração no painel iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Selecionar Bagy">
+    Na barra de busca, pesquise por **Bagy**. Selecione a plataforma e clique em **Continuar**.
+    <Frame>
+      <img src="/images/bagy/bagy-6.png" alt="Selecionando a Bagy" />
+    </Frame>
+  </Step>
+
+  <Step title="Identificar Dados Necessários">
+    Você verá que o iShorts solicita o **Token de acesso**. Mantenha essa aba aberta; agora vamos acessar o painel da sua loja para gerar essa credencial.
+    <Frame>
+      <img src="/images/bagy/bagy-7.png" alt="Campo de Token de acesso no iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Acesse o Painel Bagy">
+    Em uma nova aba, faça login na sua conta administrativa da Bagy.
+  </Step>
+
   <Step title="Menu de Configurações">
     No menu lateral esquerdo, navegue até **Configurações** e clique em **APIs e Webhooks**.
     <Frame>
       <img src="/images/bagy/bagy-1.png" alt="Menu de configurações da Bagy" />
     </Frame>
   </Step>
-  
+
   <Step title="Criar Nova Chave">
     Clique no botão **Adicionar API** (geralmente localizado no canto superior direito).
     <Frame>
@@ -35,33 +63,18 @@ Para realizar a integração, você precisará gerar um **Token de API** na plat
   </Step>
 
   <Step title="Copiar o Token">
-    Copie o código que aparece no campo **Token de acesso**. Você precisará dele no próximo passo.
+    Copie o código que aparece no campo **Token de acesso**.
     <Frame>
       <img src="/images/bagy/bagy-4.png" alt="Copiando o token de acesso" />
     </Frame>
   </Step>
 
-  <Step title="Acessar Integrações no Ishorts">
-    No painel do Ishorts, no menu lateral esquerdo, clique em **Integrar**. Na página que abrir, clique no botão **Integrar** novamente.
+  <Step title="Concluir Integração">
+    Volte para a aba do **iShorts** (onde paramos no passo 4), cole o **Token de acesso** no campo indicado e clique em **Integrar**.
     <Frame>
-      <img src="/images/bagy/bagy-5.png" alt="Menu de integração no Ishorts" />
+      <img src="/images/bagy/bagy-7.png" alt="Preenchendo o token no painel iShorts" />
     </Frame>
   </Step>
-
-  <Step title="Escolher plataforma">
-    Selecione a opção **Bagy** e clique em **Continuar**.
-    <Frame>
-      <img src="/images/bagy/bagy-6.png" alt="Concluindo integração Bagy" />
-    </Frame>
-  </Step>
-
-    <Step title="Concluir Integração">
-    Cole o **Token de acesso** no campo indicado e clique em **Integrar**.
-    <Frame>
-      <img src="/images/bagy/bagy-7.png" alt="Concluindo integração Bagy" />
-    </Frame>
-  </Step>
-
 </Steps>
 
 <Check>

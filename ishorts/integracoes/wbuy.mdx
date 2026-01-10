@@ -1,16 +1,44 @@
 ---
 title: 'WBuy'
-description: 'Conecte sua loja WBuy ao Ishorts.'
+description: 'Conecte sua loja WBuy ao iShorts.'
 icon: 'store'
 ---
 
-A integração com a WBuy é realizada através da geração de credenciais de API no painel da sua loja.
+## Visão Geral
 
-## Passo a Passo
+O iShorts possui integração nativa com a WBuy via API. O processo começa no painel da Mizui e exige a geração de credenciais no painel da sua loja.
 
 <Steps>
+  <Step title="Acesse a Plataforma Mizui">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/), faça seu login e clique em **Entrar** no aplicativo **iShorts**.
+    <Frame>
+      <img src="/images/painel-1.png" alt="Tela inicial da plataforma Mizui" />
+    </Frame>
+  </Step>
+
+  <Step title="Acessar Integrações">
+    No painel do iShorts, clique no menu **Integrações** na barra lateral esquerda. Em seguida, clique no botão **Integrar**.
+    <Frame>
+      <img src="/images/painel-2.png" alt="Iniciando a integração no painel iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Selecionar WBuy">
+    Na barra de busca, pesquise por **Wbuy**. Selecione a plataforma e clique em **Continuar**.
+    <Frame>
+      <img src="/images/wbuy/wbuy-8.png" alt="Selecionando WBuy na lista" />
+    </Frame>
+  </Step>
+
+  <Step title="Identificar Dados Necessários">
+    O iShorts solicitará três informações: **Link da Loja**, **Usuário da API** e **Senha da API**. Mantenha essa aba aberta; agora vamos acessar o painel da sua loja para gerar esses dados.
+    <Frame>
+      <img src="/images/wbuy/wbuy-9.png" alt="Campos de integração no iShorts" />
+    </Frame>
+  </Step>
+
   <Step title="Acesse o Painel WBuy">
-    Faça login na administração da sua loja WBuy: [sistema.sistemawbuy.com.br/painel](https://sistema.sistemawbuy.com.br/painel/)
+    Em uma nova aba, faça login na administração da sua loja: [sistema.sistemawbuy.com.br/painel](https://sistema.sistemawbuy.com.br/painel/)
   </Step>
 
   <Step title="Menu de Configurações">
@@ -39,9 +67,7 @@ A integração com a WBuy é realizada através da geração de credenciais de A
     <Frame>
       <img src="/images/wbuy/wbuy-4.png" alt="Nomeando a chave como IShorts" />
     </Frame>
-  </Step>
-
-  <Step title="Salvar Chave">
+    
     Role a página até o final e clique no botão verde **Gravar**.
     <Frame>
       <img src="/images/wbuy/wbuy-5.png" alt="Salvando as configurações da API" />
@@ -49,45 +75,32 @@ A integração com a WBuy é realizada através da geração de credenciais de A
   </Step>
 
   <Step title="Copiar Credenciais">
-    Sua chave será criada. Copie o **Usuário API** e clique em "Visualizar" para copiar a **Senha API**. Guarde esses dados.
+    Sua chave será criada. Copie o **Usuário API** e clique em "Visualizar" para copiar a **Senha API**.
     <Frame>
       <img src="/images/wbuy/wbuy-6.png" alt="Copiando usuário e senha da API" />
     </Frame>
   </Step>
 
   <Step title="Obter URL da Loja">
-    Para pegar o link correto da sua loja, clique no botão **Ver loja** no canto superior esquerdo do painel. Copie a URL do navegador (ex: `https://www.sualoja.com.br`).
+    Para pegar o link correto, clique no botão **Ver loja** no canto superior esquerdo do painel. Copie a URL do navegador (ex: `https://www.sualoja.com.br`).
     <Frame>
-      <img src="/images/wbuy/wbuy-10.png" alt="Localizando a URL da loja" />
+      <img src="/images/wbuy/wbuy-10.png" alt="Localizando o botão Ver Loja" />
     </Frame>
-        <Frame>
-      <img src="/images/wbuy/wbuy-11.png" alt="Localizando a URL da loja" />
-    </Frame>
-  </Step>
-
-  <Step title="Acessar Integrações no Ishorts">
-    No painel do Ishorts, vá em **Integrações** no menu lateral e clique no botão **Integrar**.
     <Frame>
-      <img src="/images/wbuy/wbuy-7.png" alt="Iniciando integração no Ishorts" />
-    </Frame>
-  </Step>
-
-  <Step title="Selecionar Plataforma">
-    Selecione a opção **Wbuy** e clique em **Continuar**.
-    <Frame>
-      <img src="/images/wbuy/wbuy-8.png" alt="Selecionando WBuy na lista" />
+      <img src="/images/wbuy/wbuy-11.png" alt="Copiando a URL no navegador" />
     </Frame>
   </Step>
 
   <Step title="Concluir Integração">
-    Preencha os campos com os dados coletados:
+    Volte para a aba do **iShorts** (onde paramos no passo 4) e preencha os campos:
+    
     * **Link da sua Loja**
     * **Usuário da Api**
     * **Senha da Api**
     
     Por fim, clique em **Integrar**.
     <Frame>
-      <img src="/images/wbuy/wbuy-9.png" alt="Preenchendo dados finais no Ishorts" />
+      <img src="/images/wbuy/wbuy-9.png" alt="Preenchendo dados finais no iShorts" />
     </Frame>
   </Step>
 </Steps>
