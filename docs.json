@@ -27,15 +27,8 @@
     {
       "group": "Começando",
       "pages": [
-        "ishorts/oquee"
-      ]
-    },
-    {
-      "group": "Funcionalidades",
-      "pages": [
-          "ishorts/funcionalidades/miniatura-flutuante",
-          "ishorts/funcionalidades/stories-produto",
-          "ishorts/funcionalidades/carrossel"
+        "ishorts/oquee",
+        "ishorts/funcionalidades"
       ]
     },
     {
@@ -48,7 +41,31 @@
         "ishorts/integracoes/wbuy",
         "ishorts/integracoes/yampi"
       ]
-    }
+    },
+    {
+      "group": "Dúvidas Frequentes",
+       "pages": [
+        "ishorts/duvidas/o-que-e-ishorts",
+        "ishorts/duvidas/ajuda-vender-mais",
+        "ishorts/duvidas/custo-mensal",
+        "ishorts/duvidas/pos-instalacao",
+        "ishorts/duvidas/conhecimento-tecnico",
+        "ishorts/duvidas/como-desinstalar",
+        "ishorts/duvidas/adicionar-videos-produtos",
+        "ishorts/duvidas/personalizar-miniatura",
+        "ishorts/duvidas/video-fixo",
+        "ishorts/duvidas/formatos-exibicao",
+        "ishorts/duvidas/video-sem-vinculo",
+        "ishorts/duvidas/onde-aparece",
+        "ishorts/duvidas/modelos-campanha",
+        "ishorts/duvidas/tempo-video",
+        "ishorts/duvidas/tamanho-maximo",
+        "ishorts/duvidas/ordem-exibicao",
+        "ishorts/duvidas/dois-modelos",
+        "ishorts/duvidas/cor-botao",
+        "ishorts/duvidas/apagar-comentarios"
+        ]
+      }
   ]
 }
       
