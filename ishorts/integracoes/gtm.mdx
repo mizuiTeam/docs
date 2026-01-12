@@ -1,0 +1,127 @@
+---
+title: 'GTM'
+description: 'Instale o iShorts em qualquer site via GTM.'
+icon: 'store'
+---
+
+A integração via Google Tag Manager (GTM) permite adicionar o iShorts em qualquer plataforma que suporte a inserção de scripts personalizados.
+
+## Passo a Passo
+
+<Steps>
+  <Step title="Acesse a Plataforma Mizui">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/), faça seu login e clique em **Entrar** no aplicativo **iShorts**.
+    <Frame>
+      <img src="/images/painel-1.png" alt="Tela inicial da plataforma Mizui" />
+    </Frame>
+  </Step>
+
+  <Step title="Acessar Integrações">
+    No painel do iShorts, clique no menu **Integrações** na barra lateral esquerda. Em seguida, clique no botão **Integrar**.
+    <Frame>
+      <img src="/images/painel-2.png" alt="Iniciando a integração no painel iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Selecionar GTM">
+    Na barra de busca, pesquise por **GTM** (ou Google Tag Manager). Selecione a opção e clique em **Continuar**.
+    <Frame>
+      <img src="/images/gtm/gtm-1.png" alt="Selecionando GTM na lista" />
+    </Frame>
+  </Step>
+
+<Step title="Identificar Dados Necessários">
+    O iShorts solicitará duas informações: **Link da Loja** e o **Código GTM**. Mantenha essa aba aberta; agora vamos acessar o painel do GTM para gerar esses dados.
+    <Frame>
+      <img src="/images/gtm/gtm-2.png" alt="Campos de integração no iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Acessar via Google Analytics">
+    Em outra aba, entre no seu **Google Analytics**.
+    
+    1. Clique no seu **Nome/Perfil** (geralmente no topo ou na troca de contas).
+    2. No menu que abrir, clique no ícone do **GTM** (Tag Manager).
+    3. Selecione a sua conta.
+    <Frame>
+      <img src="/images/gtm/gtm-3.png" alt="Campos de integração no iShorts" />
+    </Frame>
+    <Frame>
+      <img src="/images/gtm/gtm-4.png" alt="Campos de integração no iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Copiar Código do GTM">
+    Já no painel do GTM, clique na aba **Administrador** e copie o código do container (que começa com `GTM-XXXXXX`).
+    <Frame>
+      <img src="/images/gtm/gtm-5.png" alt="Copiando o ID do GTM" />
+    </Frame>
+  </Step>
+
+  <Step title="Gerar e Copiar o Script">
+    Volte para a aba do **iShorts** e preencha os campos:
+    1. **URL do Site:** O link da sua loja.
+    2. **Código GTM:** Cole o código que você copiou no passo anterior.
+    
+    Clique no botão para **copiar o script gerado** e, depois, clique em **Integrar**.
+    <Frame>
+      <img src="/images/gtm/gtm-6.png" alt="Gerando o script no iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Criar Nova Tag">
+    Volte para a aba do **Google Tag Manager**.
+    
+    Vá para a aba **Espaço de Trabalho** (Workspace) e clique em **Adicionar nova tag**.
+    <Frame>
+      <img src="/images/gtm/gtm-7.png" alt="Adicionando nova tag no GTM" />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar Tipo da Tag">
+    1. Dê um título para sua tag, por exemplo: `iShorts`.
+    <Frame>
+      <img src="/images/gtm/gtm-8.png" alt="Nomeando a TAG" />
+    </Frame>
+    2. Clique na área **Configuração da Tag**.
+    3. Na lista lateral, escolha o tipo **HTML Personalizado**.
+    <Frame>
+      <img src="/images/gtm/gtm-9.png" alt="Configurando a TAG" />
+    </Frame>
+  </Step>
+
+  <Step title="Colar o Script">
+    No campo de HTML que se abrirá, **cole o script** que você copiou do painel do iShorts.
+    <Frame>
+      <img src="/images/gtm/gtm-10.png" alt="Colando o script HTML" />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar Acionamento">
+    Role para baixo e clique na área **Acionamento** (Triggering).
+        <Frame>
+      <img src="/images/gtm/gtm-13.png" alt="Selecionando o acionamento" />
+    </Frame>
+  </Step>
+
+  <Step title="Selecionar Todas as Páginas">
+    Selecione a opção **All Pages** (Todas as Páginas) e clique em **Salvar** no canto superior direito.
+    <Frame>
+      <img src="/images/gtm/gtm-11.png" alt="Selecionando o acionador All Pages" />
+    </Frame>
+  </Step>
+
+  <Step title="Publicar">
+    Para finalizar, clique no botão **Enviar** no topo da página do GTM para publicar as alterações no seu site.
+    <Frame>
+      <img src="/images/gtm/gtm-12.png" alt="Publicando as alterações no GTM" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Check>
+  **Pronto!** A integração foi concluída e o iShorts já está ativo no seu site.
+</Check>
+
+
+
