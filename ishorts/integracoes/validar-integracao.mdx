@@ -1,0 +1,48 @@
+---
+title: 'Como validar a integração?'
+description: 'Passo a passo para garantir que o iShorts está ativo na sua loja.'
+icon: 'magnifying-glass'
+---
+
+Após realizar os passos de integração, é recomendável fazer um teste real para confirmar se o script foi carregado corretamente no seu site.
+
+## Método 1: O Teste Visual (Recomendado)
+
+A forma mais simples de validar é tentar exibir um vídeo na sua página inicial.
+
+<Steps>
+  <Step title="Crie um iShort de Teste">
+    No painel do iShorts, suba um vídeo qualquer (pode ser curto).
+  </Step>
+  <Step title="Configure para a Home">
+    Na configuração de **Exibição**, selecione **Página Inicial (Home)**.
+    Escolha o formato **Miniatura (Floating)**, pois é o mais difícil de passar despercebido.
+  </Step>
+  <Step title="Acesse sua Loja">
+    Abra uma **Aba Anônima** no seu navegador e acesse o site da sua loja.
+  </Step>
+  <Step title="Verifique e Aguarde">
+    Se a bolinha do vídeo aparecer no canto da tela, **sua integração está funcionando 100%**.
+    
+    <Warning>
+      **Atenção:** As alterações podem levar até **5 minutos** para refletir na loja devido ao cache. Se o vídeo não aparecer imediatamente, aguarde alguns minutos e recarregue a página.
+    </Warning>
+  </Step>
+</Steps>
+<Note>
+  Depois do teste, você pode apagar ou desativar esse vídeo no painel.
+</Note>
+
+## Método 2: Verificação Técnica
+
+Se você prefere não subir um vídeo agora, pode verificar se o código está presente na loja.
+
+1. Acesse a página inicial da sua loja.
+2. Clique com o botão direito em qualquer lugar e selecione **Inspecionar** (ou aperte `F12`).
+3. Pressione `Ctrl + F` (Windows) ou `Command + F` (Mac) para abrir a busca de código.
+4. Digite `ishorts`.
+5. Se a busca encontrar linhas de código (scripts) com esses nomes, a instalação técnica foi bem-sucedida.
+
+<Check>
+  **Está tudo certo!** Se passou em um desses testes, sua loja já está pronta para receber os vídeos.
+</Check>

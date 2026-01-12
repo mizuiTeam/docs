@@ -14,61 +14,76 @@
         "tab": "Mizui",
         "groups": [
           {
-            "group": "Institucional",
+           "group": "Sobre a Mizui",
             "pages": [
-              "mizui/index"
+              "mizui/sobre",
+              "mizui/estrutura",
+              "mizui/planos"
             ]
           }
         ]
       },
-      {
-  "tab": "Ishorts",
+     {
+  "tab": "iShorts",
   "groups": [
     {
-      "group": "Começando",
+      "group": "Sobre o iShorts",
       "pages": [
-        "ishorts/oquee",
-        "ishorts/funcionalidades"
+        "ishorts/sobre/oquee",
+        "ishorts/sobre/funcionalidades",
+        "ishorts/sobre/o-que-nao-faz",
+        "ishorts/sobre/quando-usar"
       ]
     },
     {
+      "group": "Estrutura na Loja",
+      "pages": [
+        "ishorts/estrutura/onde-aparecem",
+        "ishorts/estrutura/mobile-desktop",
+        "ishorts/estrutura/performance"
+      ]
+    },
+        {
       "group": "Integrações",
       "pages": [
-        "ishorts/integracoes/nuvemshop",
-        "ishorts/integracoes/loja-integrada",
-        "ishorts/integracoes/bagy",
-        "ishorts/integracoes/tray",
-        "ishorts/integracoes/wbuy",
-        "ishorts/integracoes/yampi",
-        "ishorts/integracoes/gtm"
+        "ishorts/integracoes/compatibilidade",
+        "ishorts/integracoes/validar-integracao",
+        {
+          "group": "Guias por Plataforma",
+          "pages": [
+            "ishorts/integracoes/nuvemshop",
+            "ishorts/integracoes/loja-integrada",
+            "ishorts/integracoes/bagy",
+            "ishorts/integracoes/tray",
+            "ishorts/integracoes/wbuy",
+            "ishorts/integracoes/yampi",
+            "ishorts/integracoes/gtm"
+          ]
+        }
       ]
     },
     {
       "group": "Dúvidas Frequentes",
-       "pages": [
-        "ishorts/duvidas/o-que-e-ishorts",
-        "ishorts/duvidas/ajuda-vender-mais",
-        "ishorts/duvidas/custo-mensal",
-        "ishorts/duvidas/pos-instalacao",
-        "ishorts/duvidas/conhecimento-tecnico",
-        "ishorts/duvidas/como-desinstalar",
-        "ishorts/duvidas/adicionar-videos-produtos",
+      "pages": [
+        "ishorts/duvidas/como-vincular-produto",
+        "ishorts/duvidas/diferenca-vinculo-campanha",
+        "ishorts/duvidas/como-subir-campanha",
+        "ishorts/duvidas/video-na-home",
+        "ishorts/duvidas/video-pagina-especifica",
+        "ishorts/duvidas/quais-formatos",
+        "ishorts/duvidas/diferenca-formatos",
         "ishorts/duvidas/personalizar-miniatura",
         "ishorts/duvidas/video-fixo",
-        "ishorts/duvidas/formatos-exibicao",
-        "ishorts/duvidas/video-sem-vinculo",
-        "ishorts/duvidas/onde-aparece",
-        "ishorts/duvidas/modelos-campanha",
-        "ishorts/duvidas/tempo-video",
-        "ishorts/duvidas/tamanho-maximo",
-        "ishorts/duvidas/ordem-exibicao",
-        "ishorts/duvidas/dois-modelos",
-        "ishorts/duvidas/cor-botao",
-        "ishorts/duvidas/apagar-comentarios"
-        ]
-      }
+        "ishorts/duvidas/botao-whatsapp",
+        "ishorts/duvidas/ativar-comentarios",
+        "ishorts/duvidas/aceitar-comentarios",
+        "ishorts/duvidas/como-subir-carrossel"
+      ]
+    }
+    
   ]
 }
+ 
       
     ]
   },
