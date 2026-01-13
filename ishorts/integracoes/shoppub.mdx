@@ -1,0 +1,145 @@
+---
+title: 'Shoppub'
+description: 'Conecte sua loja Shoppub ao iShorts.'
+icon: 'store'
+---
+
+A integração com a Shoppub requer três configurações: geração de Token (para leitura), instalação de Script (para exibir vídeos) e configuração de Webhook (para atualização de produtos).
+
+## Passo a Passo
+
+<Steps>
+  <Step title="Acesse a Plataforma Mizui">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/), faça seu login e clique em **Entrar** no aplicativo **iShorts**.
+    <Frame>
+      <img src="/images/painel-1.png" alt="Tela inicial da plataforma Mizui" />
+    </Frame>
+  </Step>
+
+  <Step title="Iniciar Integração">
+    Vá no menu **Integrações** na barra lateral e clique em **Integrar**.
+    
+    Na lista de plataformas, selecione **Shoppub** e clique em **Continuar**.
+    <Frame>
+      <img src="/images/painel-2.png" alt="Selecionando Shoppub" />
+    </Frame>
+  </Step>
+
+  <Step title="Preencher Link da Loja">
+    O iShorts pedirá dois campos. O primeiro é o **Link da Loja**.
+    
+    Preencha com a URL do seu site (ex: `https://www.sualoja.com.br`) e mantenha essa aba aberta. Agora vamos buscar o Token.
+    <Frame>
+      <img src="/images/shoppub/shop-2.png" alt="Campo de Link da Loja" />
+    </Frame>
+  </Step>
+
+  <Step title="Gerar Token na Shoppub">
+    Em outra aba, acesse seu painel de lojista da Shoppub.
+
+    > **Nota:** Se você não estiver logado, a tela de login aparecerá primeiro. Insira suas credenciais para prosseguir.
+    
+    1. No menu lateral, clique em **APIs e Webhooks**.
+    2. Clique em **Tokens API**.
+    3. Clique no botão **Adicionar**.
+    
+    <Frame>
+      <img src="/images/shoppub/shop-3.png" alt="Menu Tokens API na Shoppub" />
+    </Frame>
+        <Frame>
+      <img src="/images/shoppub/shop-4.png" alt="Menu Tokens API na Shoppub" />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar Permissões do Token">
+    Na tela de criação do token:
+    1. Selecione a sua loja.
+    2. Coloque um título (ex: `iShorts`).
+    3. **Importante:** Selecione a permissão de **Obter Produto**.
+    
+    Clique em **Salvar**.
+    <Frame>
+      <img src="/images/shoppub/shop-5.png" alt="Configurando permissão Obter Produto" />
+    </Frame>
+  </Step>
+
+  <Step title="Copiar e Colar o Token">
+    De volta à lista de tokens na Shoppub, copie o código do token que você acabou de criar.
+    
+    Volte para a aba do **iShorts** e cole este código no campo **Token de API**.
+    <Frame>
+      <img src="/images/shoppub/shop-6.png" alt="Copiando o token" />
+    </Frame>
+  </Step>
+
+  <Step title="Copiar Script e Webhook">
+    Ainda na tela do iShorts (agora que você preencheu o Link e o Token):
+    
+    1. Clique no botão **Copiar Script** e salve esse código em um Bloco de Notas.
+    2. Copie também a **URL do Webhook** que aparece na tela e salve no mesmo Bloco de Notas.
+    
+    Você vai precisar desses dois códigos nos próximos passos.
+    <Frame>
+      <img src="/images/shoppub/shop-7.png" alt="Copiando Script e Webhook" />
+    </Frame>
+  </Step>
+
+  <Step title="Instalar o Script na Shoppub">
+    Volte ao painel da Shoppub.
+    
+    1. No menu lateral, vá em **Scripts Adicionais** > **Scripts**.
+    2. Clique em **Adicionar**.
+
+    <Frame>
+      <img src="/images/shoppub/shop-8.png" alt="Adicionando o Script na Shoppub" />
+    </Frame>
+
+    3. Coloque o título `IShorts`.
+    4. No segundo campo, **cole o Script** que você salvou no bloco de notas.
+    5. Clique em **Salvar**.
+
+    <Frame>
+      <img src="/images/shoppub/shop-9.png" alt="Adicionando o Script na Shoppub" />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar o Webhook">
+    Agora vamos configurar a atualização automática. No painel Shoppub:
+    
+    1. Vá no menu **APIs e Webhooks** > **Webhooks**.
+    2. Localize a opção **Webhook de Produtos**, clique em **Editar** e depois em **Adicionar**.
+    <Frame>
+      <img src="/images/shoppub/shop-10.png" alt="Menu Webhooks" />
+    </Frame>
+        <Frame>
+      <img src="/images/shoppub/shop-11.png" alt="Adicionar Webhooks" />
+    </Frame>
+  </Step>
+
+  <Step title="Preencher Dados do Webhook">
+    Configure da seguinte forma:
+    
+    * **Status:** Deixe como Ativo.
+    * **Título:** `iShorts`.
+    * **URL para notificação:** Cole a **URL do Webhook** que você salvou no bloco de notas.
+    * **Selecionar produtos:** Marque a opção **na loja toda**.
+    
+    Clique em **Salvar**.
+    <Frame>
+      <img src="/images/shoppub/shop-12.png" alt="Configuração do Webhook" />
+    </Frame>
+  </Step>
+
+  <Step title="Finalizar Integração">
+    Retorne para a aba do **iShorts** e clique no botão **Integrar** para concluir o processo.
+  </Step>
+
+</Steps>
+
+<Note>
+  **Dica:** Caso você já esteja integrado e precise visualizar o Script ou a URL do Webhook novamente, basta ir em **Integrações** no painel da Mizui e clicar em cima do card da **Shoppub**.
+</Note>
+
+<Check>
+  **Pronto!** A integração foi concluída e seus produtos Shoppub serão sincronizados automaticamente.
+</Check>
