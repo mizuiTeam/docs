@@ -1,0 +1,84 @@
+---
+title: 'Cartpanda'
+description: 'Conecte sua loja Cartpanda via Token e Slug.'
+icon: 'store'
+---
+
+A integração com a Cartpanda é feita copiando as credenciais de acesso direto do seu painel administrativo.
+
+## Passo a Passo
+
+<Steps>
+  <Step title="Acesse a Plataforma Mizui">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/), faça seu login e clique em **Entrar** no aplicativo **iShorts**.
+    <Frame>
+      <img src="/images/painel-1.png" alt="Tela inicial da plataforma Mizui" />
+    </Frame>
+  </Step>
+
+  <Step title="Acessar Integrações">
+    No painel do iShorts, clique no menu **Integrações** na barra lateral esquerda. Em seguida, clique no botão **Integrar**.
+    <Frame>
+      <img src="/images/painel-2.png" alt="Iniciando a integração no painel iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Selecionar Cartpanda">
+    Na barra de busca, pesquise por **Cartpanda**. Selecione a opção e clique em **Continuar**.
+    <Frame>
+      <img src="/images/cartpanda/cartpanda-1.png" alt="Selecionando Cartpanda na lista" />
+    </Frame>
+  </Step>
+
+  <Step title="Entenda os Dados Necessários">
+    O iShorts solicitará duas informações: o **Slug** da loja e o **Token de API**.
+    
+    > **O que é Slug?**
+    > O "Slug" é o nome identificador da sua loja que aparece na URL. 
+    > Exemplo: Se sua loja é `mizui.mycartpanda.com`, o seu slug é apenas **mizui**.
+    
+    Mantenha essa aba aberta; agora vamos buscar esses dados.
+    <Frame>
+      <img src="/images/cartpanda/cartpanda-2.png" alt="Campos de integração no iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Acessar Painel Cartpanda">
+    Em outra aba, faça login no painel administrativo da Cartpanda através do link [accounts.cartpanda.com](https://accounts.cartpanda.com/).
+
+    > **Nota:** Se você não estiver logado, a tela de login aparecerá primeiro. Insira suas credenciais para prosseguir.
+    
+    No canto **superior direito**, clique no **ícone do seu perfil** (geralmente suas iniciais ou logo).
+    <Frame>
+      <img src="/images/cartpanda/cartpanda-3.png" alt="Menu de perfil no canto superior direito da Cartpanda" />
+    </Frame>
+  </Step>
+
+  <Step title="Copiar Token e Identificar Slug">
+    Ao abrir o menu suspenso do perfil, você verá as informações da loja:
+    
+    1. **Identificar o Slug:** Observe o endereço que aparece logo abaixo do nome da loja (ex: `mizui.mycartpanda.com`). O texto antes do ponto é o seu Slug (no exemplo: `mizui`).
+    2. **Copiar o Token:** Logo abaixo, haverá um código com um ícone de "copiar" ao lado (botão azul). Clique nele para copiar seu Token.
+    
+    <Frame>
+      <img src="/images/cartpanda/cartpanda-4.png" alt="Copiando o Token no menu da Cartpanda" />
+    </Frame>
+  </Step>
+
+  <Step title="Finalizar Integração">
+    Volte para a aba do **iShorts** e cole as informações:
+    
+    1. **Slug:** Digite o nome da loja que você identificou.
+    2. **Token:** Cole o código copiado.
+    
+    Clique em **Integrar** para finalizar.
+    <Frame>
+      <img src="/images/cartpanda/cartpanda-5.png" alt="Colando os dados e finalizando" />
+    </Frame>
+  </Step>
+
+</Steps>
+
+<Check>
+  **Pronto!** A integração foi concluída e seus produtos Cartpanda serão sincronizados automaticamente.
+</Check>
