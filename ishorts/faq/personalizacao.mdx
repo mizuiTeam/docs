@@ -1,13 +1,95 @@
 ---
 title: 'Personalização'
-description: 'Ajustes visuais.'
+description: 'Ajustes visuais e de layout.'
 ---
 
 <AccordionGroup>
-  <Accordion title="Mudei a cor da miniatura flutuante e não refletiu no meu site e agora?">
-    Responda aqui...
+  <Accordion title="Mudei a cor da miniatura flutuante e não refletiu no meu site, e agora?">
+    Isso geralmente acontece devido ao **Cache** (memória temporária) da sua loja ou navegador.
+    
+    Aguarde cerca de **3 a 5 minutos** após salvar a alteração. Se ainda não aparecer, tente abrir sua loja em uma guia anônima para verificar.
   </Accordion>
-    <Accordion title="Posso pedir ajuda para personalizar o layout dos vídeos?">
-    Responda aqui...
+
+  <Accordion title="Posso mudar o posicionamento do carrossel na minha loja?">
+    **Sim.** Essa mudança é feita internamente pelo nosso time técnico.
+    
+    Entre em contato pelo suporte solicitando essa alteração e informando o novo local onde deseja exibir o carrossel (ex: acima do rodapé, abaixo do banner principal, etc.).
+  </Accordion>
+
+  <Accordion title="Como deixar a miniatura flutuante fixa na página?">
+    Para que o vídeo acompanhe a rolagem da tela:
+
+    1. No menu lateral, vá em **Personalize**.
+    2. No card "Miniatura Flutuante", clique em **Personalizar**.
+    3. Role até o final da página em "Configurações Avançadas".
+    4. Ative a opção **Vídeo Fixo**.
+
+    <Warning>
+      **Importante:** Não esqueça de clicar no botão **Salvar** no final da página para aplicar a mudança.
+    </Warning>
+
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+      <video
+        controls
+        className="w-full h-auto block"
+        src="/videos/faq/personalizacao/miniatura-fixa.mp4"
+      ></video>
+    </div>
+  </Accordion>
+
+  <Accordion title="Como alterar a cor do botão Saiba Mais?">
+    1. No menu lateral, vá em **Personalize**.
+    2. No card "Informações da Loja", clique em **Personalizar**.
+    3. Você verá as opções:
+       * **Cor Primária:** Altera a cor do fundo do botão.
+       * **Cor Secundária:** Altera a cor do texto do botão.
+
+    <Warning>
+      **Importante:** Não esqueça de clicar no botão **Salvar** após escolher as cores.
+    </Warning>
+
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+      <video
+        controls
+        className="w-full h-auto block"
+        src="/videos/faq/personalizacao/cor-botao.mp4"
+      ></video>
+    </div>
+  </Accordion>
+
+  <Accordion title="Como remover o feedback ('Esse vídeo te ajudou?') do fim do vídeo?">
+    1. No menu lateral, vá em **Personalize**.
+    2. No card "Interações no iShort", clique em **Personalizar**.
+    3. Role até o final da página e **desmarque** a opção *"Esse vídeo te ajudou?"*.
+
+    <Warning>
+      **Importante:** Não esqueça de clicar no botão **Salvar** para atualizar a configuração.
+    </Warning>
+
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+      <video
+        controls
+        className="w-full h-auto block"
+        src="/videos/faq/personalizacao/remover-feedback.mp4"
+      ></video>
+    </div>
+  </Accordion>
+
+  <Accordion title="Como editar o número do WhatsApp que aparece no botão?">
+    1. No menu lateral, vá em **Personalize**.
+    2. No card "Interações no iShort", clique em **Personalizar**.
+    3. No início da página, na seção "WhatsApp no iShorts", você pode alterar:
+       * **Número do WhatsApp:** O telefone que receberá as mensagens.
+       * **Mensagem do WhatsApp:** O texto padrão que o cliente enviará.
+
+    <Warning>
+      **Importante:** Não esqueça de clicar no botão **Salvar** para gravar o novo número.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="Posso pedir ajuda para personalizar o layout dos vídeos?">
+    Ajudamos você a configurar todas as opções **nativas** do aplicativo (cores do botão, tamanhos, posições na tela).
+
+    Caso você precise de uma personalização avançada via código (CSS) que foge do padrão do app, nosso time analisará a viabilidade técnica, podendo orientar como fazer, mas não garantimos o desenvolvimento de códigos customizados para temas específicos.
   </Accordion>
 </AccordionGroup>
