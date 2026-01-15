@@ -18,7 +18,8 @@
             "pages": [
               "mizui/sobre",
               "mizui/estrutura",
-              "mizui/planos"
+              "mizui/planos",
+              "mizui/suporte"
             ]
           }
         ]
@@ -30,17 +31,9 @@
       "group": "Sobre o iShorts",
       "pages": [
         "ishorts/sobre/oquee",
-        "ishorts/sobre/funcionalidades",
         "ishorts/sobre/o-que-nao-faz",
-        "ishorts/sobre/quando-usar"
-      ]
-    },
-    {
-      "group": "Estrutura na Loja",
-      "pages": [
-        "ishorts/estrutura/onde-aparecem",
-        "ishorts/estrutura/mobile-desktop",
-        "ishorts/estrutura/performance"
+        "ishorts/sobre/quando-usar",
+        "ishorts/sobre/funcionalidades"
       ]
     },
         {
@@ -59,29 +52,24 @@
             "ishorts/integracoes/yampi",
             "ishorts/integracoes/cartpanda",
             "ishorts/integracoes/shoppub",
+            "ishorts/integracoes/magazord",
             "ishorts/integracoes/gtm"
           ]
         }
       ]
     },
-    {
-      "group": "Dúvidas Frequentes",
-      "pages": [
-        "ishorts/duvidas/como-vincular-produto",
-        "ishorts/duvidas/diferenca-vinculo-campanha",
-        "ishorts/duvidas/como-subir-campanha",
-        "ishorts/duvidas/video-na-home",
-        "ishorts/duvidas/video-pagina-especifica",
-        "ishorts/duvidas/quais-formatos",
-        "ishorts/duvidas/diferenca-formatos",
-        "ishorts/duvidas/personalizar-miniatura",
-        "ishorts/duvidas/video-fixo",
-        "ishorts/duvidas/botao-whatsapp",
-        "ishorts/duvidas/ativar-comentarios",
-        "ishorts/duvidas/aceitar-comentarios",
-        "ishorts/duvidas/como-subir-carrossel"
-      ]
-    }
+{
+            "group": "Central de Ajuda",
+            "pages": [
+              "ishorts/faq/instalacao",
+              "ishorts/faq/funcionalidades",
+              "ishorts/faq/personalizacao",
+              "ishorts/faq/desempenho",
+              "ishorts/faq/planos",
+              "ishorts/faq/problemas",
+              "ishorts/faq/estrategias"
+            ]
+          }
     
   ]
 }
