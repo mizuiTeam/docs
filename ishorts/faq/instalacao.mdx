@@ -7,7 +7,9 @@ description: 'Configuração inicial na loja.'
   <Accordion title="Como instalar o iShorts na minha loja?">
     A integração com a sua loja depende da plataforma utilizada.
     
-    Criamos um passo a passo detalhado para cada sistema. Acesse a seção **Integrações > Guias por Plataforma** no menu ao lado, selecione a sua plataforma (Nuvemshop, Cartpanda, Yampi, etc.) e siga as instruções.
+    Criamos um passo a passo detalhado para cada sistema.
+    
+    [Clique aqui para acessar os Guias de Integração](/ishorts/integracoes/nuvemshop) e, no menu lateral, selecione a sua plataforma (Nuvemshop, Cartpanda, Yampi, etc.) para ver o tutorial específico.
   </Accordion>
 
   <Accordion title="O que preciso fazer após instalar o app?">
@@ -34,16 +36,52 @@ description: 'Configuração inicial na loja.'
     </Note>
   </Accordion>
 
-  <Accordion title="Como desinstalar ou cancelar o iShorts?">
-    Para efetuar o cancelamento, siga os passos abaixo:
+  <Accordion title="Como remover a integração da minha loja?">
+    Para desvincular o iShorts da sua loja através do painel, siga os passos:
 
-    1. Acesse o [Painel da Mizui](https://app.mizui.com.br/).
-    2. Selecione o aplicativo **iShorts**.
-    3. Logo abaixo do botão "Usar Aplicativo", clique na opção **"Cancelar minha assinatura"**.
+    1. Acesse o painel do iShorts e clique no menu **Integrações**.
     
-    **Alternativa:**
-    Caso não encontre esse botão, você pode clicar em **Voltar para o plano Grátis** (Downgrade). Isso também efetuará o cancelamento da cobrança recorrente.
+    <Frame>
+      <img src="/images/faq/instalacao/remover-integracao-1.png" alt="Menu Integrações no painel" />
+    </Frame>
 
-    Se mesmo assim tiver dificuldades, entre em contato com nosso suporte.
+    2. Clique no card da sua plataforma conectada (ex: Nuvemshop, Yampi).
+    3. Na janela que abrir, clique no botão vermelho **Remover Integração**.
+
+    <Frame>
+      <img src="/images/faq/instalacao/remover-integracao-2.png" alt="Botão de remover a integração" />
+    </Frame>
+    
+    <Warning>
+      **Importante:** Isso remove os vídeos da loja, mas **não cancela sua assinatura** automaticamente. Para cancelar a cobrança, consulte a seção de [Planos](/ishorts/faq/planos).
+    </Warning>
   </Accordion>
 </AccordionGroup>
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  
+  <div className="flex gap-4">
+    <button 
+      onClick={(e) => {
+        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
+        e.currentTarget.style.cursor = 'default';
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = 'none';
+        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
+        if (textoAjuda) textoAjuda.style.display = 'none';
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20mas%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

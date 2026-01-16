@@ -15,19 +15,19 @@ description: 'Gerenciamento de vídeos e exibição.'
     6. Clique em **Publicar**.
 
     <Check>
-      **Pronto!** Em até **3 minutos** (tempo de atualização do cache), o vídeo aparecerá na página do produto selecionado.
+      **Pronto!** Em até **2 minutos** (tempo de atualização do cache), o vídeo aparecerá na página do produto selecionado.
     </Check>
 
     Para entender melhor qual formato escolher, [visite nossa página de Formatos de Vídeo](/ishorts/sobre/funcionalidades).
 
-     <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+    **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
       <video
         controls
         className="w-full h-auto block"
         src="/videos/faq/funcionalidades/criar-com-produto.mp4"
       ></video>
     </div>
-
   </Accordion>
 
   <Accordion title="Como subir um vídeo sem vínculo a produto?">
@@ -42,7 +42,8 @@ description: 'Gerenciamento de vídeos e exibição.'
     4. Faça o upload do vídeo e clique em **Continuar**.
     5. Escolha o formato desejado e clique em **Publicar**.
 
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+    **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
       <video
         controls
         className="w-full h-auto block"
@@ -51,7 +52,7 @@ description: 'Gerenciamento de vídeos e exibição.'
     </div>
 
     <Check>
-      **Pronto!** Em até 3 minutos o vídeo estará disponível na sua loja.
+      **Pronto!** Em até 2 minutos o vídeo estará disponível na sua loja.
     </Check>
   </Accordion>
 
@@ -105,7 +106,8 @@ description: 'Gerenciamento de vídeos e exibição.'
       **Importante:** Não esqueça de clicar no botão **Salvar** para aplicar as alterações.
     </Warning>
 
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+    **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
       <video
         controls
         className="w-full h-auto block"
@@ -156,7 +158,8 @@ description: 'Gerenciamento de vídeos e exibição.'
     
     Para ver exemplos visuais de cada um e decidir qual usar, [consulte nossa página de Formatos de Vídeo](/ishorts/sobre/funcionalidades).
 
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+    **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
       <video
         controls
         className="w-full h-auto block"
@@ -174,7 +177,8 @@ description: 'Gerenciamento de vídeos e exibição.'
     
     Nesta tela você pode aprovar novos comentários ou remover comentários antigos que já estavam visíveis.
 
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+    **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
       <video
         controls
         className="w-full h-auto block"
@@ -183,3 +187,28 @@ description: 'Gerenciamento de vídeos e exibição.'
     </div>
   </Accordion>
 </AccordionGroup>
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  
+  <div className="flex gap-4">
+    <button 
+      onClick={(e) => {
+        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
+        e.currentTarget.style.cursor = 'default';
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = 'none';
+        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
+        if (textoAjuda) textoAjuda.style.display = 'none';
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20mas%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

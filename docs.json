@@ -42,7 +42,7 @@
         "ishorts/integracoes/compatibilidade",
         "ishorts/integracoes/validar-integracao",
         {
-          "group": "Guias por Plataforma",
+          "group": "Como integrar na minha loja?",
           "pages": [
             "ishorts/integracoes/nuvemshop",
             "ishorts/integracoes/loja-integrada",
@@ -101,5 +101,10 @@
       "instagram": "https://instagram.com/mizuioficial",
       "linkedin": "https://www.linkedin.com/company/mizuioficial/"
     }
+  },
+  
+"feedback": {
+    "suggestEdit": false,
+    "raiseIssue": false
   }
 }

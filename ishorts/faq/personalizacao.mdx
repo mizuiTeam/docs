@@ -7,7 +7,7 @@ description: 'Ajustes visuais e de layout.'
   <Accordion title="Mudei a cor da miniatura flutuante e não refletiu no meu site, e agora?">
     Isso geralmente acontece devido ao **Cache** (memória temporária) da sua loja ou navegador.
     
-    Aguarde cerca de **3 a 5 minutos** após salvar a alteração. Se ainda não aparecer, tente abrir sua loja em uma guia anônima para verificar.
+    Aguarde cerca de **2 minutos** após salvar a alteração. Se ainda não aparecer, tente abrir sua loja em uma guia anônima para verificar.
   </Accordion>
 
   <Accordion title="Posso mudar o posicionamento do carrossel na minha loja?">
@@ -28,7 +28,8 @@ description: 'Ajustes visuais e de layout.'
       **Importante:** Não esqueça de clicar no botão **Salvar** no final da página para aplicar a mudança.
     </Warning>
 
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+    **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
       <video
         controls
         className="w-full h-auto block"
@@ -48,7 +49,8 @@ description: 'Ajustes visuais e de layout.'
       **Importante:** Não esqueça de clicar no botão **Salvar** após escolher as cores.
     </Warning>
 
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+    **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
       <video
         controls
         className="w-full h-auto block"
@@ -66,7 +68,8 @@ description: 'Ajustes visuais e de layout.'
       **Importante:** Não esqueça de clicar no botão **Salvar** para atualizar a configuração.
     </Warning>
 
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-4 mb-4">
+    **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
       <video
         controls
         className="w-full h-auto block"
@@ -93,3 +96,29 @@ description: 'Ajustes visuais e de layout.'
     Caso você precise de uma personalização avançada via código (CSS) que foge do padrão do app, nosso time analisará a viabilidade técnica, podendo orientar como fazer, mas não garantimos o desenvolvimento de códigos customizados para temas específicos.
   </Accordion>
 </AccordionGroup>
+
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  
+  <div className="flex gap-4">
+    <button 
+      onClick={(e) => {
+        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
+        e.currentTarget.style.cursor = 'default';
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = 'none';
+        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
+        if (textoAjuda) textoAjuda.style.display = 'none';
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20mas%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

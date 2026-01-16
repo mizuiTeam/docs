@@ -1,5 +1,5 @@
 ---
-title: 'Como validar a integração?'
+title: 'Como verificar se a integração deu certo?'
 description: 'Passo a passo para garantir que o iShorts está ativo na sua loja.'
 icon: 'magnifying-glass'
 ---
@@ -25,7 +25,7 @@ A forma mais simples de validar é tentar exibir um vídeo na sua página inicia
     Se a bolinha do vídeo aparecer no canto da tela, **sua integração está funcionando 100%**.
     
     <Warning>
-      **Atenção:** As alterações podem levar até **3 minutos** para refletir na loja devido ao cache. Se o vídeo não aparecer imediatamente, aguarde alguns minutos e recarregue a página.
+      **Atenção:** As alterações podem levar até **2 minutos** para refletir na loja devido ao cache. Se o vídeo não aparecer imediatamente, aguarde alguns minutos e recarregue a página.
     </Warning>
   </Step>
 </Steps>
@@ -46,3 +46,28 @@ Se você prefere não subir um vídeo agora, pode verificar se o código está p
 <Check>
   **Está tudo certo!** Se passou em um desses testes, sua loja já está pronta para receber os vídeos.
 </Check>
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  
+  <div className="flex gap-4">
+    <button 
+      onClick={(e) => {
+        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
+        e.currentTarget.style.cursor = 'default';
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = 'none';
+        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
+        if (textoAjuda) textoAjuda.style.display = 'none';
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20mas%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>
