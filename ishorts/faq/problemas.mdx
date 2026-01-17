@@ -1,22 +1,47 @@
 ---
 title: 'Problemas Comuns'
-description: 'Resolução de erros.'
+description: 'Resolução de erros e solução de dúvidas.'
 ---
 
 <AccordionGroup>
   <Accordion title="Meus vídeos não estão aparecendo na loja, o que fazer?">
-    Responda aqui...
+    Se você configurou tudo mas os vídeos não aparecem, verifique estes 3 pontos:
+
+    **1. Status da Integração**
+    Acesse o painel e vá no menu **Integrações**. Verifique se a sua plataforma está aparecendo na lista de conectados.
+    
+    <Frame>
+      <img src="/images/faq/instalacao/remover-integracao-1.png" alt="Menu de integrações" />
+    </Frame>
+
+    **2. Tempo de Cache**
+    Se você acabou de instalar ou fazer uma alteração, aguarde **2 minutos** e atualize a página da sua loja (F5). O sistema precisa desse tempo para propagar as alterações.
+
+    **3. URL da Página (Se for Landing Page)**
+    Se você configurou o vídeo para aparecer em uma "Página Específica", verifique se o link que você colou no painel é **exatamente igual** ao link que está no navegador quando você acessa a página.
   </Accordion>
+
   <Accordion title="O vídeo está demorando para carregar, é normal?">
-    Responda aqui...
+    **Não.** Nossos servidores utilizam CDN de alta velocidade para entrega imediata.
+
+    Geralmente, lentidão no carregamento está ligada a dois fatores:
+    1. **Conexão de internet:** Verifique se sua conexão está estável.
+    2. **Tamanho do arquivo:** Embora aceitemos vídeos de até 2 minutos, recomendamos vídeos mais curtos e leves para garantir uma experiência instantânea para o seu cliente.
   </Accordion>
+
   <Accordion title="Meus vídeos sumiram após alterar o tema da loja, como resolver?">
-    Responda aqui...
-  </Accordion>
-  <Accordion title="O iShorts é compatível com todos os temas da Nuvemshop/Shopify/Tray?">
-    Responda aqui...
+    Isso é comum. Quando você altera ou atualiza o tema da sua loja, muitas plataformas **removem automaticamente** os scripts e códigos externos que haviam sido instalados no tema anterior.
+
+    **Solução:**
+    Você precisa refazer o processo de instalação.
+    1. Acesse o menu **Integrações**.
+    2. Remova a integração atual.
+    3. Refaça a conexão seguindo o guia da sua plataforma.
   </Accordion>
 </AccordionGroup>
+
+<br />
+<hr />
 
 <div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
