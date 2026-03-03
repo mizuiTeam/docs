@@ -1,0 +1,36 @@
+---
+title: 'Compre Junto'
+description: 'Crie combos e ofertas complementares para aumentar o Ticket Médio.'
+icon: 'layer-group'
+---
+
+<AccordionGroup>
+  <Accordion title="Qual a diferença entre exibir o 'Compre Junto' na página do produto ou no carrinho?">
+    A estratégia e o momento. Na **página do produto**, você configura de forma específica (ex: O "Produto B" só será sugerido na página do "Produto A"). 
+    
+    Já no **carrinho**, o Compre Junto funciona como uma oferta de última hora (Cross-sell global), onde os produtos sugeridos serão oferecidos independentemente de quais itens o cliente já adicionou.
+  </Accordion>
+
+  <Accordion title="O desconto do 'Compre Junto' acumula com o desconto progressivo?">
+    Você escolhe! Ao criar a regra, você tem a opção de marcar se deseja **Acumular com produtos com desconto** ou não, permitindo que você proteja sua margem de lucro.
+  </Accordion>
+
+  <Accordion title="Posso trocar os textos que aparecem no Compre Junto?">
+    Sim. Clicando no botão **"Personalizar"**, você pode ajustar os textos de cada etapa:
+    * **Título do kit:** Exibido acima das sugestões conjuntas (ex: "Leve os dois com desconto").
+    * **Título de produtos individuais:** Exibido acima de sugestões únicas.
+    * **Título no carrinho:** Reforça a vantagem na tela final da compra.
+  </Accordion>
+</AccordionGroup>
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  <div className="flex gap-4">
+    <button onClick={(e) => { e.currentTarget.innerText = 'Obrigado pelo feedback! 💜'; e.currentTarget.style.cursor = 'default'; const btnNao = e.currentTarget.nextElementSibling; if (btnNao) btnNao.style.display = 'none'; }} className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer">👍 Sim</button>
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20do%20Compre%20Junto%20mas%20preciso%20de%20ajuda." target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">👎 Não, preciso de ajuda</a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

@@ -1,0 +1,45 @@
+---
+title: 'Avise-me'
+description: 'Capture leads e avise clientes quando um produto voltar ao estoque.'
+icon: 'bell'
+---
+
+O módulo Avise-me é altamente personalizável para que as notificações da sua loja sejam eficientes e tenham a sua identidade.
+
+<AccordionGroup>
+  <Accordion title="Eu consigo ver quantos clientes estão esperando por um produto específico?">
+    Sim! Todos os produtos esgotados são listados no painel informando exatamente a quantidade de clientes interessados.
+  </Accordion>
+
+  <Accordion title="Existe uma forma de evitar enviar e-mails se o estoque que chegou for muito baixo?">
+    Sim. Ativando a opção **"Enviar apenas com estoque mínimo"**, a plataforma notifica apenas se houver quantidade suficiente para atender pelo menos 50% dos clientes interessados. Isso evita frustrações (onde o cliente entra e já acabou de novo) e mantém a credibilidade da sua loja.
+  </Accordion>
+
+  <Accordion title="O e-mail de aviso sai com a identidade visual da minha loja?">
+    Com certeza. No painel **Customizar e-mail**, você configura tudo: "Quem está enviando", título do e-mail, cor de destaque, texto e ainda pode importar a logo da sua marca.
+  </Accordion>
+
+  <Accordion title="Posso mudar o texto ou a cor do botão do Avise-me na página do produto?">
+    Sim! Na seção **Customizar botão**, você pode ajustar:
+    * Cor de fundo e cor do texto.
+    * Texto do botão (ex: "Quero ser avisado quando voltar!").
+    * Formato (arredondamento médio, total ou sem arredondamento).
+    * Adicionar ou remover ícones.
+  </Accordion>
+
+  <Accordion title="Posso personalizar a mensagem que o cliente vê ao preencher o formulário?">
+    Sim. Você personaliza tanto a "Mensagem do formulário" (o que incentiva ele a deixar o contato) quanto a "Mensagem de confirmação" após o envio. Você também pode definir se deseja solicitar apenas e-mail.
+  </Accordion>
+</AccordionGroup>
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  <div className="flex gap-4">
+    <button onClick={(e) => { e.currentTarget.innerText = 'Obrigado pelo feedback! 💜'; e.currentTarget.style.cursor = 'default'; const btnNao = e.currentTarget.nextElementSibling; if (btnNao) btnNao.style.display = 'none'; }} className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer">👍 Sim</button>
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20do%20Avise-me%20mas%20preciso%20de%20ajuda." target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">👎 Não, preciso de ajuda</a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

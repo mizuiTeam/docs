@@ -1,0 +1,63 @@
+---
+title: 'Cupons'
+description: 'Configuração de códigos promocionais e exibição de pop-ups.'
+icon: 'ticket'
+---
+
+<AccordionGroup>
+  <Accordion title="Posso oferecer frete grátis apenas para regiões específicas?">
+    Não. Os cupons de frete grátis podem ser aplicados a produtos específicos, mas não há restrição por localidade através dos cupons. (Para isso, use a função Frete+).
+  </Accordion>
+
+  <Accordion title="Onde os cupons são exibidos?">
+    No botão flutuante na página, no carrinho e no checkout. Você pode decidir em quais dessas opções eles vão aparecer clicando no botão **Customizar**.
+  </Accordion>
+
+  <Accordion title="Posso trocar o lado que o botão flutuante aparece na loja?">
+    Sim. Você pode decidir entre os lados esquerdo e direito. Basta selecionar clicando no botão **Customizar** e ir na opção "Posição do botão flutuante".
+  </Accordion>
+
+  <Accordion title="Posso trocar as cores do pop-up de cupons?">
+    Sim. No botão **Personalizar**, selecione a aba **Cores**. Nela você pode selecionar um tema personalizado ou definir as cores manualmente.
+  </Accordion>
+
+  <Accordion title="Quais os tipos de descontos nos cupons?">
+    Temos descontos por **porcentagem**, **valor fixo** e **frete grátis**.
+  </Accordion>
+
+  <Accordion title="Posso escolher em quais produtos os cupons serão válidos?">
+    Sim, você pode selecionar para serem válidos em todos os produtos, em categorias específicas ou apenas em produtos selecionados.
+  </Accordion>
+
+  <Accordion title="Se o cliente usar um cupom de desconto, ele perde o direito ao frete grátis?">
+    Você decide. Na configuração dos cupons, na seção "Limite de uso", existe a opção "Permitir combinar com outras promoções".
+  </Accordion>
+
+  <Accordion title="Se já tenho cupom da minha plataforma, por que devo usar o cupom do Cashing?">
+    O cupom do Cashing oferece uma **experiência visual gamificada**. Enquanto o cupom nativo da plataforma fica escondido e depende do cliente digitar no final, o Cashing exibe pop-ups atrativos e botões flutuantes que captam a atenção, geram senso de urgência e aumentam drasticamente a taxa de conversão.
+  </Accordion>
+
+  <Accordion title="Para que serve o pop-up de cupons?">
+    O pop-up serve para impactar o cliente assim que ele entra na loja ou quando demonstra intenção de sair (exit intent). É a ferramenta ideal para capturar o contato (lead) em troca de um primeiro desconto ou para evitar que ele abandone o carrinho.
+  </Accordion>
+
+  <Accordion title="O que é o histórico de cupons e para que serve?">
+    
+  </Accordion>
+
+  <Accordion title="Consigo colocar descrição nos meus cupons?">
+    Sim! As descrições são ótimas para deixar as regras claras para o cliente (ex: "Válido apenas para a primeira compra" ou "Aplicável apenas em calçados").
+  </Accordion>
+</AccordionGroup>
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  <div className="flex gap-4">
+    <button onClick={(e) => { e.currentTarget.innerText = 'Obrigado pelo feedback! 💜'; e.currentTarget.style.cursor = 'default'; const btnNao = e.currentTarget.nextElementSibling; if (btnNao) btnNao.style.display = 'none'; }} className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer">👍 Sim</button>
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20de%20Cupons%20mas%20preciso%20de%20ajuda." target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">👎 Não, preciso de ajuda</a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

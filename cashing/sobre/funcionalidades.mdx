@@ -1,0 +1,111 @@
+---
+title: 'Funcionalidades'
+description: 'Explore todas as ferramentas do Cashing divididas por objetivo.'
+icon: 'list-check'
+---
+
+O Cashing é dividido em módulos estratégicos. Abaixo você encontra o resumo de tudo o que a plataforma oferece para alavancar sua loja.
+
+## Vendas
+Ferramentas focadas em aumentar a conversão, o ticket médio e captar novos clientes antes ou durante o checkout.
+
+<CardGroup cols={2}>
+  <Card title="Cupons" icon="ticket">
+    Crie e gerencie cupons de desconto para suas campanhas de marketing.
+  </Card>
+  
+  <Card title="Frete+" icon="truck-fast">
+    Crie regras de frete grátis, descontos e benefícios para estimular novas compras.
+  </Card>
+
+  <Card title="Brindes" icon="gift">
+    Crie regras para oferecer brindes por valor gasto, quantidade ou categorias de produtos.
+  </Card>
+
+  <Card title="Compre Junto" icon="layer-group">
+    Crie ofertas de produtos complementares para incentivar o cliente a levar mais por menos.
+  </Card>
+
+  <Card title="Descontos" icon="percent">
+    Crie descontos que aumentam suas conversões. Defina regras por produto, categoria, valor gasto ou período promocional.
+  </Card>
+
+  <Card title="Avise-me" icon="bell">
+    Gerencie solicitações de clientes para produtos esgotados e acompanhe as notificações e conversões.
+  </Card>
+
+  <Card title="Avaliações" icon="star">
+    Reforce a credibilidade da sua loja com avaliações reais. Permita que seus clientes avaliem com fotos e vídeos, e importe avaliações automaticamente do Google ou adicione manualmente.
+  </Card>
+
+  <Card title="Captura de Leads" icon="magnet">
+    Cresça sua base com captação fácil e divertida. Crie roletas de cupons, caixas surpresa, formulários e outras formas de captar novos leads para suas campanhas.
+  </Card>
+
+  <Card title="Guia de Medidas" icon="ruler">
+    Ajude seus clientes a escolherem o tamanho ideal. Crie guias de medidas por produto ou categoria para reduzir trocas e melhorar a experiência de compra.
+  </Card>
+
+  <Card title="Provador Virtual" icon="shirt">
+    Deixe a escolha do tamanho mais precisa e interativa. Reduza trocas e devoluções melhorando a experiência de compra do seu cliente.
+  </Card>
+
+  <Card title="Tendências" icon="fire">
+    Organize ideias e inspirações para destacar produtos. Crie tendências por época, estilo ou categoria para guiar suas campanhas e recomendações.
+  </Card>
+</CardGroup>
+
+---
+
+## Pós-venda
+Ferramentas focadas em retenção, fidelização e comunicação com o cliente que já comprou de você.
+
+<CardGroup cols={2}>
+  <Card title="Automações" icon="robot">
+    Crie fluxos automáticos que trabalham por você. Defina gatilhos, mensagens e ações para engajar clientes sem precisar fazer tudo manualmente.
+  </Card>
+
+  <Card title="Cashback" icon="coins">
+    Aumente as vendas com cashback inteligente. Crie missões e recompensas que estimulam novas compras. Cada meta concluída gera retorno e mantém o cliente ativo por mais tempo.
+  </Card>
+
+  <Card title="Giftback" icon="hand-holding-dollar">
+    Aumente as recompras com cupons de Giftback. Crie regras que geram cupons proporcionais ao valor gasto, transforme cada compra em um novo incentivo para voltar a comprar.
+  </Card>
+
+  <Card title="Campanhas" icon="bullhorn">
+    Envie mensagens certas para o público certo. Crie campanhas usando modelos prontos de WhatsApp, e-mail ou SMS e direcione para segmentações específicas de clientes.
+  </Card>
+
+  <Card title="Modelos de Mensagens" icon="message">
+    Crie modelos prontos para usar em diferentes ações. Salve mensagens personalizadas para WhatsApp, SMS e e-mail. Use esses modelos depois em campanhas, automações e gatilhos do Cashing.
+  </Card>
+</CardGroup>
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  
+  <div className="flex gap-4">
+    <button 
+      onClick={(e) => {
+        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
+        e.currentTarget.style.cursor = 'default';
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = 'none';
+        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
+        if (textoAjuda) textoAjuda.style.display = 'none';
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20de%20funcionalidades%20do%20Cashing%20mas%20preciso%20de%20ajuda." target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

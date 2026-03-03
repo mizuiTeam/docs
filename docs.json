@@ -14,7 +14,7 @@
         "tab": "Mizui",
         "groups": [
           {
-           "group": "Sobre a Mizui",
+            "group": "Sobre a Mizui",
             "pages": [
               "mizui/sobre",
               "mizui/estrutura",
@@ -24,41 +24,41 @@
           }
         ]
       },
-     {
-  "tab": "iShorts",
-  "groups": [
-    {
-      "group": "Sobre o iShorts",
-      "pages": [
-        "ishorts/sobre/oquee",
-        "ishorts/sobre/o-que-nao-faz",
-        "ishorts/sobre/quando-usar",
-        "ishorts/sobre/funcionalidades"
-      ]
-    },
-        {
-      "group": "Integrações",
-      "pages": [
-        "ishorts/integracoes/compatibilidade",
-        "ishorts/integracoes/validar-integracao",
-        {
-          "group": "Como integrar na minha loja?",
-          "pages": [
-            "ishorts/integracoes/nuvemshop",
-            "ishorts/integracoes/loja-integrada",
-            "ishorts/integracoes/bagy",
-            "ishorts/integracoes/tray",
-            "ishorts/integracoes/wbuy",
-            "ishorts/integracoes/yampi",
-            "ishorts/integracoes/cartpanda",
-            "ishorts/integracoes/shoppub",
-            "ishorts/integracoes/magazord",
-            "ishorts/integracoes/gtm"
-          ]
-        }
-      ]
-    },
-{
+      {
+        "tab": "iShorts",
+        "groups": [
+          {
+            "group": "Sobre o iShorts",
+            "pages": [
+              "ishorts/sobre/oquee",
+              "ishorts/sobre/o-que-nao-faz",
+              "ishorts/sobre/quando-usar",
+              "ishorts/sobre/funcionalidades"
+            ]
+          },
+          {
+            "group": "Integrações",
+            "pages": [
+              "ishorts/integracoes/compatibilidade",
+              "ishorts/integracoes/validar-integracao",
+              {
+                "group": "Como integrar na minha loja?",
+                "pages": [
+                  "ishorts/integracoes/nuvemshop",
+                  "ishorts/integracoes/loja-integrada",
+                  "ishorts/integracoes/bagy",
+                  "ishorts/integracoes/tray",
+                  "ishorts/integracoes/wbuy",
+                  "ishorts/integracoes/yampi",
+                  "ishorts/integracoes/cartpanda",
+                  "ishorts/integracoes/shoppub",
+                  "ishorts/integracoes/magazord",
+                  "ishorts/integracoes/gtm"
+                ]
+              }
+            ]
+          },
+          {
             "group": "Central de Ajuda",
             "pages": [
               "ishorts/faq/instalacao",
@@ -70,11 +70,43 @@
               "ishorts/faq/estrategias"
             ]
           }
-    
-  ]
-}
- 
-      
+        ]
+      },
+      {
+        "tab": "Cashing",
+        "groups": [
+          {
+            "group": "Sobre o Cashing",
+            "pages": [
+              "cashing/sobre/oquee",
+              "cashing/sobre/funcionalidades"
+            ]
+          },
+          {
+            "group": "Central de Ajuda",
+            "pages": [
+           {
+            "group": "Vendas",
+            "pages": [
+              "cashing/vendas/cupons",
+              "cashing/vendas/frete",
+              "cashing/vendas/brindes",
+              "cashing/vendas/compre-junto",
+              "cashing/vendas/descontos",
+              "cashing/vendas/avise-me"
+            ]
+          },
+              {
+                "group": "Creators",
+                "pages": [
+                  "cashing/creators/afiliados",
+                  "cashing/creators/comissoes"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   "logo": {

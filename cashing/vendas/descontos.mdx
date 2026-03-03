@@ -1,0 +1,37 @@
+---
+title: 'Descontos'
+description: 'Configure regras avançadas de abatimento e descontos progressivos.'
+icon: 'percent'
+---
+
+<AccordionGroup>
+  <Accordion title="Como funciona o Desconto Progressivo no subtotal?">
+    A regra é baseada no volume: quanto maior o valor do carrinho, maior o desconto. 
+    
+    Você configura faixas de incentivo (ex: "Ao atingir R$ 200, ganhe R$ 20 de desconto"). O sistema suporta formatos como **Desconto no subtotal**, **Leve X Pague Y**, e em breve, Desconto por unidade e no frete.
+  </Accordion>
+
+  <Accordion title="Posso oferecer um desconto que funcione junto com um cupom que o cliente já possui?">
+    Sim! O sistema permite que as promoções funcionem em conjunto.
+  </Accordion>
+
+  <Accordion title="Se eu der um brinde ao cliente, ele conta para atingir a meta de 'Quantidade de itens'?">
+    Você decide! Dentro das configurações de **Descontos > Limite de uso**, você pode definir se a promoção deve **Acumular com Brindes** e **Cupons**, garantindo total controle sobre a sua campanha.
+  </Accordion>
+
+  <Accordion title="Consigo criar um desconto que dure apenas durante o final de semana?">
+    Sim. Você pode determinar o período exato (data e hora de início e de término) em que a campanha de desconto ficará ativa na sua loja.
+  </Accordion>
+</AccordionGroup>
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  <div className="flex gap-4">
+    <button onClick={(e) => { e.currentTarget.innerText = 'Obrigado pelo feedback! 💜'; e.currentTarget.style.cursor = 'default'; const btnNao = e.currentTarget.nextElementSibling; if (btnNao) btnNao.style.display = 'none'; }} className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer">👍 Sim</button>
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20de%20Descontos%20mas%20preciso%20de%20ajuda." target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">👎 Não, preciso de ajuda</a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

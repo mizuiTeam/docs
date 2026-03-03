@@ -1,0 +1,51 @@
+---
+title: 'Frete+'
+description: 'Barra de frete e incentivos de envio.'
+icon: 'truck-fast'
+---
+
+<Warning>
+  **Atenção:** Você deve criar as regras de frete diretamente na sua plataforma de e-commerce (cálculo real). Aqui no Cashing, nós criamos os **ALERTAS VISUAIS** de frete para incentivar a compra!
+</Warning>
+
+<AccordionGroup>
+  <Accordion title="Posso colocar um frete fixo?">
+    Sim. Você pode criar o alerta tanto para frete grátis quanto para frete fixo.
+  </Accordion>
+
+  <Accordion title="Como seleciono em quais locais vai ter frete grátis?">
+    Ao criar sua regra de frete, na seção "Aplicar a", você pode selecionar regiões escolhendo os estados (UF) daquela região ou por faixa de CEP.
+  </Accordion>
+
+  <Accordion title="Como saber a faixa de CEP que eu quero?">
+    Você pode dar um Google pesquisando pelas localidades desejadas (ex: "faixa de cep Jequié BA").
+  </Accordion>
+
+  <Accordion title="Onde os alertas de frete serão exibidos?">
+    Temos três opções: no cabeçalho da loja, no carrinho de compras e na página do produto. Você escolhe onde exibir clicando em **Customizar**.
+  </Accordion>
+
+  <Accordion title="Posso trocar as cores do alerta de frete?">
+    Sim. No botão **Personalizar**, selecione a aba **Cores**. Nela você pode selecionar um tema personalizado ou definir as cores manualmente.
+  </Accordion>
+
+  <Accordion title="Posso oferecer um frete fixo de R$ 10,00 apenas para a minha cidade?">
+    Sim! Selecione a opção "Frete Fixo" nas condições de frete. Depois, na seção "Aplicar a", selecione a opção "Faixa de CEP" e coloque a faixa de CEP da sua cidade.
+  </Accordion>
+
+  <Accordion title="O alerta de frete aparece em dispositivos móveis?">
+    Sim, todo o Cashing é totalmente responsivo e se adapta perfeitamente às telas de celulares e tablets.
+  </Accordion>
+</AccordionGroup>
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  <div className="flex gap-4">
+    <button onClick={(e) => { e.currentTarget.innerText = 'Obrigado pelo feedback! 💜'; e.currentTarget.style.cursor = 'default'; const btnNao = e.currentTarget.nextElementSibling; if (btnNao) btnNao.style.display = 'none'; }} className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer">👍 Sim</button>
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20de%20Frete%2B%20mas%20preciso%20de%20ajuda." target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">👎 Não, preciso de ajuda</a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>
