@@ -96,13 +96,13 @@
               "cashing/vendas/avise-me"
             ]
           },
-              {
-                "group": "Creators",
-                "pages": [
-                  "cashing/creators/afiliados",
-                  "cashing/creators/comissoes"
-                ]
-              }
+          {
+            "group": "Creators",
+            "pages": [
+              "cashing/creators/primeiro-acesso",
+              "cashing/creators/duvidas-frequentes"
+            ]
+          }
             ]
           }
         ]

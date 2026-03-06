@@ -1,0 +1,84 @@
+---
+title: 'Dúvidas Frequentes'
+description: 'Respostas para as principais dúvidas sobre gestão de influenciadores e campanhas.'
+icon: 'circle-question'
+---
+
+<AccordionGroup>
+  <Accordion title="Consigo editar um cupom associado a um creator?">
+    Sim, você consegue. 
+    
+    1. Na sua tela **Todos os creators**, clique no nome do creator desejado. 
+    2. No campo **Cupom**, logo abaixo do nome do influenciador, clique em **Editar**.
+    3. Aparecerão todos os seus cupons criados no Cashing para você selecionar.
+    
+    *Caso o cupom ainda não tenha sido criado, vá em **Vendas > Cupons > Cadastrar**.*
+
+    **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
+      <video
+        controls
+        className="w-full h-auto block"
+        src="/videos/ishorts/funcionalidades/escolher-formato.mp4"
+      ></video>
+    </div>
+  </Accordion>
+
+  <Accordion title="Consigo alterar o comissionamento de um creator?">
+    Sim. 
+    
+    1. Na tela **Todos os creators**, localize o parceiro desejado e clique em **Editar**. 
+    2. Na tela que se abrirá, vá até a seção **Modelo de comissionamento**.
+    3. Escolha o modelo desejado ou descreva um modelo personalizado.
+
+    **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
+      <video
+        controls
+        className="w-full h-auto block"
+        src="/videos/ishorts/funcionalidades/escolher-formato.mp4"
+      ></video>
+    </div>
+  </Accordion>
+
+  <Accordion title="Consigo suspender o acesso de um creator?">
+    Sim. Na tela **Todos os creators**, no creator desejado, clique em **Editar**. Role até o final da página que se abrirá e clique na opção **Suspender acesso**, depois confirme a ação.
+  </Accordion>
+
+  <Accordion title="O que é um modelo de comissionamento?">
+    É uma regra predefinida de como um creator deve ser comissionado. Com esse modelo salvo, você não precisa preencher manualmente todas as informações repetitivas a cada novo cadastro de influenciador.
+  </Accordion>
+
+  <Accordion title="Pra que serve a seção Campanhas no Creators?">
+    Serve para você enviar ao painel do creator uma campanha completa, com todas as informações que ele precisa para realizar o trabalho: briefing, regras de divulgação, prazos e materiais de apoio.
+  </Accordion>
+
+  <Accordion title="É possível criar um link do site para influenciadores divulgarem?">
+    Não. Atualmente o rastreio das vendas é feito **somente através dos cupons** de desconto. A funcionalidade de links rastreáveis está em nosso roadmap para implementação futura.
+  </Accordion>
+
+  <Accordion title="Como faz para realizar os pagamentos dos influencers que já estão cadastrados?">
+    Você pode ir no menu **Métricas** e exportar a planilha dos Creators, filtrando pelo período que deseja. Na planilha exportada, já constará o valor exato a ser pago para cada influenciador referente àquele período.
+    
+     **Confira o passo a passo em vídeo:**
+    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
+      <video
+        controls
+        className="w-full h-auto block"
+        src="/videos/ishorts/funcionalidades/escolher-formato.mp4"
+      ></video>
+    </div>
+  </Accordion>
+</AccordionGroup>
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  <div className="flex gap-4">
+    <button onClick={(e) => { e.currentTarget.innerText = 'Obrigado pelo feedback! 💜'; e.currentTarget.style.cursor = 'default'; const btnNao = e.currentTarget.nextElementSibling; if (btnNao) btnNao.style.display = 'none'; }} className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer">👍 Sim</button>
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20as%20D%C3%BAvidas%20do%20Creators%20mas%20preciso%20de%20ajuda." target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">👎 Não, preciso de ajuda</a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>
