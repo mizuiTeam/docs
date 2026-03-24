@@ -107,6 +107,35 @@
             ]
           }
         ]
+      },
+            {
+        "tab": "Me Favorita",
+        "groups": [
+          {
+            "group": "Sobre o MeFavorita",
+            "pages": [
+              "cashing/sobre/oquee",
+              "cashing/sobre/funcionalidades"
+            ]
+          },
+          {
+            "group": "Central de Ajuda",
+            "pages": [
+           {
+            "group": "Vendas",
+            "pages": [
+              "cashing/vendas/cupons",
+              "cashing/vendas/frete",
+              "cashing/vendas/brindes",
+              "cashing/vendas/compre-junto",
+              "cashing/vendas/descontos",
+              "cashing/vendas/avise-me",
+              "cashing/vendas/avaliacoes"
+            ]
+          } 
+            ]
+          }
+        ]
       }
     ]
   },
