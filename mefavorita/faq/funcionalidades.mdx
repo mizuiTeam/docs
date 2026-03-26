@@ -1,0 +1,97 @@
+---
+title: 'Funcionalidades e Usabilidade'
+description: 'Dúvidas sobre o funcionamento prático, automações de e-mail e gestão de leads.'
+icon: 'gear'
+---
+
+## Experiência do Cliente
+
+<AccordionGroup>
+  <Accordion title="O que acontece quando o cliente clica no coração?">
+    O produto é imediatamente salvo na lista de desejos dele. O ícone do coração mudará de cor (ficará preenchido) para indicar que a ação foi bem-sucedida, e o contador no cabeçalho da loja (badge) será atualizado.
+  </Accordion>
+
+  <Accordion title="O cliente precisa criar uma conta para favoritar um produto?">
+    Não obrigatoriamente! Se você ativar a opção **"Favoritar Offline"** na aba Geral, o aplicativo usa cookies para salvar os favoritos de visitantes anônimos. Assim você não cria barreiras e captura a intenção de compra mais rápido.
+  </Accordion>
+
+  <Accordion title="Onde o cliente visualiza a lista de produtos que ele salvou?">
+    Ele pode acessar a lista completa clicando no **Botão Flutuante** (se estiver ativo) ou no ícone de coração localizado no **Cabeçalho** da sua loja.
+  </Accordion>
+
+  <Accordion title="O Me Favorita funciona no celular (versão mobile)?">
+    Sim, o aplicativo é 100% responsivo e se adapta perfeitamente às telas de smartphones e tablets.
+  </Accordion>
+
+  <Accordion title="O que são as 'Coleções de Favoritos'?">
+    Ativando essa função, você permite que o cliente crie "pastas" para organizar os favoritos dele (ex: "Looks de Inverno", "Presentes de Natal"). Isso melhora muito a usabilidade para clientes que salvam vários itens.
+  </Accordion>
+
+  <Accordion title="O cliente consegue compartilhar a lista de favoritos dele?">
+    Sim! A lista de desejos possui um link que o cliente pode copiar e enviar para amigos ou familiares via WhatsApp.
+  </Accordion>
+
+  <Accordion title="Se o produto esgotar, o botão de favoritar continua aparecendo?">
+    Sim! Essa é uma das funções mais estratégicas do aplicativo. O cliente favorita o produto esgotado, e o Me Favorita entra em ação para captar o lead e avisá-lo quando o item voltar ao estoque.
+  </Accordion>
+</AccordionGroup>
+
+## Automações de E-mail
+
+<AccordionGroup>
+  <Accordion title="O aplicativo manda e-mail automático para quem favoritou um produto?">
+    Sim! O Me Favorita possui um motor de **Reengajamento Autônomo** que dispara e-mails baseados no comportamento do cliente na loja.
+  </Accordion>
+
+  <Accordion title="Como funciona o e-mail de 'Retorno de Estoque' (Stock Return)?">
+    Se um cliente favoritar um produto que estava com estoque zerado, o sistema monitora a sua plataforma. Assim que você repor o estoque desse item, o aplicativo enviará um e-mail automaticamente avisando o cliente que o produto já está disponível.
+  </Accordion>
+
+  <Accordion title="O que é o e-mail de 'Segundo Favorito'?">
+    É uma automação de estímulo. Quando o cliente salva o seu segundo produto, o aplicativo envia uma mensagem estimulando ele a criar uma Coleção ou compartilhar seus desejos com amigos.
+  </Accordion>
+
+  <Accordion title="Os e-mails automáticos são enviados pelo meu provedor de e-mail?">
+    Não, a infraestrutura de disparo é 100% gerenciada pelos servidores da Mizui. Você não precisa gastar envios do seu provedor de marketing ou contratar plataformas externas para isso.
+  </Accordion>
+
+  <Accordion title="Consigo desativar o envio de e-mails automáticos se eu não quiser usar?">
+    Sim, os fluxos de automação podem ser ativados ou desativados individualmente no painel de administração.
+  </Accordion>
+</AccordionGroup>
+
+## Gestão de Leads e Estoque
+
+<AccordionGroup>
+  <Accordion title="Onde vejo a lista de clientes que favoritaram produtos?">
+    No menu principal, acesse **Administrar > Contatos**. Lá você encontra a lista completa de todos os visitantes que interagiram com o botão de favoritos.
+  </Accordion>
+
+  <Accordion title="Consigo saber exatamente quais produtos um cliente específico favoritou?">
+    Sim! Na aba Contatos, ao clicar nos detalhes de um cliente, você visualiza a lista exata dos itens que ele salvou. Excelente para equipes de vendas abordarem com ofertas certeiras.
+  </Accordion>
+
+  <Accordion title="Tem como eu chamar no WhatsApp o cliente que favoritou um produto?">
+    Sim. Na tela de Contatos, existe um botão de ação rápida para chamar o cliente diretamente no WhatsApp (desde que ele tenha um número de telefone registrado na sua loja).
+  </Accordion>
+
+  <Accordion title="Como os favoritos ajudam na minha gestão de estoque?">
+    Acessando **Administrar > Favoritos**, você vê um Ranking de Desejos. Se um produto tem 50 favoritos e 0 peças no estoque, você identificou uma grande demanda reprimida e deve priorizar a reposição desse item.
+  </Accordion>
+
+  <Accordion title="O que significa 'Média de Favoritos' no painel inicial?">
+    É um termômetro de engajamento. Ele soma a quantidade total de itens favoritados e divide pelo total de usuários. Uma média alta significa que seus clientes estão desejando um volume alto de peças do seu catálogo.
+  </Accordion>
+</AccordionGroup>
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  <div className="flex gap-4">
+    <button onClick={(e) => { e.currentTarget.innerText = 'Obrigado pelo feedback! 💜'; e.currentTarget.style.cursor = 'default'; const btnNao = e.currentTarget.nextElementSibling; if (btnNao) btnNao.style.display = 'none'; }} className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer">👍 Sim</button>
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20o%20FAQ%20de%20Funcionalidades%20do%20Me%20Favorita%20mas%20preciso%20de%20ajuda." target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">👎 Não, preciso de ajuda</a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

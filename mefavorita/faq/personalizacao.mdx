@@ -1,0 +1,61 @@
+---
+title: 'Personalização Visual'
+description: 'Dúvidas sobre onde o Me Favorita aparece e como alterar o design do botão.'
+icon: 'palette'
+---
+
+## Customização e Exibição
+
+<AccordionGroup>
+  <Accordion title="Onde o botão do Me Favorita pode aparecer na minha loja?">
+    Você controla isso. Ele pode aparecer em 4 lugares estratégicos: **Botão Flutuante** (canto da tela), **Cabeçalho** (topo do site), **Bloco do Produto** (nas fotos da vitrine) e na **Página do Produto** (próximo ao botão Comprar).
+  </Accordion>
+
+  <Accordion title="Posso esconder o botão flutuante e deixar apenas no cabeçalho?">
+    Com certeza. Em cada aba de customização (Botão Flutuante, Cabeçalho, etc.), existe a opção **"Exibição"**. Basta marcar "Não" no Botão Flutuante e "Sim" no Cabeçalho.
+  </Accordion>
+
+  <Accordion title="Como mudar a posição do coração na foto do produto (Vitrine)?">
+    Vá na aba **Bloco do Produto** e ative a Exibição. Use a opção **"Alinhar o Bloco"** para escolher exatamente em qual canto da foto o coração vai ficar (ex: em cima à direita, no meio, embaixo à esquerda).
+  </Accordion>
+
+  <Accordion title="Consigo alterar a cor e a espessura do ícone de coração?">
+    Sim! O aplicativo é 100% personalizável. Em todas as abas de customização, você encontra as opções "Cor do Ícone" (a cor do coração em si), "Cor de Fundo" e uma barra deslizante de "Espessura do Ícone" (para deixar a linha mais fina ou grossa).
+  </Accordion>
+
+  <Accordion title="A fonte do aplicativo vai desconfigurar o design do meu site?">
+    Não se preocupe. Na aba **Geral**, deixe a opção **"Fonte Geral"** como "Padrão da Loja". O Me Favorita vai herdar e usar exatamente a mesma fonte do tema da sua loja, mantendo tudo harmonioso.
+  </Accordion>
+
+  <Accordion title="O que é o 'Arredondamento' do botão?">
+    É a ferramenta que define a forma geométrica do botão de fundo. Se você definir como 0%, ele será um quadrado perfeito. Se colocar 50% ou mais, as bordas ficam circulares.
+  </Accordion>
+
+  <Accordion title="Tem como colocar a palavra 'Favoritos' escrita junto com o coração?">
+    Sim. Tanto na aba **Cabeçalho** quanto na aba **Produto**, você pode ativar a opção **"Exibir Texto"**. O painel permite que você escreva o que desejar (ex: "Adicionar aos Favoritos", "Eu Quero") e ajuste a cor e o tamanho da fonte.
+  </Accordion>
+
+  <Accordion title="O que é o 'Badge' ou 'Quantidade' que aparece no cabeçalho?">
+    É aquele pequeno número (contador) que fica em cima do coração informando quantos itens o cliente já salvou. Você pode alterar livremente a cor de fundo e a cor do texto numérico desse badge.
+  </Accordion>
+
+  <Accordion title="Posso escolher a posição exata do botão na página do produto?">
+    Sim. Na aba **Produto**, a opção **"Posição"** permite que você escolha onde o botão vai se encaixar (ex: "Acima do botão Comprar", "Abaixo do botão Comprar", etc.).
+  </Accordion>
+
+  <Accordion title="É possível remover a marca d'água 'Me Favorita' da lista do cliente?">
+    Sim. Na aba **Geral**, localize a opção **"Exibir Marca d'água"** e marque como "Não". (Verifique a disponibilidade desta opção de acordo com o plano contratado da sua loja).
+  </Accordion>
+</AccordionGroup>
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  <div className="flex gap-4">
+    <button onClick={(e) => { e.currentTarget.innerText = 'Obrigado pelo feedback! 💜'; e.currentTarget.style.cursor = 'default'; const btnNao = e.currentTarget.nextElementSibling; if (btnNao) btnNao.style.display = 'none'; }} className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer">👍 Sim</button>
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20o%20FAQ%20de%20Personaliza%C3%A7%C3%A3o%20do%20Me%20Favorita%20mas%20preciso%20de%20ajuda." target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">👎 Não, preciso de ajuda</a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

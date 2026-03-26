@@ -1,0 +1,50 @@
+---
+title: 'Funcionalidades'
+description: 'Conheça os módulos de inteligência e automação do Me Favorita.'
+icon: 'list-check'
+---
+
+O menu do Me Favorita é dividido de forma estratégica: Gestão de Dados (Contatos e Favoritos), Automação (E-mails) e Configurações visuais.
+
+Confira abaixo o que você pode fazer em cada módulo:
+
+<CardGroup cols={2}>
+  <Card title="Contatos (Leads Qualificados)" icon="users">
+    Sua base de dados mais rica para remarketing. Veja uma lista de clientes (com e-mail ou ID de visitante) vinculados diretamente à sua plataforma. Você consegue ver exatamente quantos itens cada contato favoritou e utilizar a ação rápida para chamá-los no WhatsApp.
+  </Card>
+  
+  <Card title="Favoritos (Inteligência de Estoque)" icon="chart-simple">
+    O ranking de desejos da sua audiência. Descubra quais produtos têm alta demanda reprimida. Se um produto tem 50 favoritos e estoque zerado, o painel te mostra que é hora de repor com urgência para não perder vendas.
+  </Card>
+
+  <Card title="Coleções" icon="folder-open">
+    Permita que seus clientes gerenciem e organizem suas próprias listas de desejos (ex: "Looks de Verão", "Presentes"). Isso estimula o aspecto social da compra e o compartilhamento da sua loja.
+  </Card>
+
+  <Card title="E-mails (Automações)" icon="envelope-open-text">
+    O motor de reengajamento autônomo. O aplicativo envia mensagens sozinho para converter desejos em vendas, incluindo o **Alerta de Retorno de Estoque** e e-mails de estímulo ao **Segundo Favorito**.
+  </Card>
+
+  <Card title="Customização Visual" icon="palette">
+    O aplicativo se adapta à sua marca. Personalize o ícone de favoritar (coração) e as cores para que combinem perfeitamente com a identidade visual e o layout da sua loja.
+  </Card>
+</CardGroup>
+
+## O poder da Automação de E-mails
+
+A funcionalidade mais importante do Me Favorita é sua capacidade de trabalhar por você através do **Reengajamento Autônomo**. O sistema possui automações nativas prontas para uso:
+
+1. **Retorno de Estoque (Stock Return):** Um e-mail é disparado automaticamente para o cliente avisando que aquele produto que ele tanto queria (e favoritou) voltou ao estoque. É um incentivo direto e altamente qualificado para a conversão.
+2. **Segundo Favorito:** Mensagem enviada para estimular o cliente a criar uma segunda lista de desejos ou compartilhar seus produtos favoritos com amigos, aumentando o reconhecimento da sua marca.
+
+<br />
+<hr />
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  <div className="flex gap-4">
+    <button onClick={(e) => { e.currentTarget.innerText = 'Obrigado pelo feedback! 💜'; e.currentTarget.style.cursor = 'default'; const btnNao = e.currentTarget.nextElementSibling; if (btnNao) btnNao.style.display = 'none'; }} className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer">👍 Sim</button>
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20de%20Funcionalidades%20do%20Me%20Favorita%20e%20fiquei%20com%20d%C3%BAvidas." target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">👎 Não, preciso de ajuda</a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

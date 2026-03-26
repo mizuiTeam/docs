@@ -1,0 +1,168 @@
+---
+title: 'Shopify'
+description: 'Conecte sua loja Shopify ao iShorts.'
+icon: 'store'
+---
+
+A integração do iShorts com a Shopify é feita através da criação de um aplicativo personalizado diretamente no seu painel de desenvolvedor (Dev Dashboard). 
+
+Siga o passo a passo abaixo para conectar sua loja em poucos minutos.
+
+## Passo a Passo
+
+<Steps>
+  <Step title="Acesse a Plataforma Mizui">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/), faça seu login e clique em **Entrar** no aplicativo **iShorts**.
+    <Frame>
+      <img src="/images/painel-1.png" alt="Tela inicial da plataforma Mizui" />
+    </Frame>
+  </Step>
+
+  <Step title="Iniciar Integração">
+    Vá no menu **Integrações** na barra lateral e clique em **Integrar**.
+    
+    Na lista de plataformas, selecione **Shopify** e clique em **Continuar**.
+    <Frame>
+      <img src="/images/shopify/shop-1.png" alt="Selecionando Shopify" />
+    </Frame>
+    <Frame>
+      <img src="/images/shopify/shop-2.png" alt="Painel de Integração Shopify" />
+    </Frame>
+  </Step>
+
+  <Step title="Obter e Preencher a URL da Loja">
+    O iShorts pedirá algumas informações. A primeira é a **URL da sua loja Shopify**.
+    
+    Copie a URL da sua loja Shopify (você pode pegar direto da barra do seu navegador ou indo em **Configurações > Domínios** na Shopify).
+    <Frame>
+      <img src="/images/shopify/shop-3.png" alt="Campo de URL da Loja" />
+    </Frame> 
+    <Frame>
+      <img src="/images/shopify/shop-4.png" alt="Copiando a URL da Loja" />
+    </Frame> 
+    
+    Cole essa URL no primeiro campo do painel de integração do iShorts e mantenha essa aba aberta. Agora, vamos até a Shopify buscar o Client ID e o Client Secret.
+  </Step>
+
+  <Step title="Criar o App no Dev Dashboard">
+    Em outra aba, acesse o painel administrativo da sua loja na Shopify.
+    
+    1. No canto superior direito, clique no seu perfil e depois em **Dev Dashboard** (Painel do Desenvolvedor).
+    <Frame>
+      <img src="/images/shopify/shop-5.png" alt="Acessando o Dev Dashboard" />
+    </Frame>
+    
+    2. O **Dev Dashboard** se abrirá. No canto superior direito, clique no botão **Criar app**.
+    <Frame>
+      <img src="/images/shopify/shop-6.png" alt="Criando o App no Dev Dashboard" />
+    </Frame>
+    
+    3. Digite um nome para o app (ex: `iShorts`) e clique em **Criar**.
+    <Frame>
+      <img src="/images/shopify/shop-7.png" alt="Nomeando e criando o app" />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar URL e Desmarcar Incorporação">
+    Na tela que se abrir após criar o app:
+    
+    1. Localize o campo **URL do app** e cole a URL do painel do iShorts (`https://app.ishorts.com.br`).
+    2. **Atenção:** Logo abaixo da URL, **desmarque** a caixa de seleção que diz "Incorporar app no admin da Shopify".
+    
+    <Frame>
+      <img src="/images/shopify/shop-8.png" alt="Configurando URL e desmarcando incorporação" />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar Permissões (Escopos)">
+    Role a página para baixo até a seção **Acesso**. Em "Escopos obrigatórios", clique em **Selecionar escopos**.
+    <Frame>
+      <img src="/images/shopify/shop-9.png" alt="Selecionando escopos na Shopify" />
+    </Frame>
+
+    Use a barra de pesquisa para encontrar e marcar exatamente estas 4 permissões:
+    * `read_product_listings`
+    * `read_products`
+    * `read_script_tags`
+    * `write_script_tags`
+
+    <Frame>
+      <img src="/images/shopify/shop-9.png" alt="Buscando permissões na Shopify" />
+    </Frame>
+
+    Após marcar todas, clique em **Concluído**.
+    <Frame>
+      <img src="/images/shopify/shop-10.png" alt="Concluindo a seleção de escopos" />
+    </Frame>
+  </Step>
+
+  <Step title="Lançar e Instalar o App">
+    Agora precisamos publicar e instalar o aplicativo na sua loja:
+    
+    1. Role até o final da página e clique no botão escuro **Lançar**. (Um pop-up pedirá o "Nome da versão". Pode deixar em branco e clicar em **Lançar** novamente).
+    <Frame>
+      <img src="/images/shopify/shop-11.png" alt="Lançando o App" />
+    </Frame>
+    <Frame>
+      <img src="/images/shopify/shop-11.png" alt="Confirmando o lançamento" />
+    </Frame>
+    
+    2. Após criar, clique no nome do seu app na lista para voltar à tela de **Visão Geral**.
+    3. Na Visão Geral, clique no botão **Instalar app** no canto superior direito.
+    <Frame>
+      <img src="/images/shopify/shop-13.png" alt="Botão Instalar App" />
+    </Frame>
+    
+    4. Selecione a sua loja na lista e confirme clicando no botão verde **Instalar**.
+  </Step>
+
+  <Step title="Copiar as Credenciais">
+    Com o app instalado, vamos pegar as chaves de acesso:
+    
+    1. No menu lateral esquerdo do Dev Dashboard, clique em **Configurações**.
+    2. Copie o código que aparece em **ID do cliente** (Client ID).
+    3. Copie também o código que aparece em **Chave secreta** (Client Secret).
+    
+    <Frame>
+      <img src="/images/shopify/shop-14.png" alt="Copiando ID do cliente e Chave secreta" />
+    </Frame>
+  </Step>
+
+  <Step title="Finalizar Integração no iShorts">
+    Retorne para a aba do **iShorts** (onde já havíamos colocado a URL da loja):
+    
+    1. Cole o ID do cliente no campo **Client ID**.
+    2. Cole a Chave secreta no campo **Client Secret**.
+    3. Clique no botão **Integrar** para concluir o processo.
+  </Step>
+
+</Steps>
+
+<Check>
+  **Pronto!** A integração foi concluída e seus produtos da Shopify serão sincronizados automaticamente com o iShorts.
+</Check>
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  
+  <div className="flex gap-4">
+    <button 
+      onClick={(e) => {
+        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
+        e.currentTarget.style.cursor = 'default';
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = 'none';
+        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
+        if (textoAjuda) textoAjuda.style.display = 'none';
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20da%20Shopify%20e%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>

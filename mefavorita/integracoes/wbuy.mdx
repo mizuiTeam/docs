@@ -1,0 +1,135 @@
+---
+title: 'WBuy'
+description: 'Conecte sua loja WBuy ao iShorts.'
+icon: 'store'
+---
+
+## Visão Geral
+
+O iShorts possui integração nativa com a WBuy via API. O processo começa no painel da Mizui e exige a geração de credenciais no painel da sua loja.
+
+<Steps>
+  <Step title="Acesse a Plataforma Mizui">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/), faça seu login e clique em **Entrar** no aplicativo **iShorts**.
+    <Frame>
+      <img src="/images/painel-1.png" alt="Tela inicial da plataforma Mizui" />
+    </Frame>
+  </Step>
+
+  <Step title="Acessar Integrações">
+    No painel do iShorts, clique no menu **Integrações** na barra lateral esquerda. Em seguida, clique no botão **Integrar**.
+    <Frame>
+      <img src="/images/painel-2.png" alt="Iniciando a integração no painel iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Selecionar WBuy">
+    Na barra de busca, pesquise por **Wbuy**. Selecione a plataforma e clique em **Continuar**.
+    <Frame>
+      <img src="/images/wbuy/wbuy-8.png" alt="Selecionando WBuy na lista" />
+    </Frame>
+  </Step>
+
+  <Step title="Identificar Dados Necessários">
+    O iShorts solicitará três informações: **Link da Loja**, **Usuário da API** e **Senha da API**. Mantenha essa aba aberta; agora vamos acessar o painel da sua loja para gerar esses dados.
+    <Frame>
+      <img src="/images/wbuy/wbuy-9.png" alt="Campos de integração no iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Acesse o Painel WBuy">
+    Em uma nova aba, faça login na administração da sua loja: [sistema.sistemawbuy.com.br/painel](https://sistema.sistemawbuy.com.br/painel/)
+  </Step>
+
+  <Step title="Menu de Configurações">
+    No menu lateral esquerdo, vá em **Plataforma** e clique em **API e webhooks**.
+    <Frame>
+      <img src="/images/wbuy/wbuy-1.png" alt="Menu de configurações da WBuy" />
+    </Frame>
+  </Step>
+
+  <Step title="Opções de API">
+    Na tela principal, clique no botão **Opções** e selecione **Integração REST API**.
+    <Frame>
+      <img src="/images/wbuy/wbuy-2.png" alt="Acessando opções de REST API" />
+    </Frame>
+  </Step>
+
+  <Step title="Criar Nova Chave">
+    Clique no botão vermelho **Criar chave de API**.
+    <Frame>
+      <img src="/images/wbuy/wbuy-3.png" alt="Botão para criar chave de API" />
+    </Frame>
+  </Step>
+
+  <Step title="Identificação">
+    No campo **Identificação**, digite `IShorts`. Certifique-se de que as permissões de leitura (GET) estejam marcadas.
+    <Frame>
+      <img src="/images/wbuy/wbuy-4.png" alt="Nomeando a chave como IShorts" />
+    </Frame>
+    
+    Role a página até o final e clique no botão verde **Gravar**.
+    <Frame>
+      <img src="/images/wbuy/wbuy-5.png" alt="Salvando as configurações da API" />
+    </Frame>
+  </Step>
+
+  <Step title="Copiar Credenciais">
+    Sua chave será criada. Copie o **Usuário API** e clique em "Visualizar" para copiar a **Senha API**.
+    <Frame>
+      <img src="/images/wbuy/wbuy-6.png" alt="Copiando usuário e senha da API" />
+    </Frame>
+  </Step>
+
+  <Step title="Obter URL da Loja">
+    Para pegar o link correto, clique no botão **Ver loja** no canto superior esquerdo do painel. Copie a URL do navegador (ex: `https://www.sualoja.com.br`).
+    <Frame>
+      <img src="/images/wbuy/wbuy-10.png" alt="Localizando o botão Ver Loja" />
+    </Frame>
+    <Frame>
+      <img src="/images/wbuy/wbuy-11.png" alt="Copiando a URL no navegador" />
+    </Frame>
+  </Step>
+
+  <Step title="Concluir Integração">
+    Volte para a aba do **iShorts** (onde paramos no passo 4) e preencha os campos:
+    
+    * **Link da sua Loja**
+    * **Usuário da Api**
+    * **Senha da Api**
+    
+    Por fim, clique em **Integrar**.
+    <Frame>
+      <img src="/images/wbuy/wbuy-9.png" alt="Preenchendo dados finais no iShorts" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Check>
+  **Pronto!** Sua loja WBuy foi conectada com sucesso e seus produtos serão sincronizados.
+</Check>
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  
+  <div className="flex gap-4">
+    <button 
+      onClick={(e) => {
+        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
+        e.currentTarget.style.cursor = 'default';
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = 'none';
+        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
+        if (textoAjuda) textoAjuda.style.display = 'none';
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20mas%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>
