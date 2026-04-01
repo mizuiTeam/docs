@@ -1,0 +1,137 @@
+---
+title: 'Braavo'
+description: 'Conecte sua loja Braavo ao iShorts.'
+icon: 'store'
+---
+
+A integração do iShorts com a Braavo exige a geração de credenciais de API e a instalação de um script (snippet) dentro do painel da sua loja.
+
+Siga o passo a passo abaixo para realizar a configuração.
+
+## Passo a Passo
+
+<Steps>
+  <Step title="Acesse a Plataforma Mizui">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/), faça seu login e clique em **Entrar** no aplicativo **iShorts**.
+    <Frame>
+      <img src="/images/painel-1.png" alt="Tela inicial da plataforma Mizui" />
+    </Frame>
+  </Step>
+
+  <Step title="Iniciar Integração">
+    Vá no menu **Integrações** na barra lateral e clique em **Integrar**.
+    
+    Na lista de plataformas, selecione **Braavo** e clique em **Continuar**.
+    <Frame>
+      <img src="/images/braavo/braavo-1.png" alt="Selecionando a plataforma Braavo" />
+    </Frame>
+  </Step>
+
+  <Step title="Preencher a URL da Loja">
+    O iShorts pedirá algumas informações. A primeira é a **URL da sua loja Braavo** (ex: `https://www.sualoja.com.br`).
+    
+    Preencha esse campo e mantenha essa aba aberta. Agora, vamos acessar o painel da sua loja para gerar as chaves de API.
+    <Frame>
+      <img src="/images/braavo/braavo-2.png" alt="Campo de URL da Loja no iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Gerar as Chaves de API na Braavo">
+    Em uma nova aba, acesse o painel administrativo da sua loja na Braavo.
+    
+    1. No menu lateral esquerdo, vá em **Serviços** e depois clique em **API Braavo!**.
+    2. Clique no botão azul **Adicionar**, localizado no canto superior direito.
+    <Frame>
+      <img src="/images/braavo/braavo-3.png" alt="Acessando a seção API Braavo" />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar a Nova API">
+    Na tela de criação da API, preencha os campos da seguinte forma:
+    
+    * **Nome do Serviço:** Escreva `iShorts`.
+    * **E-mail do Técnico Responsável:** Pode colocar o seu próprio e-mail ou o e-mail de suporte da sua agência (se tiver).
+    
+    Após preencher esses dois campos, clique no botão azul **Gravar** no canto inferior direito.
+    <Frame>
+      <img src="/images/braavo/braavo-4.png" alt="Preenchendo os dados da nova API" />
+    </Frame>
+  </Step>
+
+  <Step title="Copiar e Colar as Chaves no iShorts">
+    A Braavo gerará duas credenciais: **API Token** e **API Key**.
+    
+    1. Copie o código do **API Token** e cole no campo correspondente na aba do **iShorts**.
+    2. Copie o código da **API Key** e cole no respectivo campo na aba do **iShorts**.
+  </Step>
+
+  <Step title="Copiar o Script Gerado">
+    Agora que todos os campos no iShorts estão preenchidos, o sistema gerará o script de integração (um código longo começando com `<script>`).
+    
+    Clique no botão **Copiar Script** para salvar esse código. Você precisará dele no próximo passo.
+    <Frame>
+      <img src="/images/braavo/braavo-2.png" alt="Copiando o script gerado no iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Instalar o Script (Snippet) na Braavo">
+    Volte para o painel da sua loja **Braavo**.
+    
+    1. No menu lateral esquerdo, vá em **Marketing & SEO** e depois clique em **Snippets**.
+    2. Clique no botão azul **Adicionar**, no canto superior direito.
+    <Frame>
+      <img src="/images/braavo/braavo-5.png" alt="Acessando a seção de Snippets na Braavo" />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar o Snippet">
+    Na tela de configuração do Snippet, preencha da seguinte maneira:
+    
+    * **Nome do Snippet:** `iShorts`.
+    * **Página de Destino:** Selecione a opção `* Todas Páginas - Exceto Checkout`.
+    * **Posição no Código HTML:** Selecione a opção `<head>`.
+    * **Código do Snippet:** Neste campo grande de texto, **cole o script** que você copiou do iShorts no passo 7.
+    
+    Após preencher tudo, clique em **Gravar**.
+    <Frame>
+      <img src="/images/braavo/braavo-6.png" alt="Configurando e colando o snippet do iShorts" />
+    </Frame>
+        <Frame>
+      <img src="/images/braavo/braavo-7.png" alt="Configurando e colando o snippet do iShorts" />
+    </Frame>
+  </Step>
+
+  <Step title="Finalizar Integração no iShorts">
+    Volte uma última vez para a aba do **iShorts** e clique no botão escuro **Integrar** (no canto inferior direito) para concluir a configuração.
+  </Step>
+
+</Steps>
+
+<Check>
+  **Pronto!** A integração foi concluída e o iShorts já está configurado na sua loja Braavo.
+</Check>
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
+  
+  <div className="flex gap-4">
+    <button 
+      onClick={(e) => {
+        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
+        e.currentTarget.style.cursor = 'default';
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = 'none';
+        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
+        if (textoAjuda) textoAjuda.style.display = 'none';
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+
+    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20da%20Braavo%20e%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+</div>
