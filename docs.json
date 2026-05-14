@@ -11,136 +11,160 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Mizui",
+        "tab": "Central de Ajuda",
         "groups": [
           {
-            "group": "Sobre a Mizui",
+            "group": "Mizui",
             "pages": [
-              "mizui/sobre",
-              "mizui/estrutura",
-              "mizui/planos",
+              "mizui/o-que-e",
+              "mizui/ecossistema",
+              "mizui/planos-e-cobranca",
               "mizui/suporte"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "iShorts",
-        "groups": [
-          {
-            "group": "Sobre o iShorts",
-            "pages": [
-              "ishorts/sobre/oquee",
-              "ishorts/sobre/o-que-nao-faz",
-              "ishorts/sobre/quando-usar",
-              "ishorts/sobre/funcionalidades"
-            ]
           },
           {
-            "group": "Integrações",
+            "group": "iShorts",
             "pages": [
-              "ishorts/integracoes/compatibilidade",
-              "ishorts/integracoes/validar-integracao",
               {
-                "group": "Como integrar na minha loja?",
+                "group": "Sobre",
                 "pages": [
-                  "ishorts/integracoes/nuvemshop",
-                  "ishorts/integracoes/loja-integrada",
-                  "ishorts/integracoes/bagy",
-                  "ishorts/integracoes/braavo",
-                  "ishorts/integracoes/tray",
-                  "ishorts/integracoes/wbuy",
-                  "ishorts/integracoes/yampi",
-                  "ishorts/integracoes/cartpanda",
-                  "ishorts/integracoes/shopify",                  
-                  "ishorts/integracoes/shoppub",
-                  "ishorts/integracoes/magazord",
-                  "ishorts/integracoes/vnda",
-                  "ishorts/integracoes/gtm"
+                  "ishorts/sobre/o-que-e",
+                  "ishorts/sobre/quando-usar",
+                  "ishorts/sobre/o-que-nao-faz"
+                ]
+              },
+              {
+                "group": "Primeiros Passos",
+                "pages": [
+                  "ishorts/primeiros-passos/como-instalar",
+                  "ishorts/primeiros-passos/validar-integracao",
+                  "ishorts/primeiros-passos/primeiro-video"
+                ]
+              },
+              {
+                "group": "Recursos",
+                "pages": [
+                  "ishorts/recursos/formatos-de-video",
+                  "ishorts/recursos/gerenciar-videos",
+                  "ishorts/recursos/feed-de-videos",
+                  "ishorts/recursos/moderar-comentarios",
+                  "ishorts/recursos/metricas-e-desempenho",
+                  "ishorts/recursos/personalizacao"
+                ]
+              },
+              {
+                "group": "Integrações",
+                "pages": [
+                  "ishorts/integracoes/compatibilidade",
+                  {
+                    "group": "Como integrar na minha loja?",
+                    "pages": [
+                      "ishorts/integracoes/nuvemshop",
+                      "ishorts/integracoes/loja-integrada",
+                      "ishorts/integracoes/bagy",
+                      "ishorts/integracoes/braavo",
+                      "ishorts/integracoes/tray",
+                      "ishorts/integracoes/wbuy",
+                      "ishorts/integracoes/yampi",
+                      "ishorts/integracoes/cartpanda",
+                      "ishorts/integracoes/shopify",
+                      "ishorts/integracoes/shoppub",
+                      "ishorts/integracoes/magazord",
+                      "ishorts/integracoes/vnda",
+                      "ishorts/integracoes/gtm"
+                    ]
+                  }
+                ]
+              },
+              "ishorts/planos-e-cobranca",
+              {
+                "group": "Dúvidas Frequentes",
+                "pages": [
+                  "ishorts/faq/problemas-comuns",
+                  "ishorts/faq/estrategias-de-venda"
                 ]
               }
             ]
           },
           {
-            "group": "Central de Ajuda",
+            "group": "Cashing",
             "pages": [
-              "ishorts/faq/instalacao",
-              "ishorts/faq/funcionalidades",
-              "ishorts/faq/personalizacao",
-              "ishorts/faq/desempenho",
-              "ishorts/faq/planos",
-              "ishorts/faq/problemas",
-              "ishorts/faq/estrategias"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Cashing",
-        "groups": [
-          {
-            "group": "Sobre o Cashing",
-            "pages": [
-              "cashing/sobre/oquee",
-              "cashing/sobre/funcionalidades"
-            ]
-          },
-          {
-            "group": "Central de Ajuda",
-            "pages": [
-           {
-            "group": "Vendas",
-            "pages": [
-              "cashing/vendas/cupons",
-              "cashing/vendas/frete",
-              "cashing/vendas/brindes",
-              "cashing/vendas/compre-junto",
-              "cashing/vendas/descontos",
-              "cashing/vendas/avise-me",
-              "cashing/vendas/avaliacoes"
-            ]
-          },
-          {
-            "group": "Creators",
-            "pages": [
-              "cashing/creators/primeiro-acesso",
-              "cashing/creators/duvidas-frequentes"
-            ]
-          }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Me Favorita",
-        "groups": [
-          {
-            "group": "Sobre o Me Favorita",
-            "pages": [
-              "mefavorita/sobre/oquee",
-              "mefavorita/sobre/funcionalidades"
-            ]
-          },
-          {
-            "group": "Integrações",
-            "pages": [
-              "mefavorita/integracoes/compatibilidade",
               {
-                "group": "Como integrar na minha loja?",
+                "group": "Sobre",
                 "pages": [
-                  "mefavorita/integracoes/nuvemshop",
-                  "mefavorita/integracoes/wbuy",
-                  "mefavorita/integracoes/bagy",
-                  "mefavorita/integracoes/tray"
+                  "cashing/sobre/o-que-e",
+                  "cashing/sobre/funcionalidades"
                 ]
-              }
+              },
+              {
+                "group": "Primeiros Passos",
+                "pages": ["cashing/primeiros-passos/como-comecar"]
+              },
+              {
+                "group": "Recursos · Vendas",
+                "pages": [
+                  "cashing/recursos/vendas/cupons",
+                  "cashing/recursos/vendas/frete",
+                  "cashing/recursos/vendas/brindes",
+                  "cashing/recursos/vendas/compre-junto",
+                  "cashing/recursos/vendas/descontos",
+                  "cashing/recursos/vendas/avise-me",
+                  "cashing/recursos/vendas/avaliacoes"
+                ]
+              },
+              {
+                "group": "Recursos · Creators",
+                "pages": [
+                  "cashing/recursos/creators/primeiro-acesso",
+                  "cashing/recursos/creators/gestao-de-creators"
+                ]
+              },
+              {
+                "group": "Integrações",
+                "pages": ["cashing/integracoes/compatibilidade"]
+              },
+              "cashing/planos-e-cobranca"
             ]
           },
           {
-            "group": "Central de Ajuda",
+            "group": "Me Favorita",
             "pages": [
-              "mefavorita/faq/funcionalidades",
-              "mefavorita/faq/personalizacao"
+              {
+                "group": "Sobre",
+                "pages": [
+                  "mefavorita/sobre/o-que-e",
+                  "mefavorita/sobre/funcionalidades"
+                ]
+              },
+              {
+                "group": "Primeiros Passos",
+                "pages": ["mefavorita/primeiros-passos/como-comecar"]
+              },
+              {
+                "group": "Recursos",
+                "pages": [
+                  "mefavorita/recursos/experiencia-do-cliente",
+                  "mefavorita/recursos/automacoes-de-email",
+                  "mefavorita/recursos/gestao-de-leads",
+                  "mefavorita/recursos/personalizacao"
+                ]
+              },
+              {
+                "group": "Integrações",
+                "pages": [
+                  "mefavorita/integracoes/compatibilidade",
+                  {
+                    "group": "Como integrar na minha loja?",
+                    "pages": [
+                      "mefavorita/integracoes/nuvemshop",
+                      "mefavorita/integracoes/bagy",
+                      "mefavorita/integracoes/tray",
+                      "mefavorita/integracoes/wbuy"
+                    ]
+                  }
+                ]
+              },
+              "mefavorita/planos-e-cobranca"
             ]
           }
         ]
@@ -160,11 +184,7 @@
     ]
   },
   "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "vscode"
-    ]
+    "options": ["copy", "view", "vscode"]
   },
   "footer": {
     "socials": {
