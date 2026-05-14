@@ -1,0 +1,105 @@
+---
+title: "Pagamento e faturas"
+description: "Como pagar a mensalidade dos seus apps Mizui, ver faturas e o que acontece em caso de atraso."
+icon: "credit-card"
+---
+
+A Mizui é a empresa responsável pela cobrança de todos os apps do ecossistema (iShorts, Cashing, Me Favorita, Counti, Tagy). Você assina o app dentro da loja Mizui e recebe uma única cobrança no cartão.
+
+## Como pagar a mensalidade
+
+A cobrança é automática, no cartão de crédito que você cadastrou no momento da contratação. Todo mês, na mesma data, o valor é debitado e a fatura fica disponível na sua conta.
+
+<Steps>
+  <Step title="Acesse sua conta">
+    Entre em [app.mizui.com.br](https://app.mizui.com.br) com seu e-mail e
+    senha.
+  </Step>
+  <Step title="Vá em Faturas">
+    No menu da sua conta, clique em **Faturas e Pagamentos**.
+  </Step>
+  <Step title="Confira o status">
+    Cada fatura mostra o valor, a data de vencimento e o status (paga, em
+    aberto, atrasada).
+  </Step>
+  <Step title="Baixe a nota fiscal">
+    Faturas pagas têm um botão para baixar a nota fiscal em PDF.
+  </Step>
+</Steps>
+
+<Tip>
+  Quer trocar o cartão cadastrado? Em **Faturas e Pagamentos**, clique em
+  **Atualizar cartão** e informe os novos dados. A próxima cobrança já cai no
+  cartão novo.
+</Tip>
+
+## Esqueci de pagar, e agora?
+
+Se a cobrança não passar (limite, cartão vencido, problema no banco), você recebe um aviso por e-mail e WhatsApp. A partir daí:
+
+- **Dias 1 a 3 de atraso**: tentamos cobrar de novo automaticamente. Seu app continua funcionando normalmente.
+- **A partir do 4º dia**: o app é pausado. Os recursos param de aparecer na sua loja, mas seus dados ficam guardados.
+- **A partir do 30º dia**: a assinatura é cancelada. Seus dados ficam guardados por mais 60 dias caso você queira reativar.
+
+Para regularizar, basta atualizar o cartão ou pagar a fatura em aberto. O app volta a funcionar em poucos minutos.
+
+## Histórico de planos e notas fiscais
+
+Todo o histórico fica salvo na sua conta:
+
+- Planos contratados (com data de início e fim)
+- Faturas pagas, em aberto e canceladas
+- Notas fiscais em PDF
+- Trocas de plano (upgrades e downgrades)
+
+<Note>
+  As notas fiscais são emitidas pela Mizui, com nosso CNPJ, mesmo que você
+  esteja usando apps diferentes (iShorts + Cashing, por exemplo). Tudo entra na
+  mesma fatura.
+</Note>
+
+## Falar com o financeiro
+
+Se você precisa de uma segunda via, tem dúvida sobre um valor cobrado ou quer renegociar, fale direto com nosso financeiro.
+
+<CardGroup cols={2}>
+  <Card
+    title="WhatsApp do Suporte"
+    icon="whatsapp"
+    href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20preciso%20falar%20com%20o%20financeiro%20da%20Mizui."
+  >
+    Atendimento de segunda a sexta, das 9h às 18h.
+  </Card>
+  <Card title="E-mail" icon="envelope" href="mailto:financeiro@mizui.com.br">
+    financeiro@mizui.com.br
+  </Card>
+</CardGroup>
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Esse artigo foi útil?
+  </h3>
+  <div className="flex gap-4">
+    <button
+      onClick={(e) => {
+        e.currentTarget.innerText = "Obrigado pelo feedback! 💜";
+        e.currentTarget.style.cursor = "default";
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = "none";
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+    <a
+      href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20tenho%20d%C3%BAvida%20sobre%20pagamentos%20e%20faturas%20da%20Mizui."
+      target="_blank"
+      className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline"
+    >
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">
+    Ao clicar em "Não", você fala direto com nosso suporte.
+  </p>
+</div>

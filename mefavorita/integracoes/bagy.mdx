@@ -1,25 +1,25 @@
-﻿---
+---
 title: 'Bagy'
 description: 'Conecte sua loja Bagy ao Me Favorita.'
 icon: 'store'
 ---
 
-## VisÃ£o Geral
+## Visão Geral
 
-O Me Favorita possui integraÃ§Ã£o nativa com a Bagy via API. O processo comeÃ§a no painel da Mizui e exige a geraÃ§Ã£o de um token de acesso no painel da sua loja.
+O Me Favorita possui integração nativa com a Bagy via API. O processo começa no painel da Mizui e exige a geração de um token de acesso no painel da sua loja.
 
 <Steps>
   <Step title="Acesse a Plataforma Mizui">
-    Acesse [app.mizui.com.br](https://app.mizui.com.br/), faÃ§a seu login e clique em **Entrar** no aplicativo **Me Favorita**.
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/), faça seu login e clique em **Entrar** no aplicativo **Me Favorita**.
     <Frame>
       <img src="/images/painel-1.png" alt="Tela inicial da plataforma Mizui" />
     </Frame>
   </Step>
 
-  <Step title="Acessar IntegraÃ§Ãµes">
-    No painel do Me Favorita, clique no menu **IntegraÃ§Ãµes** na barra lateral esquerda. Em seguida, clique no botÃ£o **Integrar**.
+  <Step title="Acessar Integrações">
+    No painel do Me Favorita, clique no menu **Integrações** na barra lateral esquerda. Em seguida, clique no botão **Integrar**.
     <Frame>
-      <img src="/images/painel-2.png" alt="Iniciando a integraÃ§Ã£o no painel MeFavorita" />
+      <img src="/images/painel-2.png" alt="Iniciando a integração no painel MeFavorita" />
     </Frame>
   </Step>
 
@@ -30,32 +30,32 @@ O Me Favorita possui integraÃ§Ã£o nativa com a Bagy via API. O processo come
     </Frame>
   </Step>
 
-  <Step title="Identificar Dados NecessÃ¡rios">
-    VocÃª verÃ¡ que O Me Favorita solicita o **Token de acesso**. Mantenha essa aba aberta; agora vamos acessar o painel da sua loja para gerar essa credencial.
+  <Step title="Identificar Dados Necessários">
+    Você verá que O Me Favorita solicita o **Token de acesso**. Mantenha essa aba aberta; agora vamos acessar o painel da sua loja para gerar essa credencial.
     <Frame>
       <img src="/images/bagy/bagy-7.png" alt="Campo de Token de acesso no Me Favorita" />
     </Frame>
   </Step>
 
   <Step title="Acesse o Painel Bagy">
-    Em uma nova aba, faÃ§a login na sua conta administrativa da Bagy.
+    Em uma nova aba, faça login na sua conta administrativa da Bagy.
   </Step>
 
-  <Step title="Menu de ConfiguraÃ§Ãµes">
-    No menu lateral esquerdo, navegue atÃ© **ConfiguraÃ§Ãµes** e clique em **APIs e Webhooks**.
+  <Step title="Menu de Configurações">
+    No menu lateral esquerdo, navegue até **Configurações** e clique em **APIs e Webhooks**.
     <Frame>
-      <img src="/images/bagy/bagy-1.png" alt="Menu de configuraÃ§Ãµes da Bagy" />
+      <img src="/images/bagy/bagy-1.png" alt="Menu de configurações da Bagy" />
     </Frame>
   </Step>
 
   <Step title="Criar Nova Chave">
-    Clique no botÃ£o **Adicionar API** (geralmente localizado no canto superior direito).
+    Clique no botão **Adicionar API** (geralmente localizado no canto superior direito).
     <Frame>
-      <img src="/images/bagy/bagy-2.png" alt="BotÃ£o adicionar API" />
+      <img src="/images/bagy/bagy-2.png" alt="Botão adicionar API" />
     </Frame>
   </Step>
 
-  <Step title="Nomear a IntegraÃ§Ã£o">
+  <Step title="Nomear a Integração">
     No campo **Nome da API**, digite `MeFavorita` e clique em **Adicionar** para gerar as credenciais.
     <Frame>
       <img src="/images/bagy/bagy-3.png" alt="Nomeando a API" />
@@ -63,13 +63,13 @@ O Me Favorita possui integraÃ§Ã£o nativa com a Bagy via API. O processo come
   </Step>
 
   <Step title="Copiar o Token">
-    Copie o cÃ³digo que aparece no campo **Token de acesso**.
+    Copie o código que aparece no campo **Token de acesso**.
     <Frame>
       <img src="/images/bagy/bagy-4.png" alt="Copiando o token de acesso" />
     </Frame>
   </Step>
 
-  <Step title="Concluir IntegraÃ§Ã£o">
+  <Step title="Concluir Integração">
     Volte para a aba do **Me Favorita** (onde paramos no passo 4), cole o **Token de acesso** no campo indicado e clique em **Integrar**.
     <Frame>
       <img src="/images/bagy/bagy-7.png" alt="Preenchendo o token no painel MeFavorita" />
@@ -78,16 +78,16 @@ O Me Favorita possui integraÃ§Ã£o nativa com a Bagy via API. O processo come
 </Steps>
 
 <Check>
-  **Pronto!** ApÃ³s colar o token, seus produtos comeÃ§arÃ£o a ser sincronizados automaticamente.
+  **Pronto!** Após colar o token, seus produtos começarão a ser sincronizados automaticamente.
 </Check>
 
 <div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
-  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi Ãºtil?</h3>
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
   
   <div className="flex gap-4">
     <button 
       onClick={(e) => {
-        e.currentTarget.innerText = 'Obrigado pelo feedback! ðŸ’œ';
+        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
         e.currentTarget.style.cursor = 'default';
         const btnNao = e.currentTarget.nextElementSibling;
         if (btnNao) btnNao.style.display = 'none';
@@ -96,12 +96,12 @@ O Me Favorita possui integraÃ§Ã£o nativa com a Bagy via API. O processo come
       }}
       className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
     >
-      ðŸ‘ Sim
+      👍 Sim
     </button>
 
     <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20mas%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
-      ðŸ‘Ž NÃ£o, preciso de ajuda
+      👎 Não, preciso de ajuda
     </a>
   </div>
-  <p className="text-xs text-gray-400 mt-3">Ao clicar em "NÃ£o", vocÃª fala direto com nosso suporte.</p>
+  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
 </div>

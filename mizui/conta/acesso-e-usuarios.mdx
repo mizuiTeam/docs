@@ -1,0 +1,111 @@
+---
+title: "Acesso e usuários"
+description: "Como entrar na sua conta, recuperar senha, atualizar dados e dar acesso para outras pessoas da sua equipe."
+icon: "user-lock"
+---
+
+A sua conta Mizui é o ponto central de tudo: é por ali que você acessa todos os apps assinados, vê faturas e gerencia quem mais pode entrar.
+
+## Como entrar na sua conta
+
+1. Acesse [app.mizui.com.br](https://app.mizui.com.br).
+2. Informe o e-mail e a senha cadastrados na contratação.
+3. Pronto, você cai no painel com todos os seus apps.
+
+<Tip>
+  Marque essa página nos favoritos do navegador. É a porta de entrada para
+  iShorts, Cashing, Me Favorita e qualquer outro app Mizui que você assinar.
+</Tip>
+
+## Esqueci minha senha
+
+<Steps>
+  <Step title="Clique em Esqueci minha senha">
+    Na tela de login, clique no link **Esqueci minha senha**.
+  </Step>
+  <Step title="Informe seu e-mail">Digite o e-mail cadastrado na conta.</Step>
+  <Step title="Confira a caixa de entrada">
+    Em poucos minutos chega um e-mail com o link de redefinição. Se não chegar,
+    olhe no spam.
+  </Step>
+  <Step title="Crie a nova senha">
+    Clique no link, defina uma senha forte (mínimo 8 caracteres, com letras e
+    números) e confirme.
+  </Step>
+</Steps>
+
+## Atualizar meus dados cadastrais
+
+Em **Minha Conta > Dados Cadastrais**, você pode atualizar:
+
+- Nome e sobrenome
+- Telefone de contato
+- CNPJ ou CPF
+- Endereço de cobrança (importante para a nota fiscal)
+- E-mail principal
+
+<Warning>
+  Trocar o e-mail principal muda o login. Confirme se o novo e-mail está correto
+  antes de salvar, senão você perde o acesso e precisa pedir ajuda ao suporte.
+</Warning>
+
+## Dar acesso para outras pessoas da equipe
+
+Você pode adicionar outros usuários (gerente, designer, agência, sócio) com permissões específicas, sem precisar compartilhar sua senha.
+
+<Steps>
+  <Step title="Vá em Usuários">
+    No menu da sua conta, clique em **Usuários e Permissões**.
+  </Step>
+  <Step title="Convidar novo usuário">
+    Clique em **Convidar usuário**, informe o nome e o e-mail da pessoa.
+  </Step>
+  <Step title="Escolha o nível de acesso">
+    Defina o que essa pessoa pode fazer. As opções padrão são: -
+    **Administrador**: faz tudo, inclusive convidar outros usuários e mudar
+    plano. - **Editor**: gerencia conteúdo dos apps (vídeos, cupons, campanhas),
+    mas não vê faturas. - **Visualizador**: só consulta métricas, não altera
+    nada.
+  </Step>
+  <Step title="Enviar convite">
+    A pessoa recebe um e-mail com o link para criar a senha dela e entrar.
+  </Step>
+</Steps>
+
+<Tip>
+  Cada usuário tem login próprio, então fica fácil saber quem fez o quê dentro
+  do app. Nunca compartilhe sua senha pessoal, sempre crie um usuário novo.
+</Tip>
+
+## Remover um usuário
+
+Em **Usuários e Permissões**, encontre o nome da pessoa e clique em **Remover acesso**. O usuário perde o login imediatamente, mas o histórico do que ele fez continua salvo.
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Esse artigo foi útil?
+  </h3>
+  <div className="flex gap-4">
+    <button
+      onClick={(e) => {
+        e.currentTarget.innerText = "Obrigado pelo feedback! 💜";
+        e.currentTarget.style.cursor = "default";
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = "none";
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+    <a
+      href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20acesso%20e%20usu%C3%A1rios%20da%20Mizui."
+      target="_blank"
+      className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline"
+    >
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">
+    Ao clicar em "Não", você fala direto com nosso suporte.
+  </p>
+</div>
