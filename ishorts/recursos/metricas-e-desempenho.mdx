@@ -1,73 +1,103 @@
 ---
-title: 'Desempenho e Conversões'
-description: 'Métricas e performance.'
+title: "Métricas e desempenho"
+description: "Como medir o impacto real do iShorts nas vendas da sua loja."
+icon: "chart-line"
 ---
 
-<AccordionGroup>
-  <Accordion title="O iShorts impacta na velocidade da minha loja?">
-    **Não.** A arquitetura do iShorts foi desenhada para priorizar a velocidade.
+De nada adianta colocar vídeos na loja se você não consegue medir o resultado. O iShorts traz um painel completo de métricas para você acompanhar o que funciona e o que precisa ajustar.
 
-    Utilizamos **Carregamento em Segundo Plano (Assíncrono)**.
-    Isso significa que, quando um cliente entra na loja, o navegador carrega primeiro o que é vital (botão de compra, fotos do produto). O iShorts é carregado logo na sequência, "por trás dos panos".
+## O que dá para medir?
 
-    Isso garante que a instalação do aplicativo **não trave** nem bloqueie a exibição inicial da sua loja.
-  </Accordion>
+Dentro de **iShorts > Métricas** você acompanha, por vídeo e no total:
 
-  <Accordion title="O iShorts ajuda a aumentar as conversões?">
-    **Sim!** Vídeos aumentam drasticamente o tempo de permanência do cliente na página e ajudam a quebrar objeções de compra ao mostrar o produto em uso real.
+- **Visualizações:** quantas vezes o vídeo foi visto.
+- **Cliques no produto:** quantas pessoas clicaram para ver o produto vinculado.
+- **Pedidos gerados:** quantos pedidos passaram por um vídeo antes de fechar a compra.
+- **Receita atribuída:** quanto faturamento veio da influência do iShorts.
+- **Taxa de engajamento:** % de pessoas que assistiram até o fim ou interagiram.
 
-    Isso gera mais confiança (prova social), tende a aumentar a taxa de conversão e pode reduzir o número de devoluções.
-  </Accordion>
+## Como saber se o iShorts está aumentando minhas vendas?
 
-  <Accordion title="Posso ver relatórios ou estatísticas de visualizações?">
-    Sim. No painel do iShorts, acesse a seção **Meus iShorts**.
+A forma mais clara é olhar a **Receita Atribuída** no painel.
 
-    Ao clicar em **Ver Detalhes** no vídeo desejado, você terá acesso a todas as métricas de interação daquele vídeo específico.
+Cada vez que um cliente vê um vídeo e depois compra (mesmo que demore alguns minutos), o iShorts contabiliza essa venda. Se em um mês você teve, por exemplo, R$ 8.000 atribuídos ao iShorts, é dinheiro que provavelmente não viria sem os vídeos.
 
-    **Confira o passo a passo em vídeo:**
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
-      <video
-        controls
-        className="w-full h-auto block"
-        src="/videos/faq/desempenho/ver-metricas.mp4"
-      ></video>
-    </div>
-  </Accordion>
+<Tip>
+  Compare também o ticket médio dos pedidos com vídeo vs. sem vídeo. Lojas
+  costumam ver um ticket médio até **24,5% maior** nos pedidos influenciados
+  pelo iShorts.
+</Tip>
 
-  <Accordion title="Consigo saber quais vídeos geraram mais cliques ou vendas?">
-    **Novo painel de Estatísticas chegando!** 🚀
+## Quais vídeos estão dando resultado?
 
-    Estamos finalizando uma versão ainda mais completa e intuitiva. Em breve, você terá um novo painel para acompanhar o desempenho da sua loja e dos seus produtos, com dados mais detalhados e gráficos claros sobre atribuição de vendas.
-  </Accordion>
+Na lista de vídeos do painel, clique em **"Ordenar por Receita"** ou **"Ordenar por Cliques"**. Isso te mostra o ranking dos seus vídeos campeões.
 
-  <Accordion title="Os vídeos são otimizados para SEO e velocidade?">
-    Sim. Além do carregamento ser feito "em segundo plano" (assíncrono), os arquivos de vídeo **não ficam hospedados na sua loja**.
+A regra prática é simples:
 
-    Eles são entregues diretamente pelos servidores do iShorts (via CDN otimizada), garantindo que rodem com alta qualidade sem consumir o espaço ou a banda da sua hospedagem principal.
-  </Accordion>
-</AccordionGroup>
+1. **Mantenha** os vídeos no topo do ranking.
+2. **Substitua** os que estão na lanterna por novos.
+3. Faça isso a cada **15 a 30 dias**.
+
+## O iShorts atrapalha o SEO da minha loja?
+
+**Não.** O iShorts foi desenhado para ter zero impacto na velocidade do site. Os vídeos só são carregados quando o cliente realmente vai assistir, e a compressão deixa cada arquivo até 97% mais leve.
+
+Isso significa que o **PageSpeed** e o **Core Web Vitals** (métricas que o Google usa para SEO) não pioram com o iShorts instalado. Em vários casos até melhoram, porque o cliente fica mais tempo na página.
+
+## A loja vai ficar lenta com muitos vídeos?
+
+Não. Você pode ter dezenas ou centenas de vídeos sem problema. O iShorts trabalha de forma "sob demanda", carregando só o que está sendo visto naquele momento.
+
+<Note>
+  O limite de vídeos depende do plano que você assina: - **Essencial:** até 80
+  vídeos. - **Elite:** até 150 vídeos. - **Escala:** vídeos ilimitados.
+</Note>
+
+## Como saber se vale a pena fazer upgrade de plano?
+
+Olhe três coisas no painel de métricas:
+
+1. Quantos vídeos você já tem (se está perto do limite, é hora de subir).
+2. Qual é a **Receita Atribuída** (se ela é maior que o custo do plano superior, vale a pena).
+3. Se você já usa todos os formatos disponíveis no seu plano atual.
+
+Em caso de dúvida, fale com a gente. Conseguimos olhar os seus números e indicar o melhor caminho.
+
+## Integração com Google Analytics
+
+O iShorts envia eventos para o **Google Analytics 4** automaticamente. Os eventos mais usados são:
+
+- `ishorts_video_view`: alguém viu um vídeo.
+- `ishorts_product_click`: alguém clicou no produto a partir de um vídeo.
+- `ishorts_purchase`: alguém comprou depois de ver um vídeo.
+
+Com isso, você consegue cruzar dados no GA4, criar funis personalizados e até enviar para o Meta Ads e Google Ads como evento de conversão. Veja a [integração com GTM](/ishorts/integracoes/gtm) para configurar.
 
 <div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
-  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
-  
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Esse artigo foi útil?
+  </h3>
   <div className="flex gap-4">
-    <button 
+    <button
       onClick={(e) => {
-        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
-        e.currentTarget.style.cursor = 'default';
+        e.currentTarget.innerText = "Obrigado pelo feedback! 💜";
+        e.currentTarget.style.cursor = "default";
         const btnNao = e.currentTarget.nextElementSibling;
-        if (btnNao) btnNao.style.display = 'none';
-        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
-        if (textoAjuda) textoAjuda.style.display = 'none';
+        if (btnNao) btnNao.style.display = "none";
       }}
       className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
     >
       👍 Sim
     </button>
-
-    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20mas%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+    <a
+      href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20m%C3%A9tricas%20do%20iShorts."
+      target="_blank"
+      className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline"
+    >
       👎 Não, preciso de ajuda
     </a>
   </div>
-  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+  <p className="text-xs text-gray-400 mt-3">
+    Ao clicar em "Não", você fala direto com nosso suporte.
+  </p>
 </div>

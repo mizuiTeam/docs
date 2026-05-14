@@ -1,32 +1,114 @@
 ---
 title: "Plataformas Compatíveis"
-description: "Plataformas de e-commerce suportadas pelo Cashing."
+description: "Veja em quais plataformas de e-commerce o Cashing funciona."
 icon: "plug"
 ---
 
-O Cashing é compatível com as principais plataformas de e-commerce do mercado brasileiro. A integração é feita pelo time de suporte da Mizui no momento do onboarding.
+O Cashing foi desenvolvido para conversar com as principais plataformas de e-commerce do Brasil, sem que você precise instalar plugins extras ou mexer em código.
 
-<CardGroup cols={3}>
-  <Card title="Nuvemshop" img="/images/logo-plataforma/nuvemshop.jpeg" />
-  <Card title="Tray" img="/images/logo-plataforma/tray.jpg" />
-  <Card title="Yampi" img="/images/logo-plataforma/yampi.png" />
-  <Card title="Bagy" img="/images/logo-plataforma/bagy.jpeg" />
-  <Card title="Wbuy" img="/images/logo-plataforma/wbuy.jpeg" />
-  <Card
-    title="Loja Integrada"
-    img="/images/logo-plataforma/loja-integrada.png"
-  />
-  <Card title="Cartpanda" img="/images/logo-plataforma/cartpanda.avif" />
-  <Card title="Shopify" img="/images/logo-plataforma/shopify.png" />
-  <Card title="Shoppub" img="/images/logo-plataforma/shoppub.png" />
+## Plataformas suportadas
+
+O Cashing está disponível para as seguintes plataformas:
+
+<CardGroup cols={2}>
+  <Card title="Nuvemshop">
+    <img
+      src="/images/icons/nuvemshop.png"
+      className="w-12 h-12 mb-1"
+      alt="Nuvemshop"
+    />
+    Integração nativa via App Store da Nuvemshop.
+  </Card>
+  <Card title="Shopify">
+    <img
+      src="/images/icons/shopify.png"
+      className="w-12 h-12 mb-1"
+      alt="Shopify"
+    />
+    App oficial Shopify, instalação em 1 clique.
+  </Card>
+  <Card title="Tray">
+    <img src="/images/icons/tray.png" className="w-12 h-12 mb-1" alt="Tray" />
+    Integração disponível no marketplace de apps Tray.
+  </Card>
+  <Card title="Bagy">
+    <img src="/images/icons/bagy.png" className="w-12 h-12 mb-1" alt="Bagy" />
+    Integração nativa pelo painel da Bagy.
+  </Card>
+  <Card title="Yampi">
+    <img src="/images/icons/yampi.png" className="w-12 h-12 mb-1" alt="Yampi" />
+    Integração via apps da Yampi.
+  </Card>
+  <Card title="Loja Integrada">
+    <img
+      src="/images/icons/lojaintegrada.png"
+      className="w-12 h-12 mb-1"
+      alt="Loja Integrada"
+    />
+    Disponível na seção de aplicativos.
+  </Card>
 </CardGroup>
 
-<Note>
-  Não encontrou sua plataforma? Fale com o suporte pelo
-  [WhatsApp](https://api.whatsapp.com/send/?phone=5573981036437) para verificar
-  a viabilidade técnica.
-</Note>
+## Como começar
 
-## Como funciona a integração
+<Steps>
+  <Step title="Crie sua conta na Mizui">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/login) e crie sua conta
+    gratuita.
+  </Step>
+  <Step title="Abra o Cashing">Clique no card do Cashing na tela inicial.</Step>
+  <Step title="Selecione sua plataforma">
+    O painel pede para você escolher qual plataforma de e-commerce usa.
+  </Step>
+  <Step title="Autorize a conexão">
+    O Cashing redireciona para sua plataforma para autorizar a integração. Basta
+    seguir o passo a passo.
+  </Step>
+  <Step title="Configure o primeiro módulo">
+    Comece pelos módulos mais simples (Cupons, Frete+ ou Avise-me) e vá
+    adicionando os outros aos poucos.
+  </Step>
+</Steps>
 
-Diferente de outros apps da Mizui, a conexão do Cashing com sua plataforma é feita pelo nosso time durante o onboarding. Você não precisa configurar nada manualmente: basta solicitar a ativação no momento da contratação e nossos especialistas cuidam do restante.
+## Não vejo a minha plataforma
+
+Se você usa uma plataforma que não está aqui, fale com a gente pelo WhatsApp. Estamos sempre adicionando novas integrações e em alguns casos conseguimos avaliar uma integração customizada.
+
+## Posso usar o Cashing junto com outros aplicativos?
+
+**Sim.** O Cashing convive bem com outros plugins instalados na sua loja. Inclusive, ele foi desenhado para funcionar **em conjunto** com os outros aplicativos da Mizui (iShorts, Counti, Tagy e Me Favorita), criando uma estratégia de venda completa.
+
+<Tip>
+  Lojas que combinam Cashing + iShorts costumam ver os melhores resultados. O
+  iShorts gera o interesse no produto, o Cashing converte e aumenta o ticket
+  médio.
+</Tip>
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Esse artigo foi útil?
+  </h3>
+  <div className="flex gap-4">
+    <button
+      onClick={(e) => {
+        e.currentTarget.innerText = "Obrigado pelo feedback! 💜";
+        e.currentTarget.style.cursor = "default";
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = "none";
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+    <a
+      href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20quero%20saber%20se%20o%20Cashing%20funciona%20na%20minha%20plataforma."
+      target="_blank"
+      className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline"
+    >
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">
+    Ao clicar em "Não", você fala direto com nosso suporte.
+  </p>
+</div>

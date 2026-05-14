@@ -1,45 +1,113 @@
 ---
 title: "Automações de E-mail"
-description: "Reengajamento autônomo: o Me Favorita trabalha por você."
+description: "Como o Me Favorita reengaja seus clientes automaticamente por e-mail."
 icon: "envelope-open-text"
 ---
 
-A funcionalidade mais importante do Me Favorita é o **Reengajamento Autônomo**: o sistema dispara e-mails sozinho, baseados no comportamento do cliente, para converter desejos em vendas.
+O Me Favorita não é apenas um botão de "salvar produto". A grande mágica está nas **automações de e-mail**, que reengajam o cliente sem você precisar fazer nada manual.
 
-## Automações disponíveis
+São e-mails inteligentes, disparados no momento certo, que transformam interesse em venda.
+
+## As automações nativas
 
 <CardGroup cols={2}>
-  <Card title="Retorno de Estoque" icon="box-archive">
-    Quando o cliente favorita um produto esgotado, o sistema monitora seu
-    estoque. Assim que você repõe o item, um e-mail é disparado automaticamente
-    avisando o cliente.
+  <Card title="Retorno de Estoque" icon="bell">
+    Quando um produto favoritado **volta ao estoque**, todos os clientes que
+    estavam esperando recebem um e-mail automático avisando.
   </Card>
-  <Card title="Segundo Favorito" icon="heart-circle-plus">
-    Quando o cliente salva o segundo produto, o aplicativo envia um e-mail
-    estimulando a criação de uma Coleção ou o compartilhamento da lista com
-    amigos.
+  <Card title="Estímulo ao Segundo Favorito" icon="heart-circle-plus">
+    Cliente que favoritou apenas 1 produto é estimulado por e-mail a criar uma
+    lista mais completa, aumentando engajamento.
   </Card>
 </CardGroup>
 
-## Dúvidas frequentes
+## Por que essas automações funcionam tanto?
 
-<AccordionGroup>
-  <Accordion title="Os e-mails são enviados pelo meu provedor?">
-    Não. A infraestrutura de disparo é 100% gerenciada pelos servidores da Mizui. Você não precisa gastar envios do seu provedor de marketing nem contratar plataformas externas.
-  </Accordion>
+A diferença entre uma campanha tradicional e o Retorno de Estoque é simples:
 
-<Accordion title="Consigo desativar uma automação se não quiser usar?">
-  Sim. Os fluxos de automação podem ser ativados ou desativados individualmente
-  no painel.
-</Accordion>
+- Em uma campanha por e-mail comum, você manda para todo mundo na esperança de que alguém se interesse.
+- No Retorno de Estoque, você manda para quem **literalmente já pediu** aquele produto.
 
-<Accordion title="Como funciona o monitoramento de estoque?">
-  O Me Favorita conecta com sua plataforma e identifica em tempo real quando o
-  estoque de um produto favoritado sai de zero. O disparo do e-mail é imediato
-  após a reposição.
-</Accordion>
+Por isso a taxa de conversão dessas automações é extremamente alta. É um dos e-mails que mais convertem no e-commerce.
 
-  <Accordion title="Os e-mails têm a identidade visual da minha loja?">
-    Sim. Você personaliza logo, cores e textos no painel para garantir que o cliente reconheça a comunicação como sua.
-  </Accordion>
-</AccordionGroup>
+## Como ativar a automação de Retorno de Estoque
+
+<Steps>
+  <Step title="Acesse o Me Favorita">
+    Entre em [app.mizui.com.br](https://app.mizui.com.br/login) e abra o Me
+    Favorita.
+  </Step>
+  <Step title="Vá em E-mails">No menu lateral, clique em **E-mails**.</Step>
+  <Step title="Ative a automação">
+    Encontre **"Retorno de Estoque"** e ative o gatilho.
+  </Step>
+  <Step title="Personalize o template (opcional)">
+    Ajuste o assunto, o texto e as cores do e-mail para combinar com a sua
+    marca.
+  </Step>
+</Steps>
+
+## Personalizando os e-mails
+
+Você pode editar:
+
+- **Assunto:** o que aparece na caixa de entrada do cliente.
+- **Texto principal:** a mensagem dentro do e-mail.
+- **Cores e logotipo:** para ficar com cara da sua marca.
+- **Botão de ação:** texto e link para a página do produto ou lista.
+
+<Tip>
+  Use um assunto **personalizado e direto**. Em vez de "Produto disponível!",
+  tente "[Nome do cliente], aquele produto que você queria voltou! ❤️". A taxa
+  de abertura sobe drasticamente.
+</Tip>
+
+## Quando o e-mail é disparado?
+
+| Automação                        | Gatilho                                            | Disparo                            |
+| :------------------------------- | :------------------------------------------------- | :--------------------------------- |
+| **Retorno de Estoque**           | Produto favoritado volta a ter estoque             | Imediato (no momento da reposição) |
+| **Estímulo ao Segundo Favorito** | Cliente favoritou exatamente 1 item há mais de 24h | Após 1 a 3 dias                    |
+
+## Posso desligar uma automação?
+
+**Sim.** Em **E-mails**, basta desativar o gatilho da automação que você não quer usar. Você pode ligar e desligar a qualquer momento, sem perder o histórico.
+
+## Quem recebe esses e-mails?
+
+Apenas clientes que cadastraram o **e-mail** no Me Favorita. Visitantes anônimos (sem e-mail cadastrado) não entram na automação, justamente porque não temos como contatá-los.
+
+Por isso é importante incentivar o cadastro do e-mail logo cedo na jornada.
+
+## Posso criar minhas próprias automações?
+
+Hoje as automações nativas (Retorno de Estoque e Segundo Favorito) são as principais. Para campanhas mais customizadas (cupons personalizados, fluxos de boas-vindas, etc), recomendamos usar o **Cashing** (módulo de Automações), que tem fluxos mais avançados de WhatsApp, e-mail e SMS.
+
+<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Esse artigo foi útil?
+  </h3>
+  <div className="flex gap-4">
+    <button
+      onClick={(e) => {
+        e.currentTarget.innerText = "Obrigado pelo feedback! 💜";
+        e.currentTarget.style.cursor = "default";
+        const btnNao = e.currentTarget.nextElementSibling;
+        if (btnNao) btnNao.style.display = "none";
+      }}
+      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
+    >
+      👍 Sim
+    </button>
+    <a
+      href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20as%20automa%C3%A7%C3%B5es%20do%20Me%20Favorita."
+      target="_blank"
+      className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline"
+    >
+      👎 Não, preciso de ajuda
+    </a>
+  </div>
+  <p className="text-xs text-gray-400 mt-3">
+    Ao clicar em "Não", você fala direto com nosso suporte.
+  </p>
+</div>

@@ -1,69 +1,102 @@
 ---
-title: 'Problemas Comuns'
-description: 'Resolução de erros e solução de dúvidas.'
+title: "Resolvendo problemas comuns"
+description: "Os problemas mais frequentes do iShorts e como resolver cada um deles."
+icon: "wrench"
 ---
 
-<AccordionGroup>
-  <Accordion title="Meus vídeos não estão aparecendo na loja, o que fazer?">
-    Se você configurou tudo mas os vídeos não aparecem, verifique estes 3 pontos:
+Aqui estão as situações mais comuns que podem acontecer com o iShorts e o que fazer em cada caso. Se mesmo seguindo o passo a passo o problema continuar, fale com a gente pelo WhatsApp.
 
-    **1. Status da Integração**
-    Acesse o painel e vá no menu **Integrações**. Verifique se a sua plataforma está aparecendo na lista de conectados.
-    
-    <Frame>
-      <img src="/images/faq/instalacao/remover-integracao-1.png" alt="Menu de integrações" />
-    </Frame>
+## Os vídeos não estão aparecendo na loja
 
-    **2. Tempo de Cache**
-    Se você acabou de instalar ou fazer uma alteração, aguarde **2 minutos** e atualize a página da sua loja (F5). O sistema precisa desse tempo para propagar as alterações.
+Esse é o problema mais comum e quase sempre tem uma das três causas abaixo. Verifique nesta ordem:
 
-    **3. URL da Página (Se for Landing Page)**
-    Se você configurou o vídeo para aparecer em uma "Página Específica", verifique se o link que você colou no painel é **exatamente igual** ao link que está no navegador quando você acessa a página.
-  </Accordion>
+### 1. O vídeo está ativo no painel?
 
-  <Accordion title="O vídeo está demorando para carregar, é normal?">
-    **Não.** Nossos servidores utilizam CDN de alta velocidade para entrega imediata.
+No painel do iShorts, abra o vídeo e confira se ele está marcado como **"Ativo"**. Vídeos pausados ou em rascunho não aparecem na loja.
 
-    Geralmente, lentidão no carregamento está ligada a dois fatores:
-    1. **Conexão de internet:** Verifique se sua conexão está estável.
-    2. **Tamanho do arquivo:** Embora aceitemos vídeos de até 2 minutos, recomendamos vídeos mais curtos e leves para garantir uma experiência instantânea para o seu cliente.
-  </Accordion>
+### 2. O formato escolhido está exibido na página correta?
 
-  <Accordion title="Meus vídeos sumiram após alterar o tema da loja, como resolver?">
-    Isso é comum. Quando você altera ou atualiza o tema da sua loja, muitas plataformas **removem automaticamente** os scripts e códigos externos que haviam sido instalados no tema anterior.
+Cada formato aparece em um lugar diferente da loja:
 
-    **Solução:**
-    Você precisa refazer o processo de instalação.
-    1. Acesse o menu **Integrações**.
-    2. Remova a integração atual.
-    3. Refaça a conexão seguindo o guia da sua plataforma.
-  </Accordion>
-</AccordionGroup>
+- **Miniatura Flutuante:** aparece em qualquer página (canto da tela).
+- **Stories no Produto:** aparece **só** na página de um produto que está vinculado ao vídeo.
+- **Carrossel de Vídeos:** aparece **só** nas páginas que você marcou (Home, coleções, etc).
 
-<br />
-<hr />
+Confira se você está olhando a página certa para o formato escolhido.
+
+### 3. Já passou o tempo de cache?
+
+Algumas plataformas demoram alguns minutos para atualizar o conteúdo. Aguarde até **5 minutos**, depois atualize a página com **Ctrl+F5** (força a atualização sem cache).
+
+<Tip>
+  Se ainda assim não aparecer, abra a página em uma aba anônima do navegador. Se
+  aparecer lá, o problema é só o cache do seu navegador.
+</Tip>
+
+## A loja ficou lenta depois de instalar
+
+O iShorts foi desenhado para **não impactar** a velocidade da loja. Os vídeos só são baixados quando o cliente vai assistir, em segundo plano.
+
+Se você notou lentidão depois de instalar, geralmente é uma de duas situações:
+
+1. **Vídeo muito pesado fora do nosso painel.** Se você colocou um vídeo gigante (ex: 200MB) por outro caminho, isso sim pesa. Sempre suba pelo painel do iShorts para usar nossa compressão.
+2. **Outro app instalado no mesmo período.** Se você instalou outros plugins ao mesmo tempo, desative-os um a um para descobrir o real responsável.
+
+Se mesmo assim houver lentidão, abra um chamado no nosso WhatsApp. Conseguimos analisar a sua loja e identificar a causa.
+
+## Os vídeos sumiram depois que eu mudei de tema
+
+Em algumas plataformas (especialmente Shopify e temas customizados), trocar o tema da loja pode "desconectar" os blocos visuais do iShorts.
+
+A solução é simples:
+
+<Steps>
+  <Step title="Entre no painel do iShorts">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/login) e abra o iShorts.
+  </Step>
+  <Step title="Acesse a Integração">
+    Vá em **Integração** ou **Configurações da loja** e clique em
+    **"Reconectar"**.
+  </Step>
+  <Step title="Confirme">
+    O iShorts vai detectar o novo tema e religar os vídeos automaticamente.
+  </Step>
+</Steps>
+
+<Note>
+  Se você usa Shopify, talvez também precise abrir o editor de tema e ativar o
+  app na seção desejada. Veja o [guia do Shopify](/ishorts/integracoes/shopify).
+</Note>
+
+## Outros problemas
+
+Se o seu problema não está aqui, fale com a gente pelo WhatsApp. Nosso suporte é humano, atende em horário comercial e resolve junto com você.
 
 <div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
-  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
-  
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Esse artigo foi útil?
+  </h3>
   <div className="flex gap-4">
-    <button 
+    <button
       onClick={(e) => {
-        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
-        e.currentTarget.style.cursor = 'default';
+        e.currentTarget.innerText = "Obrigado pelo feedback! 💜";
+        e.currentTarget.style.cursor = "default";
         const btnNao = e.currentTarget.nextElementSibling;
-        if (btnNao) btnNao.style.display = 'none';
-        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
-        if (textoAjuda) textoAjuda.style.display = 'none';
+        if (btnNao) btnNao.style.display = "none";
       }}
       className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
     >
       👍 Sim
     </button>
-
-    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20mas%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+    <a
+      href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20com%20um%20problema%20no%20iShorts%20que%20n%C3%A3o%20encontrei%20na%20documenta%C3%A7%C3%A3o."
+      target="_blank"
+      className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline"
+    >
       👎 Não, preciso de ajuda
     </a>
   </div>
-  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+  <p className="text-xs text-gray-400 mt-3">
+    Ao clicar em "Não", você fala direto com nosso suporte.
+  </p>
 </div>

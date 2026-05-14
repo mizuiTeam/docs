@@ -1,39 +1,83 @@
 ---
-title: 'Plataformas Compatíveis'
-description: 'Confira a lista de plataformas suportadas pelo Me Favorita.'
-icon: 'plug'
+title: "Plataformas Compatíveis"
+description: "Veja em quais plataformas o Me Favorita funciona."
+icon: "plug"
 ---
 
-Atualmente, o Me Favorita possui integração nativa e é 100% compatível com as plataformas de e-commerce listadas abaixo:
+O Me Favorita está integrado às principais plataformas de e-commerce do Brasil. A instalação é simples e o botão de favoritar aparece na sua loja em poucos minutos.
 
-<CardGroup cols={3}>
-  <Card title="Bagy" img="/images/logo-plataforma/bagy.jpeg" />
-  <Card title="Nuvemshop" img="/images/logo-plataforma/nuvemshop.jpeg" />
-  <Card title="Tray" img="/images/logo-plataforma/tray.jpg" />
-  <Card title="Wbuy" img="/images/logo-plataforma/wbuy.jpeg" />
+## Plataformas suportadas
+
+<CardGroup cols={2}>
+  <Card title="Nuvemshop" href="/mefavorita/integracoes/nuvemshop">
+    <img
+      src="/images/icons/nuvemshop.png"
+      className="w-12 h-12 mb-1"
+      alt="Nuvemshop"
+    />
+    Integração via App Store da Nuvemshop.
+  </Card>
+  <Card title="Bagy" href="/mefavorita/integracoes/bagy">
+    <img src="/images/icons/bagy.png" className="w-12 h-12 mb-1" alt="Bagy" />
+    Integração nativa pelo painel da Bagy.
+  </Card>
+  <Card title="Tray" href="/mefavorita/integracoes/tray">
+    <img src="/images/icons/tray.png" className="w-12 h-12 mb-1" alt="Tray" />
+    Integração via marketplace de apps Tray.
+  </Card>
+  <Card title="WBuy" href="/mefavorita/integracoes/wbuy">
+    <img src="/images/icons/wbuy.png" className="w-12 h-12 mb-1" alt="WBuy" />
+    Integração via apps WBuy.
+  </Card>
 </CardGroup>
 
+## Como começar
+
+<Steps>
+  <Step title="Crie conta na Mizui">
+    Acesse [app.mizui.com.br](https://app.mizui.com.br/login).
+  </Step>
+  <Step title="Abra o Me Favorita">
+    Clique no card do Me Favorita na tela inicial.
+  </Step>
+  <Step title="Conecte sua loja">
+    Selecione sua plataforma e siga o passo a passo específico (links acima).
+  </Step>
+  <Step title="Personalize o coração">
+    Configure cor, posição e texto do botão de favoritar para combinar com sua
+    loja.
+  </Step>
+</Steps>
+
+## Não vejo a minha plataforma
+
+Estamos expandindo. Se a sua plataforma não está na lista, fale com a gente pelo WhatsApp. Em vários casos conseguimos avaliar integração customizada.
+
 <div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
-  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
-  
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Esse artigo foi útil?
+  </h3>
   <div className="flex gap-4">
-    <button 
+    <button
       onClick={(e) => {
-        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
-        e.currentTarget.style.cursor = 'default';
+        e.currentTarget.innerText = "Obrigado pelo feedback! 💜";
+        e.currentTarget.style.cursor = "default";
         const btnNao = e.currentTarget.nextElementSibling;
-        if (btnNao) btnNao.style.display = 'none';
-        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
-        if (textoAjuda) textoAjuda.style.display = 'none';
+        if (btnNao) btnNao.style.display = "none";
       }}
       className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
     >
       👍 Sim
     </button>
-
-    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20de%20compatibilidade%20do%20Me%20Favorita%20mas%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+    <a
+      href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20quero%20saber%20se%20o%20Me%20Favorita%20funciona%20na%20minha%20plataforma."
+      target="_blank"
+      className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline"
+    >
       👎 Não, preciso de ajuda
     </a>
   </div>
-  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+  <p className="text-xs text-gray-400 mt-3">
+    Ao clicar em "Não", você fala direto com nosso suporte.
+  </p>
 </div>

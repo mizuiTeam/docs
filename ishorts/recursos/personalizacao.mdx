@@ -1,124 +1,149 @@
 ---
-title: 'Personalização'
-description: 'Ajustes visuais e de layout.'
+title: "Personalizando o iShorts"
+description: "Adapte cores, posição e visual dos vídeos para combinar com a identidade da sua loja."
+icon: "palette"
 ---
 
-<AccordionGroup>
-  <Accordion title="Mudei a cor da miniatura flutuante e não refletiu no meu site, e agora?">
-    Isso geralmente acontece devido ao **Cache** (memória temporária) da sua loja ou navegador.
-    
-    Aguarde cerca de **2 minutos** após salvar a alteração. Se ainda não aparecer, tente abrir sua loja em uma guia anônima para verificar.
-  </Accordion>
+O iShorts foi feito para se adaptar à cara da sua marca. Você consegue mudar **cor, posição, miniatura, botões e textos** direto pelo painel, sem precisar mexer em nada de código.
 
-  <Accordion title="Posso mudar o posicionamento do carrossel na minha loja?">
-    **Sim.** Essa mudança é feita internamente pelo nosso time técnico.
-    
-    Entre em contato pelo suporte solicitando essa alteração e informando o novo local onde deseja exibir o carrossel (ex: acima do rodapé, abaixo do banner principal, etc.).
-  </Accordion>
+## Onde personalizar
 
-  <Accordion title="Como deixar a miniatura flutuante fixa na página?">
-    Para que o vídeo acompanhe a rolagem da tela:
+Toda personalização fica em **iShorts > Configurações > Personalização** no Painel da Mizui. As opções são divididas por formato (Miniatura Flutuante, Stories e Carrossel) e por elemento (Botões, Textos, Cor).
 
-    1. No menu lateral, vá em **Personalize**.
-    2. No card "Miniatura Flutuante", clique em **Personalizar**.
-    3. Role até o final da página em "Configurações Avançadas".
-    4. Ative a opção **Vídeo Fixo**.
+## Mudando as cores
 
-    <Warning>
-      **Importante:** Não esqueça de clicar no botão **Salvar** no final da página para aplicar a mudança.
-    </Warning>
+Você pode definir uma cor principal que vai aparecer em todos os botões, contornos e destaques dos vídeos.
 
-    **Confira o passo a passo em vídeo:**
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
-      <video
-        controls
-        className="w-full h-auto block"
-        src="/videos/ishorts/personalizacao/miniatura-fixa.mp4"
-      ></video>
-    </div>
-  </Accordion>
+<Steps>
+  <Step title="Abra a Personalização">
+    No painel do iShorts, vá em **Configurações > Personalização**.
+  </Step>
+  <Step title="Escolha a cor">
+    Clique no campo **"Cor principal"** e digite o código HEX da sua marca (ex: `#8420D3`) ou use o seletor visual.
+  </Step>
+  <Step title="Salve">
+    Clique em **Salvar**. A cor é aplicada em até 5 minutos na loja.
+  </Step>
+</Steps>
 
-  <Accordion title="Como alterar a cor do botão Saiba Mais?">
-    1. No menu lateral, vá em **Personalize**.
-    2. No card "Informações da Loja", clique em **Personalizar**.
-    3. Você verá as opções:
-       * **Cor Primária:** Altera a cor do fundo do botão.
-       * **Cor Secundária:** Altera a cor do texto do botão.
+<Note>
+  Se você mudou a cor e ela não apareceu, atualize a loja com **Ctrl+F5** (força
+  a limpar o cache do navegador).
+</Note>
 
-    <Warning>
-      **Importante:** Não esqueça de clicar no botão **Salvar** após escolher as cores.
-    </Warning>
+## Posição da Miniatura Flutuante
 
-    **Confira o passo a passo em vídeo:**
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
-      <video
-        controls
-        className="w-full h-auto block"
-        src="/videos/ishorts/personalizacao/cor-botao.mp4"
-      ></video>
-    </div>
-  </Accordion>
+A Miniatura é aquele "card" de vídeo que fica flutuando em um canto da tela. Você pode posicionar onde quiser:
 
-  <Accordion title="Como remover o feedback ('Esse vídeo te ajudou?') do fim do vídeo?">
-    1. No menu lateral, vá em **Personalize**.
-    2. No card "Interações no iShort", clique em **Personalizar**.
-    3. Role até o final da página e **desmarque** a opção *"Esse vídeo te ajudou?"*.
+- **Canto inferior direito** (padrão)
+- **Canto inferior esquerdo**
+- **Canto superior direito**
+- **Canto superior esquerdo**
 
-    <Warning>
-      **Importante:** Não esqueça de clicar no botão **Salvar** para atualizar a configuração.
-    </Warning>
+A configuração é separada para **desktop** e **mobile**, então você pode deixar uma posição no computador e outra no celular.
 
-    **Confira o passo a passo em vídeo:**
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
-      <video
-        controls
-        className="w-full h-auto block"
-        src="/videos/ishorts/personalizacao/remover-feedback.mp4"
-      ></video>
-    </div>
-  </Accordion>
+## Posição do Carrossel
 
-  <Accordion title="Como editar o número do WhatsApp que aparece no botão?">
-    1. No menu lateral, vá em **Personalize**.
-    2. No card "Interações no iShort", clique em **Personalizar**.
-    3. No início da página, na seção "WhatsApp no iShorts", você pode alterar:
-       * **Número do WhatsApp:** O telefone que receberá as mensagens.
-       * **Mensagem do WhatsApp:** O texto padrão que o cliente enviará.
+O Carrossel pode ser posicionado em qualquer parte da página. As posições mais comuns são:
 
-    <Warning>
-      **Importante:** Não esqueça de clicar no botão **Salvar** para gravar o novo número.
-    </Warning>
-  </Accordion>
+- **Topo da Home** (logo abaixo do banner principal)
+- **Meio da Home** (entre coleções)
+- **Página de coleção** (acima ou abaixo da grade de produtos)
 
-  <Accordion title="Posso pedir ajuda para personalizar o layout dos vídeos?">
-    Ajudamos você a configurar todas as opções **nativas** do aplicativo (cores do botão, tamanhos, posições na tela).
+Em algumas plataformas isso é configurado direto no editor de tema (ex: Shopify e Nuvemshop). Em outras, basta marcar no painel onde você quer que apareça.
 
-    Caso você precise de uma personalização avançada via código (CSS) que foge do padrão do app, nosso time analisará a viabilidade técnica, podendo orientar como fazer, mas não garantimos o desenvolvimento de códigos customizados para temas específicos.
-  </Accordion>
-</AccordionGroup>
+## Imagem da miniatura (capa)
 
+Cada vídeo tem uma **capa** (a imagem que aparece antes do play). Por padrão, o iShorts pega o primeiro frame do vídeo, mas você pode trocar:
+
+<Steps>
+  <Step title="Abra o vídeo">
+    No painel, clique no vídeo que quer personalizar.
+  </Step>
+  <Step title="Vá em Capa">
+    Na aba **Capa**, faça upload de uma imagem (PNG ou JPG, recomendado 720x1280
+    px).
+  </Step>
+  <Step title="Salve">A nova capa aparece em até 5 minutos.</Step>
+</Steps>
+
+<Tip>
+  Use capas com **rostos** ou **frases curtas** para chamar mais atenção. Vídeos
+  com capa boa têm até 3x mais cliques.
+</Tip>
+
+## Cor e estilo do botão "Comprar"
+
+Em cada vídeo aparece um botão "Comprar" ou "Ver Produto" que leva o cliente direto para a página do produto. Você pode:
+
+- Mudar o **texto** (ex: "Quero esse", "Saiba mais", "Ver oferta").
+- Mudar a **cor de fundo** e a **cor do texto**.
+- Mudar o **formato** (arredondado, retangular, com borda).
+
+A configuração fica em **Personalização > Botão de compra**.
+
+## Removendo elementos que você não quer
+
+Você pode esconder qualquer elemento que não combine com a sua loja:
+
+- **Botão de "curtir":** desligue se não quer interação social.
+- **Contador de visualizações:** esconda para não mostrar números baixos no início.
+- **Logo do iShorts:** clientes do plano Elite e Escala podem remover a marca d'água.
+- **Botão de WhatsApp:** ative ou desative o botão direto para o WhatsApp da loja.
+
+## WhatsApp dentro do vídeo
+
+Se você quiser que clientes possam clicar e ir direto para o seu WhatsApp a partir do vídeo:
+
+<Steps>
+  <Step title="Vá em Personalização">
+    No painel, **Configurações > Personalização > WhatsApp**.
+  </Step>
+  <Step title="Coloque seu número">
+    Digite seu número com DDD e código do país (ex: 5511999998888).
+  </Step>
+  <Step title="Personalize a mensagem">
+    Defina a mensagem inicial que o cliente verá já escrita ao abrir a conversa.
+  </Step>
+  <Step title="Salve">
+    Pronto, o botão de WhatsApp passa a aparecer nos vídeos.
+  </Step>
+</Steps>
+
+## Personalização avançada (CSS)
+
+Lojistas mais técnicos podem aplicar CSS customizado para mudanças muito específicas (ex: animação diferente, sombra única, fonte da marca). Essa opção fica em **Personalização > Avançado**.
+
+<Warning>
+  Mudanças via CSS exigem conhecimento técnico. Se você não tem certeza, fale
+  com nosso suporte antes de aplicar para evitar quebrar o visual da loja.
+</Warning>
 
 <div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
-  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Esse artigo foi útil?</h3>
-  
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    Esse artigo foi útil?
+  </h3>
   <div className="flex gap-4">
-    <button 
+    <button
       onClick={(e) => {
-        e.currentTarget.innerText = 'Obrigado pelo feedback! 💜';
-        e.currentTarget.style.cursor = 'default';
+        e.currentTarget.innerText = "Obrigado pelo feedback! 💜";
+        e.currentTarget.style.cursor = "default";
         const btnNao = e.currentTarget.nextElementSibling;
-        if (btnNao) btnNao.style.display = 'none';
-        const textoAjuda = e.currentTarget.parentElement.nextElementSibling;
-        if (textoAjuda) textoAjuda.style.display = 'none';
+        if (btnNao) btnNao.style.display = "none";
       }}
       className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
     >
       👍 Sim
     </button>
-
-    <a href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20estou%20lendo%20a%20documenta%C3%A7%C3%A3o%20mas%20continuei%20com%20d%C3%BAvidas%2C%20pode%20me%20ajudar%3F" target="_blank" className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline">
+    <a
+      href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20personalizando%20o%20iShorts."
+      target="_blank"
+      className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline"
+    >
       👎 Não, preciso de ajuda
     </a>
   </div>
-  <p className="text-xs text-gray-400 mt-3">Ao clicar em "Não", você fala direto com nosso suporte.</p>
+  <p className="text-xs text-gray-400 mt-3">
+    Ao clicar em "Não", você fala direto com nosso suporte.
+  </p>
 </div>
