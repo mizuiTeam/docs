@@ -18,8 +18,8 @@ Módulos que entram em ação **antes e durante a compra** para o cliente coloca
 
 <CardGroup cols={2}>
   <Card title="Cupons" icon="ticket">
-    Crie e gerencie cupons de desconto com regras avançadas (primeira compra,
-    valor mínimo, categoria, cliente específico).
+    Pop-up de cupons no estilo Shein (miniatura no canto da tela ou bloco no
+    carrinho e checkout) para instigar o cliente a fechar a compra com desconto.
   </Card>
   <Card title="Frete+" icon="truck-fast">
     Gamifica o frete grátis: avisa o cliente "faltam R$ 30" e sugere produtos
@@ -30,8 +30,9 @@ Módulos que entram em ação **antes e durante a compra** para o cliente coloca
     escolhida.
   </Card>
   <Card title="Compre Junto" icon="layer-group">
-    Mostra produtos que combinam (ex: tênis + meia + cadarço) e oferece
-    desconto no combo.
+    Combine produtos em **kits** ou **sugestões individuais**, exiba na página
+    do produto, no carrinho ou no checkout e aplique descontos especiais nas
+    sugestões ou no kit fechado.
   </Card>
   <Card title="Descontos" icon="percent">
     Campanhas de desconto progressivo, por categoria, por quantidade ou em
@@ -41,31 +42,45 @@ Módulos que entram em ação **antes e durante a compra** para o cliente coloca
     Captura interesse em produtos esgotados e dispara aviso automático quando
     voltam ao estoque.
   </Card>
-  <Card title="Avaliações" icon="star">
-    Avaliações com nota, foto e vídeo direto na página do produto. Importa do
-    Google ou cadastra manualmente.
+  <Card title="Avaliações e Depoimentos" icon="star">
+    Avaliações com nota, foto e vídeo na página do produto, depoimentos para a
+    home, e **características customizadas** por avaliação (caimento da peça,
+    conforto, tamanho etc.) no estilo Mercado Livre.
   </Card>
   <Card title="Captura de Leads" icon="magnet">
-    Roleta de cupons, caixa surpresa, formulários e popups para capturar e-mail
-    e WhatsApp de visitantes.
+    Roleta de cupons, caixa surpresa, formulários e popups para capturar e-mail,
+    WhatsApp e **data de aniversário** dos visitantes.
   </Card>
   <Card title="Guia de Medidas" icon="ruler">
     Tabela de medidas profissional na página do produto, reduz dúvidas e
     devoluções por tamanho.
   </Card>
-  <Card title="Provador Virtual (IA)" icon="shirt">
-    Cliente experimenta a peça virtualmente com tecnologia de IA, ideal para
-    moda e acessórios.
-  </Card>
-  <Card title="Tendências" icon="chart-line">
-    Mostra na loja os produtos em alta, reforçando prova social com base no
-    comportamento real dos clientes.
+  <Card title="Provador Virtual com IA (Beta)" icon="shirt">
+    Cliente experimenta virtualmente **maquiagem, acessórios e roupas** com
+    tecnologia de IA. Módulo em fase beta, disponível para lojas selecionadas.
   </Card>
 </CardGroup>
 
-## Pós-venda
+<Warning>
+  **Recursos legados.** Você pode encontrar no menu uma seção de "Legados".
+  São módulos antigos que foram **substituídos por versões melhores** e
+  continuam ali apenas para quem já usava. A lógica:
 
-Módulos para **fazer o cliente voltar** depois da primeira compra. É onde o Cashing realmente se diferencia da maioria dos plugins do mercado.
+- **Brinde no Carrinho** e **Compre e Ganhe** → viraram a aba **Brindes**.
+- **Upsell** e **OrderBump** → viraram a aba **Compre Junto** (mais
+  completa).
+- **Compre Junto antigo** → substituído pelo **Compre Junto novo** da aba
+  Vendas.
+
+Sempre prefira a versão nova: é onde recebem novas funcionalidades.
+
+</Warning>
+
+## Pós-venda (CRM de Fidelização)
+
+O Pós-venda do Cashing é o nosso **CRM de fidelização**: um motor completo para fazer o cliente que já comprou **voltar a comprar de novo, e de novo, e de novo**. Em vez de gastar 100% do orçamento atraindo gente nova, você aumenta o LTV (lifetime value) de quem já confia na sua marca.
+
+É onde a maioria das lojas perde dinheiro sem perceber. E onde o Cashing entrega o maior ROI.
 
 <Frame>
   <img
@@ -76,24 +91,25 @@ Módulos para **fazer o cliente voltar** depois da primeira compra. É onde o Ca
 
 <CardGroup cols={2}>
   <Card title="Automações" icon="robot">
-    Fluxos automáticos de WhatsApp e e-mail disparados por gatilhos (carrinho
-    abandonado, pós-compra, aniversário do cliente, recompra prevista).
+    Fluxos automáticos de WhatsApp e e-mail disparados por gatilhos: carrinho
+    abandonado, pós-compra, aniversário do cliente, recompra prevista,
+    reativação de inativos e muito mais.
   </Card>
   <Card title="Cashback" icon="coins">
-    Devolve uma % da compra em saldo na loja, com regras e missões que
-    estimulam a próxima compra.
+    Devolve uma % da compra em saldo na loja, com regras e missões que estimulam
+    a próxima compra. O cliente já sai com motivo para voltar.
   </Card>
   <Card title="Giftback" icon="hand-holding-dollar">
     Crédito presenteado pela loja em datas especiais (aniversário, reativação,
-    boas-vindas).
+    boas-vindas) para reativar quem está sumido.
   </Card>
   <Card title="Campanhas" icon="bullhorn">
-    Disparos em massa segmentados para grupos de clientes (ex: VIPs, inativos,
-    novos compradores).
+    Disparos em massa segmentados por comportamento (VIPs, inativos, novos
+    compradores, quem nunca usou cupom etc.).
   </Card>
   <Card title="Modelos de Mensagem" icon="comment-dots">
     Biblioteca de templates prontos de WhatsApp e e-mail para usar nas
-    automações e campanhas.
+    automações e campanhas, sem começar do zero.
   </Card>
 </CardGroup>
 
@@ -110,12 +126,12 @@ Um CRM completo para você **conhecer cada cliente** da sua loja: histórico de 
 
 <CardGroup cols={2}>
   <Card title="Todos os Clientes" icon="users">
-    Lista completa com data de cadastro, total gasto, origem, pontos
-    acumulados, perfil RFM e ações rápidas (editar, WhatsApp).
+    Lista completa com data de cadastro, total gasto, origem, pontos acumulados,
+    perfil RFM e ações rápidas (editar, WhatsApp).
   </Card>
   <Card title="Segmentações" icon="filter">
-    Crie grupos dinâmicos por comportamento (ex: "comprou há mais de 90 dias"
-    ou "VIPs com ticket acima de R$ 500") para usar em campanhas.
+    Crie grupos dinâmicos por comportamento (ex: "comprou há mais de 90 dias" ou
+    "VIPs com ticket acima de R$ 500") para usar em campanhas.
   </Card>
 </CardGroup>
 
@@ -132,12 +148,12 @@ Um painel completo para você **enxergar o impacto real do Cashing** na sua loja
 
 <CardGroup cols={2}>
   <Card title="Visão Geral" icon="chart-pie">
-    Receita total, receita impactada pelo Cashing, número de vendas, LTV,
-    ticket médio e frequência média por cliente.
+    Receita total, receita impactada pelo Cashing, número de vendas, LTV, ticket
+    médio e frequência média por cliente.
   </Card>
   <Card title="Retorno de Investimento" icon="sack-dollar">
-    Quanto cada R$ 1 investido no Cashing gerou em receita, com ROI
-    consolidado dos últimos 30 dias.
+    Quanto cada R$ 1 investido no Cashing gerou em receita, com ROI consolidado
+    dos últimos 30 dias.
   </Card>
   <Card title="Matriz RFM" icon="table-cells">
     Segmentação automática de clientes por Recência, Frequência e Valor para
@@ -173,7 +189,7 @@ Transforme clientes, influenciadores e parceiros em vendedores da sua marca, com
 
 ## Por que ter tudo no mesmo app?
 
-A grande vantagem do Cashing é a **integração nativa** entre os módulos. Em vez de assinar 8 plugins diferentes (cupom, frete, brinde, cashback, avaliação, captura de leads, afiliados, automação) e ficar tentando fazer eles conversarem, no Cashing tudo já vem conectado.
+A grande vantagem do Cashing é a **integração nativa** entre os módulos. Em vez de assinar 8 aplicativos diferentes (cupom, frete, brinde, cashback, avaliação, captura de leads, afiliados, automação) e ficar tentando fazer eles conversarem, no Cashing tudo já vem conectado.
 
 Isso significa, por exemplo:
 
@@ -184,9 +200,9 @@ Isso significa, por exemplo:
 - Toda venda gerada é automaticamente medida no painel de **Métricas** com cálculo de ROI.
 
 <Tip>
-  Não precisa ligar tudo de uma vez. Comece por 2 ou 3 módulos que resolvem
-  sua maior dor (geralmente Captura de Leads + Frete+ + Cupons) e vá ativando
-  os outros conforme cresce.
+  Não precisa ligar tudo de uma vez. Comece por 2 ou 3 módulos que resolvem sua
+  maior dor (geralmente Captura de Leads + Frete+ + Cupons) e vá ativando os
+  outros conforme cresce.
 </Tip>
 
 ## Quero ver na prática
