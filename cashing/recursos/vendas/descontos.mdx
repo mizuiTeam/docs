@@ -3,25 +3,38 @@ title: 'Descontos'
 description: 'Configure regras avançadas de abatimento e descontos progressivos.'
 ---
 
-<AccordionGroup>
-  <Accordion title="Como funciona o Desconto Progressivo no subtotal?">
-    A regra é baseada no volume: quanto maior o valor do carrinho, maior o desconto. 
-    
-    Você configura faixas de incentivo (ex: "Ao atingir R$ 200, ganhe R$ 20 de desconto"). O sistema suporta formatos como **Desconto no subtotal**, **Leve X Pague Y**, e em breve, Desconto por unidade e no frete.
-  </Accordion>
+O módulo de **Descontos** é onde você cria as **regras de incentivo por volume**. Em vez de simplesmente baixar o preço de tudo, você condiciona o desconto a um comportamento (atingir um valor, levar mais unidades, comprar em uma data específica), aumentando ticket médio sem destruir margem.
 
-  <Accordion title="Posso oferecer um desconto que funcione junto com um cupom que o cliente já possui?">
-    Sim! O sistema permite que as promoções funcionem em conjunto.
-  </Accordion>
+## Desconto Progressivo no subtotal
 
-  <Accordion title="Se eu der um brinde ao cliente, ele conta para atingir a meta de 'Quantidade de itens'?">
-    Você decide! Dentro das configurações de **Descontos > Limite de uso**, você pode definir se a promoção deve **Acumular com Brindes** e **Cupons**, garantindo total controle sobre a sua campanha.
-  </Accordion>
+A regra clássica: **quanto maior o valor do carrinho, maior o desconto**. Você define faixas de incentivo, por exemplo:
 
-  <Accordion title="Consigo criar um desconto que dure apenas durante o final de semana?">
-    Sim. Você pode determinar o período exato (data e hora de início e de término) em que a campanha de desconto ficará ativa na sua loja.
-  </Accordion>
-</AccordionGroup>
+- Acima de R$ 200: R$ 20 de desconto.
+- Acima de R$ 350: R$ 50 de desconto.
+- Acima de R$ 500: R$ 100 de desconto.
 
-<br />
-<hr />
+O cliente sempre vê o próximo nível e é incentivado a aumentar o pedido.
+
+## Formatos suportados
+
+- **Desconto no subtotal** (ex: R$ X OFF a partir de R$ Y).
+- **Leve X Pague Y** (ex: leve 3 pague 2).
+- **Em breve:** desconto por unidade e desconto no frete.
+
+## Combinação com cupons, brindes e outras promoções
+
+Dentro de **Descontos > Limite de uso**, você decide se a campanha **acumula** com:
+
+- **Cupons** que o cliente já tem.
+- **Brindes** ativos no carrinho.
+- Outras campanhas em paralelo.
+
+Isso te dá controle total para empilhar incentivos quando faz sentido (ex: Black Friday) ou proteger margem em datas regulares.
+
+## Janela de ativação
+
+Você pode programar **data e hora exatas** de início e fim de cada campanha. Use isso para criar:
+
+- Promoções de fim de semana.
+- Flash sales por algumas horas.
+- Campanhas sazonais (Natal, dia das mães, aniversário da loja) que ligam e desligam sozinhas, sem você precisar lembrar.
