@@ -45,19 +45,12 @@
       {
         "group": "iShorts",
         "pages": [
-          {
-            "group": "Sobre",
-            "pages": [
-              "ishorts/sobre/o-que-e",
-              "ishorts/sobre/quando-usar",
-              "ishorts/sobre/o-que-nao-faz"
-            ]
-          },
+          "ishorts/sobre/o-que-e",
+          "ishorts/sobre/quando-usar",
           {
             "group": "Primeiros Passos",
             "pages": [
               "ishorts/primeiros-passos/como-instalar",
-              "ishorts/primeiros-passos/validar-integracao",
               "ishorts/primeiros-passos/primeiro-video"
             ]
           },
