@@ -67,32 +67,3 @@ Se você quer parar a cobrança recorrente sem necessariamente perder o acesso a
 ## Mudei de ideia, posso cancelar o cancelamento?
 
 Sim. Enquanto seu app ainda está ativo (dentro do período já pago), você pode reverter o cancelamento direto em **Plano e cobrança > Reverter cancelamento**. A cobrança volta a ser automática no próximo ciclo.
-
-<div className="my-8 border-gray-200 dark:border-gray-800 flex flex-col items-center justify-center text-center">
-  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-    Esse artigo foi útil?
-  </h3>
-  <div className="flex gap-4">
-    <button
-      onClick={(e) => {
-        e.currentTarget.innerText = "Obrigado pelo feedback! 💜";
-        e.currentTarget.style.cursor = "default";
-        const btnNao = e.currentTarget.nextElementSibling;
-        if (btnNao) btnNao.style.display = "none";
-      }}
-      className="px-6 py-2 bg-green-100 hover:bg-green-200 text-green-700 rounded-lg font-medium transition-colors cursor-pointer"
-    >
-      👍 Sim
-    </button>
-    <a
-      href="https://api.whatsapp.com/send/?phone=5573981036437&text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20para%20cancelar%20ou%20reativar%20uma%20assinatura%20Mizui."
-      target="_blank"
-      className="px-6 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-lg font-medium transition-colors no-underline"
-    >
-      👎 Não, preciso de ajuda
-    </a>
-  </div>
-  <p className="text-xs text-gray-400 mt-3">
-    Ao clicar em "Não", você fala direto com nosso suporte.
-  </p>
-</div>

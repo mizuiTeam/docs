@@ -1,0 +1,108 @@
+---
+title: "Outras plataformas"
+description: "Instale o iShorts em qualquer loja virtual usando o Google Tag Manager (GTM)."
+icon: "code"
+---
+
+Se a sua plataforma de e-commerce não está na nossa lista de integrações nativas, você ainda consegue usar o iShorts. Basta instalar via **Google Tag Manager (GTM)**, que funciona em praticamente qualquer site (Shopify, VTEX, lojas próprias, WordPress/WooCommerce, etc).
+
+A configuração leva menos de 5 minutos.
+
+<Note>
+  O GTM é uma ferramenta gratuita do Google que serve justamente para inserir
+  scripts de aplicativos externos no seu site, sem precisar mexer em código.
+</Note>
+
+## 1. Verifique se você já tem o Google Tag Manager
+
+Acesse [tagmanager.google.com](https://tagmanager.google.com/?hl=pt) e faça login com sua conta Google.
+
+- Se você **já tem** uma conta GTM vinculada à sua loja, pode pular para o próximo passo.
+- Se **ainda não tem**, crie uma conta e instale o container do GTM no seu site. Em muitas plataformas isso é feito colando um código no tema ou ativando uma opção no painel. Em caso de dúvida, peça ao suporte da sua plataforma para configurar o GTM, e depois volte aqui.
+
+<Tip>
+  Não sabe se o GTM já está instalado? Use a extensão gratuita **Tag Assistant
+  Companion** do Google ou abra o site da loja, dê **Ctrl+U** (ver código-fonte)
+  e procure por `GTM-`. Se encontrar, está instalado.
+</Tip>
+
+## 2. Gere o script do iShorts
+
+<Steps>
+  <Step title="Acesse o painel da Mizui">
+    Entre em [app.mizui.com.br](https://app.mizui.com.br/login) e abra o
+    **iShorts**.
+  </Step>
+  <Step title="Vá em Integrações">
+    No menu lateral, clique em **Integrações** e depois em **Integrar**.
+  </Step>
+  <Step title="Selecione GTM">
+    Na busca, pesquise por **GTM** (ou Google Tag Manager). Selecione e clique
+    em **Continuar**.
+  </Step>
+  <Step title="Preencha os dados">
+    Informe o **link da sua loja** e o **código do seu container GTM** (no
+    formato `GTM-XXXXXX`, que você pega na tela inicial do
+    [tagmanager.google.com](https://tagmanager.google.com/?hl=pt)).
+  </Step>
+  <Step title="Copie o script gerado">
+    O iShorts vai gerar um script personalizado para sua loja. Clique em
+    **copiar script** e clique em **Integrar**.
+  </Step>
+</Steps>
+
+## 3. Crie a tag no Google Tag Manager
+
+<Steps>
+  <Step title="Volte para o GTM">
+    Acesse [tagmanager.google.com](https://tagmanager.google.com/?hl=pt) e abra
+    o container da sua loja.
+  </Step>
+  <Step title="Crie uma nova tag">
+    No menu lateral, vá em **Tags** e clique em **Nova**.
+  </Step>
+  <Step title="Nomeie a tag">
+    Em **Nome da tag**, escreva `iShorts` (assim você identifica facilmente
+    depois).
+  </Step>
+  <Step title="Configure como HTML personalizado">
+    Clique em **Configuração da tag** e selecione **HTML personalizado**. Cole o
+    script que você copiou no passo anterior.
+  </Step>
+  <Step title="Defina o acionador">
+    Clique em **Acionamento** e selecione **All Pages** (Todas as páginas).
+    Salve a tag.
+  </Step>
+</Steps>
+
+## 4. Publique a tag (essencial)
+
+Salvar a tag não é o suficiente. Para o iShorts aparecer na sua loja, você precisa publicar:
+
+<Steps>
+  <Step title="Clique em Enviar">
+    Botão azul no canto superior direito do painel do GTM.
+  </Step>
+  <Step title="Clique em Publicar">
+    Confirme em **Continuar**. Pronto, sua tag está no ar.
+  </Step>
+</Steps>
+
+<Check>
+  Em até **5 minutos** o iShorts já estará ativo na sua loja. Abra o site em uma
+  aba anônima para conferir.
+</Check>
+
+## Dúvidas comuns
+
+### Não tenho GTM. Como instalo?
+
+Cada plataforma tem um caminho diferente. O mais comum é colar o script do GTM no `<head>` do tema, mas em muitas lojas existe um campo dedicado no painel para isso. Procure pelo termo "Google Tag Manager" na central de ajuda da sua plataforma ou peça ao suporte dela.
+
+### Tenho mais de uma conta GTM, qual uso?
+
+Use a conta cujo código `GTM-XXXXXX` está realmente instalado no seu site. Se não souber qual é, pergunte ao profissional que cuidou da criação da loja ou ao suporte da sua plataforma.
+
+### Posso instalar sem o GTM?
+
+Sim, é possível colar o script do iShorts direto no código do tema, mas recomendamos o GTM porque é mais simples de manter, não exige editar o tema toda vez e funciona em qualquer plataforma.

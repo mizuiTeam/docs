@@ -81,7 +81,7 @@
               "ishorts/integracoes/shoppub",
               "ishorts/integracoes/magazord",
               "ishorts/integracoes/vnda",
-              "ishorts/integracoes/gtm"
+              "ishorts/integracoes/outras-plataformas"
             ]
           },
           {
@@ -185,6 +185,9 @@
   },
   "contextual": {
     "options": ["copy", "view", "vscode"]
+  },
+  "feedback": {
+    "thumbsRating": true
   },
   "footer": {
     "socials": {
