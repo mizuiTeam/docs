@@ -22,6 +22,11 @@
           "anchor": "Comunidade de Lojistas",
           "icon": "whatsapp",
           "href": "https://chat.whatsapp.com/J6pkukTh835AdFlJ8UDEfi"
+        },
+        {
+          "anchor": "Suporte WhatsApp",
+          "icon": "whatsapp",
+          "href": "https://api.whatsapp.com/send/?phone=5573981036437&text&type=phone_number&app_absent=0"
         }
       ]
     },
@@ -97,10 +102,8 @@
       {
         "group": "Cashing",
         "pages": [
-          {
-            "group": "Sobre",
-            "pages": ["cashing/sobre/o-que-e", "cashing/sobre/funcionalidades"]
-          },
+          "cashing/sobre/o-que-e",
+          "cashing/sobre/funcionalidades",
           {
             "group": "Primeiros Passos",
             "pages": ["cashing/primeiros-passos/como-comecar"]
@@ -137,13 +140,8 @@
       {
         "group": "Me Favorita",
         "pages": [
-          {
-            "group": "Sobre",
-            "pages": [
-              "mefavorita/sobre/o-que-e",
-              "mefavorita/sobre/funcionalidades"
-            ]
-          },
+          "mefavorita/sobre/o-que-e",
+          "mefavorita/sobre/funcionalidades",
           {
             "group": "Primeiros Passos",
             "pages": ["mefavorita/primeiros-passos/como-comecar"]
@@ -159,13 +157,7 @@
           },
           {
             "group": "Integrações",
-            "pages": [
-              "mefavorita/integracoes/compatibilidade",
-              "mefavorita/integracoes/nuvemshop",
-              "mefavorita/integracoes/bagy",
-              "mefavorita/integracoes/tray",
-              "mefavorita/integracoes/wbuy"
-            ]
+            "pages": ["mefavorita/integracoes/compatibilidade"]
           },
           {
             "group": "Planos",
@@ -176,12 +168,7 @@
     ]
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Suporte WhatsApp",
-        "href": "https://api.whatsapp.com/send/?phone=5573981036437&text&type=phone_number&app_absent=0"
-      }
-    ]
+    "links": []
   },
   "contextual": {
     "options": ["copy", "view", "vscode"]
