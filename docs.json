@@ -121,6 +121,17 @@
             ]
           },
           {
+            "group": "Pós-venda (CRM)",
+            "pages": [
+              "cashing/recursos/pos-venda/automacoes",
+              "cashing/recursos/pos-venda/cashback",
+              "cashing/recursos/pos-venda/giftback",
+              "cashing/recursos/pos-venda/whatsapp-api",
+              "cashing/recursos/pos-venda/campanhas",
+              "cashing/recursos/pos-venda/modelos-de-mensagem"
+            ]
+          },
+          {
             "group": "Creators",
             "pages": [
               "cashing/recursos/creators/primeiro-acesso",

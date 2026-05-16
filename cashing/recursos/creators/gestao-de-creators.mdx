@@ -1,74 +1,155 @@
 ---
-title: 'Dúvidas Frequentes'
-description: 'Respostas para as principais dúvidas sobre gestão de influenciadores e campanhas.'
+title: "Gestão de Creators"
+description: "Como cadastrar, comissionar, suspender, criar campanhas e pagar seus influenciadores, afiliados e vendedores."
 ---
 
-<AccordionGroup>
-  <Accordion title="Consigo editar um cupom associado a um creator?">
-    Sim, você consegue. 
-    
-    1. Na sua tela **Todos os creators**, clique no nome do creator desejado. 
-    2. No campo **Cupom**, logo abaixo do nome do influenciador, clique em **Editar**.
-    3. Aparecerão todos os seus cupons criados no Cashing para você selecionar.
-    
-    *Caso o cupom ainda não tenha sido criado, vá em **Vendas > Cupons > Cadastrar**.*
+O Cashing permite gerenciar **três tipos de creator** em um só painel: **influenciadores**, **afiliados** e **vendedores da loja**. Para cada um você define modelo de comissionamento, gera cupom único, acompanha vendas e paga pela central financeira.
 
-    **Confira o passo a passo em vídeo:**
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
-      <video
-        controls
-        className="w-full h-auto block"
-        src="/videos/cashing/creators/cupons.mp4"
-      ></video>
-    </div>
-  </Accordion>
+## Como cadastrar um creator
 
-  <Accordion title="Consigo alterar o comissionamento de um creator?">
-    Sim. 
-    
-    1. Na tela **Todos os creators**, localize o parceiro desejado e clique em **Editar**. 
-    2. Na tela que se abrirá, vá até a seção **Modelo de comissionamento**.
-    3. Escolha o modelo desejado ou descreva um modelo personalizado.
+Você tem dois caminhos para trazer um creator para o programa:
 
-    **Confira o passo a passo em vídeo:**
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
-      <video
-        controls
-        className="w-full h-auto block"
-        src="/videos/cashing/creators/comissionamento.mp4"
-      ></video>
-    </div>
-  </Accordion>
+- **Cadastro manual:** o lojista cadastra direto pelo painel **Creators > Todos os creators > Adicionar**.
+- **Link público de inscrição:** o Cashing gera um link da sua loja que você divulga no Instagram, no rodapé do site ou em campanhas. Os interessados se candidatam sozinhos e você aprova ou recusa cada inscrição.
 
-  <Accordion title="Consigo suspender o acesso de um creator?">
-    Sim. Na tela **Todos os creators**, no creator desejado, clique em **Editar**. Role até o final da página que se abrirá e clique na opção **Suspender acesso**, depois confirme a ação.
-  </Accordion>
+<Tip>
+  Use o link público quando quiser escalar o programa. O cadastro manual é ideal
+  para parceiros estratégicos que você já tem contato direto.
+</Tip>
 
-  <Accordion title="O que é um modelo de comissionamento?">
-    É uma regra predefinida de como um creator deve ser comissionado. Com esse modelo salvo, você não precisa preencher manualmente todas as informações repetitivas a cada novo cadastro de influenciador.
-  </Accordion>
+## Cupom dinâmico ao aprovar
 
-  <Accordion title="Pra que serve a seção Campanhas no Creators?">
-    Serve para você enviar ao painel do creator uma campanha completa, com todas as informações que ele precisa para realizar o trabalho: briefing, regras de divulgação, prazos e materiais de apoio.
-  </Accordion>
+Assim que você aprova um creator, o Cashing **gera automaticamente um cupom personalizado** com o nome dele + a porcentagem de desconto que você definir como padrão (ex: `JULIA10`, `MARCOS15`).
 
-  <Accordion title="É possível criar um link do site para influenciadores divulgarem?">
-    Não. Atualmente o rastreio das vendas é feito **somente através dos cupons** de desconto. A funcionalidade de links rastreáveis está em nosso roadmap para implementação futura.
-  </Accordion>
+Esse cupom já vai vinculado ao perfil do creator, então toda venda usando esse código gera comissão automática para ele, sem você precisar amarrar nada manualmente.
 
-  <Accordion title="Como faz para realizar os pagamentos dos influencers que já estão cadastrados?">
-    Você pode ir no menu **Métricas** e exportar a planilha dos Creators, filtrando pelo período que deseja. Na planilha exportada, já constará o valor exato a ser pago para cada influenciador referente àquele período.
-    
-     **Confira o passo a passo em vídeo:**
-    <div className="rounded-xl border border-gray-100 shadow-md overflow-hidden mt-2 mb-4">
-      <video
-        controls
-        className="w-full h-auto block"
-        src="/videos/cashing/creators/pagamentos.mp4"
-      ></video>
-    </div>
-  </Accordion>
-</AccordionGroup>
+### Editar o cupom de um creator
 
-<br />
-<hr />
+Se quiser trocar o cupom associado depois:
+
+<Steps>
+  <Step title="Abra o creator">Em **Todos os creators**, clique no nome dele.</Step>
+  <Step title="Edite o cupom">No campo **Cupom**, abaixo do nome, clique em **Editar**.</Step>
+  <Step title="Selecione ou crie">
+    Escolha um dos cupons existentes na lista. Se ainda não criou, vá em
+    **Vendas > Cupons > Cadastrar** e depois volte aqui.
+  </Step>
+</Steps>
+
+<Frame>
+  <video
+    controls
+    className="w-full h-auto rounded-xl border border-gray-100 shadow-md"
+    src="/videos/cashing/creators/cupons.mp4"
+  ></video>
+</Frame>
+
+## Modelos de comissionamento
+
+Cada creator pode receber:
+
+- **% por venda:** comissão variável proporcional ao que ele vendeu no período.
+- **Valor fixo mensal:** um cachê fixo, independente do volume.
+
+Você pode salvar **modelos padrão** (ex: _Iniciante 5%_, _Pro 10%_, _VIP 15%_) e reutilizar em novos cadastros sem reconfigurar tudo do zero.
+
+### Alterar o comissionamento de um creator
+
+<Steps>
+  <Step title="Abra o creator">
+    Em **Todos os creators**, localize e clique em **Editar**.
+  </Step>
+  <Step title="Vá em Modelo de comissionamento">
+    Role até a seção **Modelo de comissionamento**.
+  </Step>
+  <Step title="Escolha ou personalize">
+    Selecione um modelo salvo ou descreva uma regra personalizada para esse
+    creator específico.
+  </Step>
+</Steps>
+
+<Frame>
+  <video
+    controls
+    className="w-full h-auto rounded-xl border border-gray-100 shadow-md"
+    src="/videos/cashing/creators/comissionamento.mp4"
+  ></video>
+</Frame>
+
+## Campanhas e calendário
+
+A seção **Campanhas** é onde você organiza as ações de divulgação com prazos e materiais. Cada campanha pode ter:
+
+- **Briefing** com o que o creator deve falar / mostrar.
+- **Regras de divulgação** (formatos, hashtags, marcações).
+- **Período de vigência** (datas de início e fim).
+- **Materiais de apoio** (imagens, vídeos, copy sugerida).
+
+A campanha aparece automaticamente no painel do creator, que vê tudo o que precisa para executar.
+
+### Calendário de campanhas
+
+No **calendário**, você visualiza:
+
+- Todas as campanhas ativas e futuras em um só lugar.
+- Os creators que já postaram em cada campanha.
+- Lacunas no mês que precisam de mais ação de divulgação.
+
+É a ferramenta ideal para o time de marketing planejar lançamentos, sazonais e Black Friday sem perder nenhuma janela.
+
+## Suspender um creator
+
+Quer pausar o acesso de alguém sem apagar o histórico?
+
+<Steps>
+  <Step title="Abra o creator">
+    Em **Todos os creators**, clique em **Editar** no creator desejado.
+  </Step>
+  <Step title="Suspender">
+    Role até o final da página e clique em **Suspender acesso**.
+  </Step>
+  <Step title="Confirme">
+    Confirme a ação. O cupom dele para de funcionar e ele perde acesso ao
+    painel, mas os dados e métricas históricas ficam preservados.
+  </Step>
+</Steps>
+
+## Central de pagamentos
+
+A central de pagamentos calcula automaticamente quanto cada creator deve receber no período (com base nas vendas atribuídas pelo cupom dele) e organiza tudo para o seu financeiro.
+
+<Steps>
+  <Step title="Vá em Métricas">
+    Acesse o menu **Métricas** dentro de Creators.
+  </Step>
+  <Step title="Filtre o período">
+    Escolha o intervalo que você quer fechar (ex: mês anterior).
+  </Step>
+  <Step title="Exporte a planilha">
+    Clique em exportar. A planilha já vem com o **valor exato a pagar para cada
+    creator** no período selecionado, pronta para o financeiro processar.
+  </Step>
+</Steps>
+
+<Frame>
+  <video
+    controls
+    className="w-full h-auto rounded-xl border border-gray-100 shadow-md"
+    src="/videos/cashing/creators/pagamentos.mp4"
+  ></video>
+</Frame>
+
+## Painel exclusivo do creator
+
+Cada creator aprovado recebe acesso ao próprio painel (no link configurado no [primeiro acesso](/cashing/recursos/creators/primeiro-acesso)), onde vê em tempo real:
+
+- **Campanhas ativas** com briefing e materiais.
+- **Cupom dele** com a % de desconto vigente.
+- **Vendas realizadas** atribuídas ao cupom.
+- **Comissão acumulada** no período.
+
+Isso reduz drasticamente o atendimento manual para tirar dúvidas de "quanto eu vendi?" e mantém o creator engajado vendo seus próprios resultados.
+
+## Limitações atuais
+
+- **Rastreamento por cupom:** as vendas são atribuídas ao creator pelo cupom usado no checkout. Links rastreáveis (UTM exclusivos) estão no roadmap, mas ainda não estão disponíveis.

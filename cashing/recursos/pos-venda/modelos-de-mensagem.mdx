@@ -1,0 +1,74 @@
+---
+title: "Modelos de Mensagem"
+description: "Biblioteca de templates de WhatsApp e e-mail prontos para usar nas suas automações e campanhas."
+---
+
+Os **Modelos de Mensagem** são templates reutilizáveis de WhatsApp e e-mail que você usa nas [Automações](/cashing/recursos/pos-venda/automacoes) e [Campanhas](/cashing/recursos/pos-venda/campanhas). Em vez de escrever mensagem do zero toda vez, você monta uma vez, salva, e reaplica.
+
+## Variáveis dinâmicas
+
+Cada modelo aceita variáveis que são substituídas pelos dados do cliente / pedido na hora do envio:
+
+- `{{nome_cliente}}` · primeiro nome.
+- `{{produto}}` · nome do último produto comprado / abandonado.
+- `{{valor}}` · valor do pedido ou do cupom.
+- `{{cupom}}` · código de cupom personalizado.
+- `{{validade}}` · data limite do cupom / saldo.
+- `{{saldo_cashback}}` · saldo atual do cliente.
+- `{{loja}}` · nome da sua loja.
+
+Exemplo de mensagem com variáveis:
+
+> Oi `{{nome_cliente}}`, vi que você curtiu `{{produto}}` mas não terminou
+> a compra. Que tal fechar agora com **`{{cupom}}`** e ganhar 10% off? Vale
+> só até `{{validade}}`. ❤️ `{{loja}}`
+
+## Templates já prontos
+
+O Cashing entrega uma biblioteca inicial com modelos validados pela Meta para os principais cenários:
+
+<CardGroup cols={2}>
+  <Card title="Carrinho abandonado" icon="cart-shopping">
+    Versões amigável (1ª tentativa) e com cupom (2ª tentativa).
+  </Card>
+  <Card title="Pós-compra" icon="box">
+    Confirmação, agradecimento, pedido de avaliação.
+  </Card>
+  <Card title="Boas-vindas" icon="hand-wave">
+    Para novos cadastros, apresentando a marca e oferecendo cupom de welcome.
+  </Card>
+  <Card title="Aniversário" icon="cake-candles">
+    Mensagem de feliz aniversário com mimo (cupom ou cashback extra).
+  </Card>
+  <Card title="Recompra prevista" icon="rotate">
+    "Já vai dar tempo de você pedir aquele produto X de novo?"
+  </Card>
+  <Card title="Reativação de inativos" icon="bell">
+    Para clientes que sumiram há 60+ dias, com oferta agressiva.
+  </Card>
+  <Card title="Saldo a expirar" icon="hourglass-half">
+    "Você tem R$ X de cashback expirando em Y dias."
+  </Card>
+  <Card title="Lançamento / novidade" icon="sparkles">
+    Para campanhas pontuais de produtos novos.
+  </Card>
+</CardGroup>
+
+## Aprovação de templates (WhatsApp)
+
+Para mandar mensagens de **marketing** pelo WhatsApp ([API Oficial Meta](/cashing/recursos/pos-venda/whatsapp-api)), o template precisa estar **aprovado pela Meta**. Os templates inclusos no Cashing já vêm pré-aprovados. Quando você cria um template novo, o sistema submete para aprovação automaticamente (geralmente liberado em poucas horas).
+
+<Note>
+  Mensagens de **utilidade** (confirmação de pedido, código de rastreio, aviso
+  de entrega) e mensagens dentro de **janela de atendimento** (cliente respondeu
+  nas últimas 24h) podem ser enviadas livremente, sem template aprovado.
+</Note>
+
+## Boas práticas de copy
+
+- **Comece pelo nome** do cliente. Soa pessoal, aumenta abertura.
+- **Uma mensagem, uma ação**. Não tente vender 3 coisas no mesmo template.
+- **Urgência real**, não inventada. Validade verdadeira do cupom funciona melhor que pressão falsa.
+- **Texto curto no WhatsApp**. Se passou de 5 linhas no celular, encurte.
+- **Imagem só quando agrega**. Foto bonita do produto ajuda; banner genérico atrapalha.
+- **Sempre dê opção de sair** (descadastro fácil). Reduz reclamações e protege o número.

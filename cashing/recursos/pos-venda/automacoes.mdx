@@ -1,0 +1,66 @@
+---
+title: "Automações"
+description: "Fluxos automáticos de WhatsApp e e-mail disparados por gatilhos de comportamento."
+---
+
+As **Automações** são o motor do CRM de fidelização do Cashing. Em vez de você ter que mandar cada mensagem na mão, você cria fluxos que disparam **sozinhos** quando o cliente faz (ou deixa de fazer) algo na sua loja.
+
+## Gatilhos disponíveis
+
+Você pode disparar uma automação a partir de qualquer um destes eventos:
+
+- **Carrinho abandonado** · cliente colocou item no carrinho e saiu sem fechar.
+- **Pós-compra** · imediatamente ou X dias depois da compra.
+- **Aniversário do cliente** · usa a data capturada na Captura de Leads.
+- **Recompra prevista** · prevê quando o cliente deveria comprar de novo e dispara antes.
+- **Reativação de inativos** · cliente sumiu há X dias / meses.
+- **Boas-vindas** · primeiro cadastro na loja.
+- **Pós-avaliação** · após o cliente deixar uma review.
+
+## Canais de envio
+
+Cada fluxo pode disparar por:
+
+- **WhatsApp** (via [API Oficial da Meta](/cashing/recursos/pos-venda/whatsapp-api)).
+- **E-mail** com identidade visual da loja.
+- **Os dois canais combinados** em sequência (ex: WhatsApp primeiro, e-mail como fallback se não responder).
+
+## Como funciona um fluxo
+
+Um fluxo é uma sequência de etapas com **espera** e **condições**. Exemplo de um clássico de carrinho abandonado:
+
+<Steps>
+  <Step title="Gatilho">Cliente abandona o carrinho.</Step>
+  <Step title="Espera 1h">Aguarda 1 hora.</Step>
+  <Step title="WhatsApp 1">
+    Manda mensagem amigável: _"Vi que você esqueceu algo no carrinho..."_.
+  </Step>
+  <Step title="Espera 24h">Aguarda mais 24 horas.</Step>
+  <Step title="Condição: comprou?">
+    Se já comprou, encerra o fluxo. Se não, segue.
+  </Step>
+  <Step title="WhatsApp 2 com cupom">
+    Manda nova mensagem com **cupom de 5% de desconto** para fechar.
+  </Step>
+</Steps>
+
+## Templates prontos
+
+Para acelerar, o Cashing já vem com vários **templates aprovados** de WhatsApp e e-mail (ver [Modelos de Mensagem](/cashing/recursos/pos-venda/modelos-de-mensagem)). Você só ajusta tom de voz e variáveis (nome, produto, valor) e ativa.
+
+## Métricas de cada fluxo
+
+Cada automação ativa mostra no painel:
+
+- Quantos clientes entraram no fluxo.
+- Quantos abriram a mensagem.
+- Quantos converteram em venda.
+- Receita gerada e ROI.
+
+Use isso para identificar quais fluxos pagam o Cashing sozinhos e onde vale otimizar copy ou tempo de espera.
+
+<Tip>
+  Comece pelos 3 fluxos de maior ROI: **carrinho abandonado**, **pós-compra
+  pedindo recompra** e **reativação de inativos de 60 dias**. Só esses 3 já
+  justificam a assinatura na maioria das lojas.
+</Tip>
